@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
-
-<library name="ASP Tags" desc="A collection of ASP tags." reference="ASP">
-	<element name="expression" value='<%= %>' reference='ASP,EXPRESSION'/>
-	<element name="scriplet" value='<% %>' reference='ASP,SCRIPLET'/>
-</library>
