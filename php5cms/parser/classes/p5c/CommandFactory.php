@@ -6,6 +6,9 @@ import('p5c.command.FileManagerDefault');
 class p5c_CommandFactory extends p5c_BaseObject {
 	
 	
+	public function __construct() {
+		parent::__construct();
+	} // end public function __construct()
 	
 	
 	public function createCommand($module, $action) {

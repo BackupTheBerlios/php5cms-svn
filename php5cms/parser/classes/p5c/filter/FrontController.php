@@ -1,10 +1,12 @@
 <?php
 import('p5c.CommandFactory');
+import('p5c.Filter');
 
-class p5c_filter_FrontController {
+class p5c_filter_FrontController extends p5c_Filter {
 	
 	
-	public function run(p5c_http_Request $request, p5c_http_Response $response) {
+	public function execute(p5c_http_Request $request, 
+	                        p5c_http_Response $response) {
 		
 		$module = $request->getParameter('module');
 		$action = $request->getParameter('action');
@@ -24,7 +26,7 @@ class p5c_filter_FrontController {
 		if (($view = $command->getView()) != null) {
 			$view->display();
 		}
-	} // end public function run(p5c_http_Request $request, ...)
+	} // end public function execute(p5c_http_Request $request, ...)
 	
 	
 } // end class p5c_filter_FrontController
