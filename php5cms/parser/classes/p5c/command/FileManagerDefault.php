@@ -31,14 +31,33 @@ class p5c_command_FileManagerDefault extends p5c_Command {
 		$order = -1;
 		
 		$sort = $request->getParameter('sort');
+		if (is_array($sort)) {
+			$sort = key($sort);
+		}
 		if (preg_match('#^([a-z0-9]+)-(asc|desc)$#i', $sort, $match)) {
 			$key   = $match[1];
-			$order = ($match[2] == 'asc' ? -1 : -2);
+			$order = $match[2];
 		}
 		
-		$fileList = new p5c_model_FileList(
-			$config->getProperty('filemanager.directory'), $key, $order
-		);
+		if (($path = $request->getParameter('workdir')) === null) {
+			$path = $config->getProperty('filemanager.directory') . '/parser';
+		}
+		
+		if (($chdir = $request->getParameter('chdir')) != null) {
+			
+			if (is_array($chdir)) {
+				$chdir = key($chdir);
+			}
+			
+			if (strpos($chdir, '..') !== false) {
+				$path = preg_replace('#/?[^/]+/?$#U', '', $path);
+			} else {
+				$path .= '/' . $chdir;
+			}
+		}
+		$path = str_replace(array('..', '//'), array('', '/'), $path);
+		
+		$fileList = new p5c_model_FileList($path, $key, $order);
 		
 		$this->view = new p5c_view_FileManager($fileList);
 	} // end public function execute(p5c_http_Request $request, ...)

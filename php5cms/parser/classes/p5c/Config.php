@@ -61,11 +61,20 @@ class p5c_Config extends p5c_BaseObject {
 	 */
 	protected function __construct() {
 		
-		$parserDir = realpath(dirname(__FILE__) . '/../../');
+		$parserDir = str_replace('/usr/devel/var/src/web', '', realpath(dirname(__FILE__) . '/../../../'));
 		
 		$this->properties = array(
+			
+			'system.docroot' => '/var/www/html',
 		
-			'filemanager.directory' => realpath($parserDir . '/../'),
+			'filemanager.directory'  => $parserDir,
+			'filemanager.texttypes' => array(
+				'css', 'htm', 'html', 'php', 'tpl', 'txt', 'xhtml', 'xml', 'xsl'
+			),
+			'filemanager.mediatypes' => array(
+				'png', 'gif', 'jpg', 'jpeg', 'mp3', 'mp2', 'mp1', 'mpg', 'mpeg', 
+				'asf', 'avi' 
+			)
 		);
 	} // end protected function __construct()
 	

@@ -16,6 +16,13 @@ class p5c_http_Request extends p5c_BaseObject {
 	 */
 	private static $instance = null;
 	
+	/**
+	 * Used request method.
+	 * 
+	 * @access private
+	 * @var    string
+	 */
+	private $method = 'GET';
 	
 	/**
 	 * Request parameters.
@@ -66,7 +73,33 @@ class p5c_http_Request extends p5c_BaseObject {
 				}
 			}
 		}
+		
+		if (isset($params['action']) && is_array($params['action'])) {
+
+			foreach ($params['action'] as $key => $value) {
+				if ($key == 'x' || $key == 'y' || is_numeric($key)) {
+					continue;
+				}
+					
+				if (preg_match('#^([^:]+):([^:]+)$#', $key, $match)) {
+					$params['action']       = $match[1];
+					$params['action_param'] = $match[2];
+				} else {
+					$params['action'] = $key;
+				}
+				break;
+			}
+		}
+		
 		$this->parameters = $params;
+		
+		if (isset($_SERVER['REQUEST_METHOD'])) {
+			$this->method = strtoupper($_SERVER['REQUEST_METHOD']);
+		} else if (isset($_ENV['REQUEST_METHOD'])) {
+			$this->method = strtoupper($_ENV['REQUEST_METHOD']);
+		} else if (isset($_POST) && !empty($_POST)) {
+			$this->method = 'POST';
+		}
 	} // end protected function __construct() 
 	
 	

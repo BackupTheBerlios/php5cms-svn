@@ -6,6 +6,9 @@ using('io.FolderArray');
 class p5c_model_FileList extends p5c_BaseObject {
 	
 	
+	private $workingDirectory = '';
+	
+	
 	private $entries = array();
 	
 	private $meta = array(
@@ -18,19 +21,26 @@ class p5c_model_FileList extends p5c_BaseObject {
 	
 	
 	private $sKey = '';
-	private $sOrder = -1;
+	private $sOrder = 'asc';
 	
 	
-	public function __construct($dir, $sKey = null, $sOrder = -1) {
+	public function __construct($dir, $sKey = 'name', $sOrder = 'asc') {
 		parent::__construct();
 		
 		
 		
 		$this->sKey   = (string)$sKey;
-		$this->sOrder = (integer)$sOrder;
+		$this->sOrder = (string)$sOrder;
 		
 		
-		$folder = new FolderArray($dir . '/parser/classes/p5c');
+		$this->workingDirectory = $dir;
+		
+		
+		$fullpath  = p5c_Config::getInstance()->getProperty('system.docroot');
+		$fullpath .= $dir;
+		
+		
+		$folder = new FolderArray($fullpath);
 		$folder->setRecursive(false);
 		$folder->setIgnore(array('.', '..', '.svn'));
 		$folder->parseDir();
@@ -46,6 +56,16 @@ class p5c_model_FileList extends p5c_BaseObject {
 		
 		
 		#print "<pre>";print_r($this->getIterator());print "</pre>";
+	}
+	
+	
+	public function getWorkingDirectory() {
+		return $this->workingDirectory;
+	} // end public function getWorkingDirectory()
+	
+	
+	public function getSort() {
+		return $this->sKey . '-' . $this->sOrder;
 	}
 	
 	
@@ -66,10 +86,10 @@ class p5c_model_FileListIterator extends p5c_BaseObject implements Iterator {
 	
 	
 	private $sKey = '';
-	private $sOrder = -1;
+	private $sOrder = 'asc';
 	
 	
-	public function __construct($files, $key = null, $order = -1) {
+	public function __construct($files, $key = null, $order = 'asc') {
 		
 		
 		$this->files = $files;
@@ -129,7 +149,7 @@ class p5c_model_FileListIterator extends p5c_BaseObject implements Iterator {
 		}
 		
 		
-		return ($return * ($this->sOrder == -1 ? 1 : -1));
+		return ($return * ($this->sOrder == 'asc' ? 1 : -1));
 	}
 
 }

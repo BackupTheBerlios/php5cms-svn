@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<html xmlns:ap="http://ap">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+    <meta http-equiv="content-style-type" content="text/css" />
+		<style type="text/css" media="screen" ap:src-include="string:/style.css" />
+	</head>
+	<body>
+	  <h1>Manuel</h1>
+		
+		<form action="" method="post">
+		  <input type="hidden" name="sort" value="${form/sort}" />
+			<input type="hidden" name="workdir" value="${form/workdir}" />
+			
+		<div ap:content="form/workdir" />
+		
+		<table border="0">
+		  <tr style="background-color: green;color: white;">
+			  <td></td>
+				<td></td>
+				<td></td>
+			  <td>Name</td>
+			  <td>Größe</td>
+			  <td>Zeit</td>	
+			  <td>Rechte</td>
+			</tr>
+			
+			
+		  <tr class="fm-sort-row">
+			  <td class="fm-sort-button"></td>
+				<td class="fm-sort-button"></td>
+				<td class="fm-sort-button"></td>
+			  <td class="fm-sort-button">
+				  <input type="image"
+					       name="sort[name-asc]"
+								 class="fm-sort-button"
+								 border="0" width="10" height="7"
+								 src="${base/directory}/img/filemanager/up.png" />
+				  <input type="image"
+					       name="sort[name-desc]"
+								 class="fm-sort-button"
+								 border="0" width="10" height="7"
+								 src="${base/directory}/img/filemanager/down.png" />
+				</td>
+			  <td class="fm-sort-button">
+				  <input type="image"
+					       name="sort[size-asc]"
+								 class="fm-sort-button"
+								 border="0" width="10" height="7"
+								 src="${base/directory}/img/filemanager/up.png" />
+				  <input type="image"
+					       name="sort[size-desc]"
+								 class="fm-sort-button"
+								 border="0" width="10" height="7"
+								 src="${base/directory}/img/filemanager/down.png" />
+				</td>
+			  <td class="fm-sort-button">
+				  <input type="image"
+					       name="sort[mtime-asc]"
+								 class="fm-sort-button"
+								 border="0" width="10" height="7"
+								 src="${base/directory}/img/filemanager/up.png" />
+				  <input type="image"
+					       name="sort[mtime-desc]"
+								 class="fm-sort-button"
+								 border="0" width="10" height="7"
+								 src="${base/directory}/img/filemanager/down.png" />
+				</td>	
+			  <td class="fm-sort-button" height="">
+				  <input type="image"
+					       name="sort[perms-asc]"
+								 class="fm-sort-button"
+								 border="0" width="10" height="7"
+								 src="${base/directory}/img/filemanager/up.png" />
+				  <input type="image"
+					       name="sort[perms-desc]"
+								 class="fm-sort-button"
+								 border="0" width="10" height="7"
+								 src="${base/directory}/img/filemanager/down.png" />
+				</td>
+			</tr>
+			
+			
+		  <tr>
+			  <td> </td>
+				<td>
+				  <input type="image"
+					       name="chdir[..]"
+								 src="${base/directory}/img/filemanager/parent.png" />
+				</td>
+				<td> </td>
+			  <td> </td>
+			  <td> </td>
+			  <td> </td>	
+			  <td> </td>
+			</tr>
+			
+			
+		  <tr ap:repeat="file folder">
+			  <td>
+				  <input type="checkbox"
+					       name="selection[]"
+								 ap:attributes="value file/name" />
+				</td>
+				<td>
+				  <input ap:condition="file/folder" 
+					       type="image"
+					       name="chdir[${file/name}]"
+								 src="${base/directory}/img/filemanager/filetypes/${file/icon}" />
+				  <input ap:condition="file/editable" 
+					       type="image"
+					       name="action[show]" 
+								 src="${base/directory}/img/filemanager/filetypes/${file/icon}" />
+				  <input ap:condition="file/displayable" 
+					       type="image"
+					       name="action[show]"
+								 src="${base/directory}/img/filemanager/filetypes/${file/icon}" />
+          <a href="" ap:condition="file/downloadable">
+					  <img src="${base/directory}/img/filemanager/filetypes/${file/icon}"
+								 border="0" width="16" height="16" alt="" />
+					</a>
+				</td>
+				<td>
+				  <input ap:condition="file/editable" 
+					       type="image"
+					       name="action[edit]" 
+								 src="${base/directory}/img/filemanager/edit.png" />
+				</td>
+			  <td ap:content="file/name" />
+				<td ap:content="file/size" />
+				<td ap:content="file/time" />
+				<td ap:content="file/perms" />
+			</tr>
+		</table>
+		
+		</form>
+		
+	</body>
+</html>
