@@ -1,0 +1,410 @@
+<!--
+Copyright (c) 2000-2002 Microsoft Corp. All rights reserved.
+-->
+
+
+<PROPERTY NAME="selectable"/>
+<PROPERTY NAME="striped"/>
+
+<METHOD NAME="Format"/>
+<METHOD NAME="reset"/>
+
+<EVENT NAME="onrowover"  ID="rowover"/>
+<EVENT NAME="onrowout"   ID="rowout"/>
+<EVENT NAME="onrowclick" ID="rowclick"/>
+<EVENT NAME="onerror"    ID="error"/>
+
+<ATTACH EVENT="onreadystatechange" HANDLER="DoInit"/>
+<ATTACH EVENT="onmouseout"         HANDLER="LeaveTable"/>
+<ATTACH EVENT="onselectstart"      HANDLER="DoSelectStart"/>
+
+
+<script language="JavaScript">
+
+/**
+ * current mouseover row
+ * @access public
+ */
+var oCurrRow;
+
+/**
+ * currently selected row
+ * @access public
+ */
+var oSelectRow;
+
+/**
+ * previous backgroundColor of selected row
+ * @access public
+ */
+var sSelectBack;
+
+/**
+ * previous color of selected row
+ * @access public
+ */
+var sSelectClr;
+
+/**
+ * previous backgroundColor of mouseover row
+ * @access public
+ */
+var sDefaultBack;
+
+/**
+ * previous color of mouseover row
+ * @access public
+ */
+var sDefaultClr;
+
+/**
+ * backgroundColor for unselecting selected row
+ * @access public
+ */
+var sUndoBack;
+
+/**
+ * color for unselecting selected row
+ * @access public
+ */
+var sUndoClr;
+
+
+/**
+ * @access public
+ */
+function DoInit()
+{
+    SetDefaults();
+    Format();
+};
+
+/**
+ * @access public
+ */
+function SetDefaults()
+{
+    // custom CSS Property Defaults
+	CustomDefault( 'ro--hover-background',   'roHoverBackground',    'navy'    );
+	CustomDefault( 'ro--hover-color',        'roHoverColor',         'white'   );
+	CustomDefault( 'ro--selected-background','roSelectedBackground', 'navy'    );
+	CustomDefault( 'ro--selected-color',     'roSelectedColor',      'white'   );
+	CustomDefault( 'ro--shade-background',   'roShadeBackground',    '#dddddd' );
+	CustomDefault( 'ro--light-background',   'roLightBackground',    'white'   );
+
+    // CSS Property Defaults
+    NormalDefault( 'cursor', 'auto', 'default' );
+
+    // Attribute | Property Defaults
+    if ( selectable == null )
+		selectable  = false;
+    
+	if ( striped == null )
+		striped = false;
+};
+
+/**
+ * @access public
+ */
+function CustomDefault( sCSSName, sScriptName, sDefault )
+{
+    if ( currentStyle[sCSSName] == null )
+		style[sCSSName] = sDefault;
+    else
+		style[sCSSName] = currentStyle[sCSSName];
+    
+    style[sScriptName] = style[sCSSName];
+};
+
+/**
+ * @access public
+ */
+function NormalDefault( sCSSName, sIEDefault, sDefault )
+{
+    if ( currentStyle[sCSSName] == sIEDefault && ( ( style[sCSSName] == "" ) || ( style[sCSSName] == null ) ) )
+    	style[sCSSName] = sDefault;
+};
+
+/**
+ * @access public
+ */
+function Format()
+{
+    // if the table's readyState is not complete, wait
+	if ( readyState != "complete" && readyState != 4 )
+	{
+	    window.setTimeout( uniqueID + ".Format()", 50 );
+	}
+    else 
+    {
+        Stripes( eval( striped ) );
+        	
+        attachEvent( "onmouseover", DoMouseOver );
+        attachEvent( "onmouseout", DoMouseOut );
+        attachEvent( "onclick", DoClick );
+        attachEvent( "onpropertychange", DoPropChange );
+    }
+};
+
+/**
+ * @access public
+ */
+function DoPropChange()
+{
+    var propertyName = window.event.propertyName;
+
+    if ( propertyName.substring(0,5) == "style" )
+    {
+        switch ( propertyName )
+        {
+            case "style.roHoverBackground" :
+                break;
+
+            case "style.roHoverColor" :
+                break;
+
+            case "style.roSelectedBackground" :
+                if ( oSelectRow != null )
+					ColorCells( oSelectRow, style.roSelectedColor, style.roSelectedBackground );
+                
+				break;                
+
+            case "style.roSelectedColor" :
+                if ( oSelectRow != null )
+					ColorCells(oSelectRow, style.roSelectedColor, style.roSelectedBackground );
+					
+                break;
+
+            case "style.roShadeBackground" :
+                Stripes( eval( striped ) );
+                break;
+
+            case "style.roLightBackground" :
+                Stripes( eval( striped ) );
+                break;     
+
+            case "style.cursor" :
+                break;               
+        }
+    }
+    else
+    {
+        // detach the onpropertychange event to prevent it from firing while the changes are handled
+        detachEvent( "onpropertychange", DoPropChange );
+        
+        switch ( propertyName )
+        {
+            case "striped" :
+                Stripes( eval( striped ) );
+                break;
+
+            case "selectable" :
+                if ( !eval( selectable ) )
+					ColorCells( oSelectRow, sSelectClr, sSelectBack );
+                
+				break;
+                
+            default :
+                ReturnError( propertyName + " not a valid property" );
+                break;
+        }
+
+        //  Re-attach the onpropertychange event
+        attachEvent( "onpropertychange", DoPropChange );
+    }
+};
+
+/**
+ * @access public
+ */
+function reset()
+{
+    oCurrRow = null;
+    
+    // if there is a row currently selected, unselect it.
+    if ( oSelectRow != null )
+		ColorCells( oSelectRow, sUndoClr, sUndoBack );
+    	
+	sDefaultBack = sUndoBack;
+	sDefaultClr  = sUndoClr;
+    oSelectRow   = null;
+};
+
+/**
+ * @access public
+ */
+function Stripes( bColor )
+{
+    // iterate through the rows of the table, alternately applying the shade and light colors
+    for ( var j = 1; j < rows.length; j++ )
+    {
+        if ( ( rows(j) == oSelectRow ) && eval( selectable ) )
+			continue;
+        
+		if ( rows( j ).parentElement.tagName.toLowerCase() != "tbody" )
+			continue;
+    
+        if ( rows( j ).rowIndex % 2 ) 
+        {
+            var sColShade = ( bColor? style.roShadeBackground : "transparent" );
+            ColorCells( rows( j ), null, sColShade );
+        }
+        else
+        {
+            var sColLight = ( bColor? style.roLightBackground : "transparent" );
+            ColorCells( rows( j ), null, sColLight );
+        }
+    }
+};
+
+/**
+ * @access public
+ */
+function LeaveTable()
+{
+    if ( window.event.toElement == element.parentElement )
+		oCurrRow = null;
+};
+
+/**
+ * @access public
+ */
+function GetRow( oElem )
+{
+	while ( oElem )
+	{
+		if ( ( oElem.tagName.toLowerCase() == "tr" ) && ( oElem.parentElement.tagName.toLowerCase() == "tbody" ) )
+			return oElem;
+			 
+		if ( oElem.tagName.toLowerCase() == "table" )
+			return false;
+		
+		oElem = oElem.parentElement;
+	}
+};
+
+/**
+ * @access public
+ */
+function ColorCells( oRow, sClr, sBack )
+{
+	if ( oRow == false )
+		return false;
+	
+    if ( sClr != null )
+		oRow.style.color = sClr;
+	
+	if ( sBack != null )
+		oRow.style.backgroundColor = sBack;
+
+    // iterate through the cells of the sourceRow and apply the color and background color
+	for ( var i = 0; i < oRow.cells.length; i++ )
+	{
+		if ( sClr != null )
+			oRow.cells( i ).style.color = sClr;
+		
+		if ( sBack != null )
+			oRow.cells(i).style.backgroundColor = sBack;
+	}
+};
+
+/**
+ * @access public
+ */
+function DoMouseOver()
+{
+    // find the row of the srcElement and make sure it's not the row that's currently highlighted
+	if ( !( oRow = GetRow( window.event.srcElement ) ) )
+		return true;
+	
+	if ( oRow == oCurrRow )
+		return true;
+    
+	oCurrRow = oRow;
+
+    // set the variables to record the current background and color of the row    
+	sDefaultBack = oRow.currentStyle.backgroundColor;
+	sDefaultClr  = oRow.currentStyle.color;
+
+    // apply the formatting to the row
+	ColorCells( oRow, style.roHoverColor, style.roHoverBackground );
+
+    // fire the rowover event with the srcRow property
+    var oEvent = createEventObject();
+    oEvent.setAttribute( "srcRow", oRow );
+	rowover.fire( oEvent );
+};
+
+/**
+ * @access public
+ */
+function DoMouseOut()
+{
+    // find the row of the srcElement and make sure it's not the row that's currently highlighted
+	if ( ( oCurrRow != null ) && oCurrRow.contains( window.event.toElement ) )
+		return true;
+	
+	if ( !( oRow = GetRow( window.event.srcElement ) ) )
+		return true;
+	
+	// if this row is selected, leave the selected formatting on leaving
+	if ( ( oRow == oSelectRow ) && eval( selectable ) )
+		ColorCells( oRow, style.roSelectedColor, style.roSelectedBackground );
+	else
+		ColorCells( oRow, sDefaultClr, sDefaultBack );
+
+    // fire the rowout event with the srcRow property
+    var oEvent = createEventObject();
+    oEvent.setAttribute( "srcRow", oRow );
+	rowout.fire( oEvent );
+};
+
+/**
+ * @access public
+ */
+function DoClick()
+{
+    if ( !eval( selectable ) )
+		return true;
+
+    // get the row
+    var oRow = GetRow( window.event.srcElement );
+    
+    // remove formatting from any currently selected rows
+    if ( oSelectRow != null )
+		ColorCells( oSelectRow, sSelectClr, sSelectBack );
+
+    // set the variables to record the current background and color of the row    
+    sSelectBack = sDefaultBack;
+	sSelectClr  = sDefaultClr;
+    
+    if ( oSelectRow == oRow )
+    {
+		reset();
+		return;
+	}
+	
+	sUndoBack  = sDefaultBack;
+	sUndoClr   = sDefaultClr;
+    oSelectRow = oRow;
+
+    // apply the formatting to the row
+    ColorCells( oSelectRow, style.roSelectedColor, style.roSelectedBackground );
+    
+    // fire rowclick event with the srcRow property
+    var oEvent = createEventObject();
+    oEvent.setAttribute( "srcRow", oRow );
+	rowclick.fire( oEvent );
+};
+
+/**
+ * @access public
+ */
+function ReturnError( sMsg )
+{
+    var oEvent = createEventObject();
+    oEvent.setAttribute( "error", sMsg );
+    error.fire( oEvent );
+};
+
+</script>

@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+
+<tag name="ButtonColumn" endtag="yes">
+	<tagformat indentcontents="yes" formatcontents="yes" nlbeforetag="1" nlbeforecontents="0" nlaftercontents="0" nlaftertag="1" />
+  
+  	<attributes>
+    	<attrib name="ButtonType" type="ENUMERATED" casesensitive="yes">
+      		<opt value="LinkButton"/>
+      		<opt value="PushButton"/>
+    	</attrib>	
+    
+		<attrib name="CommandName" type="TEXT" casesensitive="yes"/>
+    	<attrib name="DataTextField" type="TEXT" casesensitive="yes"/>
+    	<attrib name="DataTextFormatString" type="TEXT" casesensitive="yes"/>
+    	<attrib name="FooterStyle" type="TEXT" casesensitive="yes"/>
+    	<attrib name="FooterText" type="TEXT" casesensitive="yes"/>
+    	<attrib name="HeaderImageUrl" type="TEXT" casesensitive="yes"/>	
+    	<attrib name="HeaderStyle" type="TEXT" casesensitive="yes"/>	
+    	<attrib name="HeaderText" type="TEXT" casesensitive="yes"/>	
+    	<attrib name="ItemStyle" type="TEXT" casesensitive="yes"/>		
+    	<attrib name="SortExpression" type="TEXT" casesensitive="yes"/>		
+    	<attrib name="Text" type="TEXT" casesensitive="yes"/>	
+    
+		<attrib name="Visible" type="ENUMERATED" casesensitive="yes">
+      		<opt value="true"/>
+      		<opt value="false"/>
+    	</attrib>	
+  	</attributes>	
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

@@ -1,0 +1,209 @@
+<!--
+Copyright (c) 2000-2002 Microsoft Corp. All rights reserved.
+-->
+
+
+
+<PROPERTY NAME="datasrc"/>
+<PROPERTY NAME="datafldtext"/>
+<PROPERTY NAME="datafldvalue"/>
+<PROPERTY NAME="value"/>
+
+<METHOD NAME="FillBox"/>
+<METHOD NAME="SetValue"/>
+    
+<EVENT NAME="ondatasetcomplete" ID="dataset"/>
+<EVENT NAME="onerror" ID="error"/>
+
+<ATTACH EVENT="ondocumentready" HANDLER="DoInit"/>
+
+
+<script language="JavaScript">
+
+/**
+ * Records script for onchange event set on page
+ * @access public
+ */
+var sChange = "";
+
+
+/**
+ * @access public
+ */
+function DoInit()
+{
+	// Gets the name of the TDC object on the page
+	var sData = dataSrc.substring( 1, dataSrc.length );
+	
+	// If the dataFldValue property is not set, use the dataFldText property
+	if (dataFldValue == null)
+		dataFldValue = dataFldText;
+	
+	// HTML to write to page
+	var sTab = '<TABLE ID="' + uniqueID + 'tab" '
+		+ 'STYLE="display:none" onreadystatechange="'
+		+ uniqueID + '.FillBox()" DATASRC="' + dataSrc + '"><TR>'
+		+ '<TD><SPAN DATAFLD="' + dataFldValue + '"></SPAN></TD>'
+		+ '<TD><SPAN DATAFLD="' + dataFldText  + '"></SPAN></TD>'
+		+ '</TR></TABLE>';
+
+	alert( sTab )
+	
+	// Write HTML to page
+	insertAdjacentHTML( "AfterEnd", sTab );
+	OverrideOnchange();
+};
+
+/**
+ * @access public
+ */
+function FillBox()
+{
+	var e = window.event.srcElement;
+
+	// If the SELECT element is done rendering on the page...
+	if ( e.readyState == "complete" || e.readyState == 4 )
+	{
+		// Loop through the data rows and create OPTION tags for each
+		for (i = 0; i < e.rows.length; i++)
+		{
+			var oOpt   = document.createElement( "OPTION" );
+			oOpt.value = e.rows( i ).cells( 0 ).children( 0 ).innerText;
+			oOpt.text  = e.rows( i ).cells( 1 ).children( 0 ).innerText;
+		
+			// If this data value is the same as the VALUE property, select it.
+			if ( value == e.rows( i ).cells( 0 ).children( 0 ).innerText )
+				oOpt.selected = true;
+			
+			// Add element to the SELECT element
+			add( oOpt );
+		}
+		
+		// Fire the ondatasetcomplete event from the HTC
+		dataset.fire();
+		
+		// Attach the onpropertychange event
+		attachEvent( "onpropertychange", DoPropChange );
+	}
+};
+
+/**
+ * @access public
+ */
+function EmptyBox()
+{
+	while ( options.length > 0 )
+		remove( options.item( 0 ) );
+};
+
+/**
+ * @access public
+ */
+function SetValue()
+{
+	value = options( selectedIndex ).value;
+
+	for ( i = 0; i < options.length; i++ )
+	{
+		if ( options( i ).value == value )
+		{
+			 options( i ).selected = true;
+			 break;
+		}
+	}
+
+	// Execute the script stored in the sChange variable.  This is the script
+	// that was originally saved when the onchange event was erased.
+	eval( sChange );
+};
+
+/**
+ * @access public
+ */
+function DoPropChange()
+{
+    var propertyName = window.event.propertyName;
+
+    if ( propertyName.substring( 0, 5 ) == "style" )
+    {
+    }
+    else
+    {
+        detachEvent( "onpropertychange", DoPropChange );
+		
+        switch( propertyName )
+        {			
+            case "dataFldValue":
+				EmptyBox();
+				var oTab = eval( uniqueID + "tab" );
+				oTab.dataSrc = "";
+				oTab.rows( 0 ).cells( 0 ).children( 0 ).dataFld = dataFldValue;
+				oTab.dataSrc = dataSrc;				
+				break;
+
+            case "dataFldText":
+				EmptyBox();
+				var oTab = eval( uniqueID + "tab" );
+				oTab.dataSrc = "";
+				oTab.rows( 0 ).cells( 1 ).children( 0 ).dataFld = dataFldText;
+				oTab.dataSrc = dataSrc;				
+				break;
+
+            case "dataSrc":
+				EmptyBox();
+				var oTab = eval( uniqueID + "tab" );
+				
+				if ( dataSrc.charAt( 0 ) != "#" )
+					dataSrc = "#" + dataSrc;
+				
+				oTab.dataSrc = dataSrc;
+				break;
+
+            case "value":
+				SetValue();
+                break;
+
+			case "onchange":
+				OverrideOnchange();
+				break;
+
+            case "selectedIndex":
+                break;
+                
+            default:
+                ReturnError( propertyName + " not a valid property" );
+                break;
+        }
+        
+        attachEvent( "onpropertychange", DoPropChange );
+    }
+};
+
+/**
+ * @access public
+ */
+function OverrideOnchange()
+{
+	if ( onchange == null )
+		return false;
+
+	// Get the current script for the onchange event (specified on the page)
+	sChange = getAttribute( "onchange" );
+	sChange = sChange.toString();
+	sChange = sChange.substring( 23, sChange.length - 2 );
+	
+	// Set the onchange event to nothing
+	onchange = "";
+};
+
+/**
+ * @access public
+ */
+function ReturnError(sMsg)
+{
+    var oEvent = createEventObject();
+    oEvent.setAttribute( "error", sMsg );
+    error.fire( oEvent );
+};
+
+</script

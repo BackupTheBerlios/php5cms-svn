@@ -1,0 +1,127 @@
+<!--
++----------------------------------------------------------------------+
+|This program is free software; you can redistribute it and/or modify  |
+|it under the terms of the GNU General Public License as published by  |
+|the Free Software Foundation; either version 2 of the License, or     |
+|(at your option) any later version.                                   |
+|                                                                      |
+|This program is distributed in the hope that it will be useful,       |
+|but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+|MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the          |
+|GNU General Public License for more details.                          |
+|                                                                      |
+|You should have received a copy of the GNU General Public License     |
+|along with this program; if not, write to the Free Software           |
+|Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.             |
++----------------------------------------------------------------------+
+|Authors: Markus Nix <mnix@docuverse.de>                               |
++----------------------------------------------------------------------+
+-->
+
+
+<public:component>
+<public:attach event="onmousedown" onevent="startMove()"/>
+
+<script language="JavaScript">
+
+/**
+ * @access private
+ */
+var _dx;
+
+/**
+ * @access private
+ */
+var _dy;
+
+
+/**
+ * @access public
+ */
+function getLeft()
+{
+	return window.screenLeft - getInsets().left;
+};
+
+/**
+ * @access public
+ */
+function getTop()
+{
+	return window.screenTop - getInsets().top;
+};
+
+/**
+ * @access public
+ */
+function getInsets()
+{
+	// store the old document position
+	var oldScreenLeft = window.screenLeft;
+	var oldScreenTop  = window.screenTop;
+
+	// if no previous inset calculated assume one
+	if ( window._insets == null )
+		window._insets = { left: 5, top: 80 };
+
+	// move to a known position
+	window.moveTo( oldScreenLeft - window._insets.left, oldScreenTop - window._insets.top );
+	
+	// Measure the new document position
+	var newScreenLeft = window.screenLeft;
+	var newScreenTop  = window.screenTop;
+	
+	// ... and store the insets result
+	var res = {
+		left:	newScreenLeft - oldScreenLeft + window._insets.left,
+		top:	newScreenTop  - oldScreenTop  + window._insets.top
+	};
+	
+	// move back the window to its original place
+	window.moveTo( oldScreenLeft - res.left, oldScreenTop - res.top );
+	
+	// and backup the insets for next time
+	window._insets = res;
+	
+	return res;
+};
+
+/**
+ * @access public
+ */
+function startMove()
+{
+	_dx = event.screenX - getLeft();
+	_dy = event.screenY - getTop();
+	
+	element.attachEvent( "onmousemove", doMove );
+	element.attachEvent( "onmouseup", endMove );
+	element.attachEvent( "onlosecapture", endMove );
+
+	element.setCapture();
+	event.cancelBubble = true;
+};
+
+/**
+ * @access public
+ */
+function doMove()
+{
+	window.moveTo( event.screenX - _dx, event.screenY - _dy );
+};
+
+/**
+ * @access public
+ */
+function endMove()
+{
+	element.detachEvent( "onmousemove",   doMove  );
+	element.detachEvent( "onmouseup",     endMove );
+	element.detachEvent( "onlosecapture", endMove );
+	
+	element.releaseCapture();
+};
+
+</script>
+
+</public:component>

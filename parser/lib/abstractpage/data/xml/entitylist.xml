@@ -1,0 +1,492 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE entitylist [
+	<!ELEMENT entitylist    (entity*)>
+    <!ELEMENT entity        (replacestring,targetchar)>
+    <!ELEMENT replacestring (#PCDATA)>
+    <!ELEMENT targetchar    (#PCDATA)>
+]>
+
+<entitylist>
+
+	<entity>
+		<replacestring>&#x26;nbsp&#x3B;</replacestring>
+		<targetchar>32</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;amp&#x3B;</replacestring>
+		<targetchar>38</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;lt&#x3B;</replacestring>
+		<targetchar>60</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;gt&#x3B;</replacestring>
+		<targetchar>62</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;euro&#x3B;</replacestring>
+		<targetchar>128</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;iexcl&#x3B;</replacestring>
+		<targetchar>161</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;cent&#x3B;</replacestring>
+		<targetchar>162</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;pound&#x3B;</replacestring>
+		<targetchar>163</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;curren&#x3B;</replacestring>
+		<targetchar>164</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;yen&#x3B;</replacestring>
+		<targetchar>165</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;brvbar&#x3B;</replacestring>
+		<targetchar>166</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;sect&#x3B;</replacestring>
+		<targetchar>167</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;uml&#x3B;</replacestring>
+		<targetchar>168</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;copy&#x3B;</replacestring>
+		<targetchar>169</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ordf&#x3B;</replacestring>
+		<targetchar>170</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;laquo&#x3B;</replacestring>
+		<targetchar>171</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;not&#x3B;</replacestring>
+		<targetchar>172</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;reg&#x3B;</replacestring>
+		<targetchar>174</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;macr&#x3B;</replacestring>
+		<targetchar>175</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;deg&#x3B;</replacestring>
+		<targetchar>176</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;plusmn&#x3B;</replacestring>
+		<targetchar>177</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;sup2&#x3B;</replacestring>
+		<targetchar>178</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;sup3&#x3B;</replacestring>
+		<targetchar>179</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;acute&#x3B;</replacestring>
+		<targetchar>180</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;micro&#x3B;</replacestring>
+		<targetchar>181</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;para&#x3B;</replacestring>
+		<targetchar>182</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;middot&#x3B;</replacestring>
+		<targetchar>183</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;cedil&#x3B;</replacestring>
+		<targetchar>184</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;sup1&#x3B;</replacestring>
+		<targetchar>185</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ordm&#x3B;</replacestring>
+		<targetchar>186</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;raquo&#x3B;</replacestring>
+		<targetchar>187</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;frac14&#x3B;</replacestring>
+		<targetchar>188</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;frac12&#x3B;</replacestring>
+		<targetchar>189</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;frac34&#x3B;</replacestring>
+		<targetchar>190</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;iquest&#x3B;</replacestring>
+		<targetchar>191</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Agrave&#x3B;</replacestring>
+		<targetchar>192</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Aacute&#x3B;</replacestring>
+		<targetchar>193</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Acirc&#x3B;</replacestring>
+		<targetchar>194</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Atilde&#x3B;</replacestring>
+		<targetchar>195</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Auml&#x3B;</replacestring>
+		<targetchar>196</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Aring&#x3B;</replacestring>
+		<targetchar>197</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Aelig&#x3B;</replacestring>
+		<targetchar>198</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Ccedil&#x3B;</replacestring>
+		<targetchar>199</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Egrave&#x3B;</replacestring>
+		<targetchar>200</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Eacute&#x3B;</replacestring>
+		<targetchar>201</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Ecirc&#x3B;</replacestring>
+		<targetchar>202</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Euml&#x3B;</replacestring>
+		<targetchar>203</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Igrave&#x3B;</replacestring>
+		<targetchar>204</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Iacute&#x3B;</replacestring>
+		<targetchar>205</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Icirc&#x3B;</replacestring>
+		<targetchar>206</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Iuml&#x3B;</replacestring>
+		<targetchar>207</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Ntilde&#x3B;</replacestring>
+		<targetchar>209</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Ograve&#x3B;</replacestring>
+		<targetchar>210</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Oacute&#x3B;</replacestring>
+		<targetchar>211</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Ocirc&#x3B;</replacestring>
+		<targetchar>212</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Otilde&#x3B;</replacestring>
+		<targetchar>213</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Ouml&#x3B;</replacestring>
+		<targetchar>214</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Oslash&#x3B;</replacestring>
+		<targetchar>216</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Ugrave&#x3B;</replacestring>
+		<targetchar>217</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Uacute&#x3B;</replacestring>
+		<targetchar>218</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Ucirc&#x3B;</replacestring>
+		<targetchar>219</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Uuml&#x3B;</replacestring>
+		<targetchar>220</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;Yacute&#x3B;</replacestring>
+		<targetchar>221</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;THORN&#x3B;</replacestring>
+		<targetchar>222</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;szlig&#x3B;</replacestring>
+		<targetchar>223</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;agrave&#x3B;</replacestring>
+		<targetchar>224</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;aacute&#x3B;</replacestring>
+		<targetchar>225</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;acirc&#x3B;</replacestring>
+		<targetchar>226</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;atilde&#x3B;</replacestring>
+		<targetchar>227</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;auml&#x3B;</replacestring>
+		<targetchar>228</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;aring&#x3B;</replacestring>
+		<targetchar>229</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;aelig&#x3B;</replacestring>
+		<targetchar>230</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ccedil&#x3B;</replacestring>
+		<targetchar>231</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;egrave&#x3B;</replacestring>
+		<targetchar>232</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;eacute&#x3B;</replacestring>
+		<targetchar>233</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ecirc&#x3B;</replacestring>
+		<targetchar>234</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;euml&#x3B;</replacestring>
+		<targetchar>235</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;igrave&#x3B;</replacestring>
+		<targetchar>236</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;iacute&#x3B;</replacestring>
+		<targetchar>237</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;icirc&#x3B;</replacestring>
+		<targetchar>238</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;iuml&#x3B;</replacestring>
+		<targetchar>239</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;eth&#x3B;</replacestring>
+		<targetchar>240</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ntilde&#x3B;</replacestring>
+		<targetchar>241</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ograve&#x3B;</replacestring>
+		<targetchar>242</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;oacute&#x3B;</replacestring>
+		<targetchar>243</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ocirc&#x3B;</replacestring>
+		<targetchar>244</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;otilde&#x3B;</replacestring>
+		<targetchar>245</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ouml&#x3B;</replacestring>
+		<targetchar>246</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;oslash&#x3B;</replacestring>
+		<targetchar>248</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ugrave&#x3B;</replacestring>
+		<targetchar>249</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;uacute&#x3B;</replacestring>
+		<targetchar>250</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;ucirc&#x3B;</replacestring>
+		<targetchar>251</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;uuml&#x3B;</replacestring>
+		<targetchar>252</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;yacute&#x3B;</replacestring>
+		<targetchar>253</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;thorn&#x3B;</replacestring>
+		<targetchar>254</targetchar>
+	</entity>
+
+	<entity>
+		<replacestring>&#x26;yuml&#x3B;</replacestring>
+		<targetchar>255</targetchar>
+	</entity>
+
+</entitylist>

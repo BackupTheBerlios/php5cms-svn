@@ -1,0 +1,87 @@
+.collapsible-panel-po 
+{
+	width: 				223px; 
+	position: 			relative; 
+	top: 				0px;
+	background-image: 	url(../img/panel_xp_over.jpg); 
+	font: 				bold 11px tahoma; 
+	color: 				#000000; 
+	text-align: 		left; 
+	height: 			23px; 
+	padding-left: 		13px; 
+	padding-top: 		6px; 
+	cursor: 			hand;
+}
+.collapsible-panel-p 
+{
+	width: 				223px; 
+	position: 			relative; 
+	top: 				0px;
+	background-image: 	url(../img/panel_xp.jpg); 
+	font: 				bold 11px tahoma; 
+	color: 				#3F3D3D; 
+	text-align: 		left; 
+	height: 			23px; 
+	padding-left: 		13px; 
+	padding-top: 		6px;
+	cursor: 			hand;
+}
+.collapsible-panel-ps 
+{
+	width: 				223px; 
+	position: 			relative; 
+	top: 				0px;
+	background-image: 	url(../img/panel_xp_slctd.jpg); 
+	font: 				bold 11px tahoma; 
+	color: 				#000000; 
+	text-align: 		left; 
+	height: 			23px; 
+	padding-left: 		13px; 
+	padding-top: 		6px;
+	cursor: 			hand;
+}
+.collapsible-panel-co 
+{
+	width: 				223px; 
+	font: 				11px tahoma;
+	color: 				#3F3D3D; 
+	text-align: 		left; 
+	vertical-align:	 	middle; 
+	margin-left: 		5px; 
+	margin-top: 		5px; 
+	text-decoration: 	underline; 
+	cursor: 			hand;
+}
+.collapsible-panel-c 
+{
+	width: 				223px;
+	font: 				11px tahoma; 
+	color: 				#3F3D3D; 
+	text-align: 		left; 
+	vertical-align: 	middle; 
+	margin-left: 		5px; 
+	margin-top: 		5px;
+}
+.collapsible-panel-cb 
+{
+	background-color: 	#F0F1F5; 
+	border-bottom: 		1px solid white; 
+	border-left: 		1px solid white; 
+	border-right: 		1px solid white;
+}
+.collapsible-panel-cs 
+{
+	width: 				223px; 
+	font: 				11px tahoma; 
+	color: 				#215DC6; 
+	text-align: 		left; 
+	vertical-align: 	middle; 
+	margin-left: 		5px; 
+	margin-top: 		5px;
+}
+.collapsible-panel-emptyDiv 
+{
+	overflow: 			hidden; 
+	height: 			1px; 
+	width: 				100%;
+} 

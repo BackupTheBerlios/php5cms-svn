@@ -1,0 +1,4 @@
+id -> int auto_increment
+name -> text null
+idade -> int(3) null
+conteudo -> text

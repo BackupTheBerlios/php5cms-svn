@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<h3>Form to import public key</h3>
+
+<form action="process.php" method="post">
+<table border=1>
+	<tr><td>Email:</td><td><input type="text" name="userEmail"></td></tr>
+	<tr><td colspan=2>Public Key to import:</td></tr>
+	<tr><td colspan=2><textarea name="key" rows="20" cols="80"></textarea></td></tr>
+	<tr><td colspan=2><input type="submit" name="action" value="import_key"></td></tr>
+</table>
+</form>
+
+<pre>Enter the user name who will receive the public key and the ASC public key of one other user.</pre>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<template>
+  
+  <title xml:lang="en">Welcome to phpXML!</title>
+  <title xml:lang="de">Willkommen bei phpXML!</title>
+  
+  <description xml:lang="en">This is the famous welcome page to the phpXML system. Be glad having downloaded it!</description>
+  <description xml:lang="de">Dies ist die berühmte-berüchtige Willkommensseite des phpXML Systems. Sie können sich glücklich schätzen, das System heruntergeladen zu haben.</description>
+  
+  <part xml:lang="en">
+    <subpart>This is an english subpart.</subpart>
+    <subpart>It's language is determined by the language definition of its ancestor.</subpart>
+  </part>
+  
+  <part xml:lang="de">
+    <subpart>Dies ist ein deutscher, untergegliederter Teil.</subpart>
+    <subpart>Seine Sprache wird durch die Sprachdefinition seines nächsten Vorfahren festgelegt.</subpart>
+  </part>
+  
+  <unknown>Dieser Teil hat keine Sprache.</unknown>
+
+</template>

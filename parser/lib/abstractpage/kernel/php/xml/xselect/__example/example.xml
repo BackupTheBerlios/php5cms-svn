@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding='ISO-8859-1'?>
+
+<project>
+	<config>
+    	<title>XSelect Example</title>
+    	<global_type>group</global_type>
+    	<content_type>website</content_type>
+    	<description>project config file</description>
+  	</config>
+  
+  	<data>
+    	<members>
+      		<member email="nada@morbus-x.de">Markus Nix</member>
+    	</members>
+    
+		<mail>
+      		<account address="mnix@docuverse.de" username="nada">Nada</account>
+    	</mail>
+    
+		<news>
+      		<searchstrings>xml;php</searchstrings>
+    	</news>
+    
+		<links>
+        	<link url="http://www.subpop.com" description="subpop homepage" category="record labels">sub pop records</link>
+        	<link url="http://www.uprecords.com" description="up records homepage" category="record labels">up records</link>
+        	<link url="http://www.php.net" description="" category="php">php.net</link>
+        	<link url="http://www.xmlhack.com" description="excellent xml news site" category="xml">xmlhack.com</link>
+    	</links>
+    
+		<contacts>
+     	 	<contact email="carl@nypd.gov">carl@nypd.gov</contact>
+      		<contact email="josha@subpop.com">josh ayala</contact>
+    	</contacts>
+    
+		<dates>(stored in calendar data?)</dates>
+    	<deliverables>(website,document,product)</deliverables>
+		<resources>(contacts,links...maybe stored in tables?)</resources>
+  	</data>
+</project>

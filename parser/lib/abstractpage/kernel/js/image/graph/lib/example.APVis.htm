@@ -1,0 +1,215 @@
+<html>
+<head>
+
+<title>APVis Example</title>
+
+<script language="JavaScript" src="../../../../../prepend.js"></script>
+
+<script language="JavaScript">
+
+set_library_path( '../../../../../kernel/js/' );
+using( 'util.Dictionary' );
+using( 'util.color.ColorUtil' );
+using( 'image.graph.lib.APVis' );
+using( 'image.graph.lib.APVisSeries' );
+using( 'image.graph.lib.APVisSeriesLineChart' );
+using( 'image.graph.lib.APVisSeriesPieChart' );
+using( 'image.graph.lib.APVisBarChart' );
+using( 'image.graph.lib.APVisColumnChart' );
+using( 'image.graph.lib.APVisColumnChart' );
+using( 'image.graph.lib.APVisLineChart' );
+using( 'image.graph.lib.APVisPieChart' );
+using( 'image.graph.lib.APVisStackedColumnChart' );
+
+</script>
+
+<script language="JavaScript">
+
+var series;
+
+function createApplet( type )
+{
+	switch( type )
+	{
+		case 'bar':
+			var chart = new APVisBarChart( 500, 420 );
+			chart.setLoadingMessage( 'Loading...' );
+			chart.setMessageColor( '#000000' );
+			chart.setBackgroundColor( '#ffffff' );
+			chart.setGridMode( true );
+			chart.setAxisMode( true );
+			chart.setXLabelsMode( true );
+			chart.setGridColumns( 6 );
+			chart.setDecimalPlaces( 1 );
+			chart.setHSpace( 30 );
+			chart.setBarWidth( 18 );
+			chart.setGridX( 100 );
+			chart.setGridY( 350 );
+			chart.setXPosOfYAxisLabels( 50 );
+			chart.setChartScale( '5.0' );
+			chart.setChartX( '-5.0' );
+			chart.addImage( '__example/legend_barchart.gif', 295, 100 );
+			chart.setGridColor( '#a00000' );
+			chart.setAxisColor( '#808080' );
+			chart.setFloorColor( '#404040' );
+			chart.setBarOutlineColor( '#000000' );
+			chart.setChartTitle( 'Temperature by season', 50, 20 );
+			chart.setXTitle( 'Temperature (Degrees C)', 200, 400 );
+			chart.setYTitle( 'Season', 10, 300 );
+			
+			series = new APVisSeries();
+			series.addLabels( new Array( 'Spring', 'Summer', 'Autumn', 'Winter' ) );
+			series.add( new Array( ['12.8'], ['22.2'], ['11.3'],   ['3.2'] ), '#c80000' );
+			series.add( new Array(  ['4.1'], ['19.6'],  ['9.4'],  ['-2.7'] ), '#0000c8' );
+			series.add( new Array( ['11.7'], ['21.8'], ['10.1'], ['-1.35'] ), '#00c800' );
+			chart.addSeries( series );
+			
+			break;
+			
+		case 'column':
+			var chart = new APVisColumnChart( 500, 420 );
+			chart.setLoadingMessage( 'Loading...' );
+			chart.setMessageColor( '#000000' );
+			chart.setBackgroundColor( '#ffffff' );
+			chart.setGridMode( true );
+			chart.setAxisMode( true );
+			chart.setYLabelsMode( true );
+			chart.setVSpace( 30 );
+			chart.setGridRows( 7 );
+			chart.setBarWidth( 20 );
+			chart.setGridX( 75 );
+			chart.setGridY( 350 );
+			chart.setYPosOfXAxisLabels( 375 );
+			chart.setChartScale( 1000 );
+			chart.setChartY( 6000 );
+			chart.addImage( '__example/legend_columnchart.gif', 210, 0 );
+			chart.setGridColor( '#a00000' );
+			chart.setAxisColor( '#808080' );
+			chart.setFloorColor( '#404040' );
+			chart.setBarOutlineColor( '#000000' );
+			chart.setChartTitle( 'Sales by Quarter', 50, 20 );
+			chart.setXTitle( 'Year 2000', 200, 400 );
+			chart.setYTitle( 'Value $', 10, 300 );
+			
+			series = new APVisSeries();
+			series.addLabels( new Array( 'Quarter 1', 'Quarter 2', 'Quarter 3', 'Quarter 4' ) );
+			series.add( new Array( [7000], [7900], [10350], [13800] ), '#c80000' );
+			series.add( new Array( [6300], [6400],  [8700],  [9200] ), '#c800c8' );
+			series.add( new Array( [6900], [6200],  [7000],  [7750] ), '#00c800' );
+			chart.addSeries( series );
+			
+			break;
+			
+		case 'line':
+			var chart = new APVisLineChart( 500, 420 );
+			chart.setLoadingMessage( 'Loading...' );
+			chart.setMessageColor( '#ffffff' );
+			chart.setBackgroundColor( '#000000' );
+			chart.setGridMode( true );
+			chart.setAxisMode( true );
+			chart.setYLabelsMode( true );
+			chart.setDecimalPlaces( 2 );
+			chart.setVSpace( 30 );
+			chart.setHSpace( 30 );
+			chart.setGridRows( 7 );
+			chart.setGridX( 75 );
+			chart.setGridY( 350 );
+			chart.setYPosOfXAxisLabels( 375 );
+			chart.setChartScale( 100 );
+			chart.setChartY( 2000 );
+			chart.addImage( '__example/legend_linechart.gif', 100, 50 );
+			chart.setGridColor( '#a0a0a0' );
+			chart.setAxisColor( '#808080' );
+			chart.setFloorColor( '#404040' );
+			chart.setChartTitle( 'Market Indices', 100, 20 );
+			chart.setXTitle( 'Year 2000', 200, 410 );
+			chart.setYTitle( 'Index Value', 5, 375 );
+			
+			series = new APVisSeriesLineChart();
+			series.addLabels( new Array( 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ) );
+			series.add( new Array( 2420.45, 2630.56, 2700.90, 2500.40, 2450.20, 2380.45, 2230.56, 2400.90, 2450.20, 2350.45, 2320.45, 2530.56 ), '#c80000', 1 );
+			series.add( new Array( 2200.45, 2180.56, 2160.56, 2165.40, 2230.20, 2250.87, 2267.15, 2305.91, 2330.12, 2300.63, 2290.54, 2250.74 ), '#c800c8', 2 );
+			series.add( new Array( 2000.44, 2050.51, 2075.41, 2040.32, 2010.41, 1955.11, 2007.44, 2020.22, 2010.21, 2040.65, 2069.33, 2210.51 ), '#00c800', 0 );
+			chart.addSeries( series );
+			
+			break;
+			
+		case 'pie':
+			var series;
+			var chart = new APVisPieChart( 500, 420 );
+			chart.setLoadingMessage( 'Loading...' );
+			chart.setMessageColor( '#000000' );
+			chart.setBackgroundColor( '#ffffff' );
+			chart.setSegmentLabelsMode( true );
+			chart.set3DDepth( 30 );
+			chart.setLabelOrientation( 0 );
+			chart.setChartTitle( 'Sales by Product', 150, 30 );
+			
+			series = new APVisSeriesPieChart();
+			series.set( new Array( [3000, 'Product X', '#ff0000'], [1500, 'Product Y', '#00ff00'], [6200, 'Product Z', '#0000ff'] ) );
+			chart.addPie( series, 50, 100, 150 );
+			
+			series = new APVisSeriesPieChart();
+			series.set( new Array( [4500, 'Product X', '#ff0000'], [2200, 'Product Y', '#00ff00'], [4200, 'Product Z', '#0000ff'] ) );
+			chart.addPie( series, 300, 100, 150 );
+			
+			series = new APVisSeriesPieChart();
+			series.set( new Array( [2000, 'Product X', '#ff0000'], [1000, 'Product Y', '#00ff00'], [500, 'Product Z', '#0000ff', 'example_apvisobject.htm'] ) );
+			chart.addPie( series, 200, 270, 150 );
+			
+			break;
+		
+		case 'stackedcolumn':
+			var chart = new APVisStackedColumnChart( 500, 420 );
+			chart.setLoadingMessage( 'Loading...' );
+			chart.setMessageColor( '#000000' );
+			chart.setBackgroundColor( '#ffffff' );
+			chart.setGridMode( true );
+			chart.setAxisMode( true );
+			chart.setYLabelsMode( true );
+			chart.setVSpace( 30 );
+			chart.setGridRows( 7 );
+			chart.setBarWidth( 50 );
+			chart.setGridX( 75 );
+			chart.setGridY( 350 );
+			chart.setYPosOfXAxisLabels( 375 );
+			chart.setChartScale( 4000 );
+			chart.setChartY( 6000 );
+			chart.addImage( '__example/legend_stcolumnchart.gif', 210, 0 );
+			chart.setGridColor( '#a00000' );
+			chart.setAxisColor( '#808080' );
+			chart.setFloorColor( '#404040' );
+			chart.setBarOutlineColor( '#000000' );
+			chart.setChartTitle( 'Sales by Quarter', 50, 20 );
+			chart.setXTitle( 'Year 2000', 200, 400 );
+			chart.setYTitle( 'Value $', 10, 300 );
+			
+			series = new APVisSeries();
+			series.addLabels( new Array( 'Quarter 1', 'Quarter 2', 'Quarter 3', 'Quarter 4' ) );
+			series.add( new Array( [7000], [7900], [10350], [13800] ), '#c80000' );
+			series.add( new Array( [6300], [6400],  [8700],  [9200] ), '#c800c8' );
+			series.add( new Array( [6900], [6200],  [7000],  [7750] ), '#00c800' );
+			chart.addSeries( series );
+			
+			break;
+	}
+	
+	document.getElementById( "chart" ).innerHTML = chart.getAppletHTML();
+}
+
+</script>
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<a href="javascript:createApplet('bar')">Show BarChart</a><br>
+<a href="javascript:createApplet('column')">Show ColumnChart</a><br>
+<a href="javascript:createApplet('line')">Show LineChart</a><br>
+<a href="javascript:createApplet('pie')">Show PieChart</a><br>
+<a href="javascript:createApplet('stackedcolumn')">Show StackedColumnChart</a><br>
+
+<br><div id="chart"></div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+INSTALLATION
+============
+
+Just put the Abstractpage folder somewhere below your web root.
+You have to include prepend.php (in the case of server side
+scripting) or prepend.js (in the case of client side
+scripting) to make the libraries work.
+
+For your convenience you can also put prepend.php as auto 
+prepend file in your php.ini
+
+Some basic configuration data (e.g. path informations) can be found
+at {abstractpage_root}/config/basic.php.
+
+Please chmod the directories tmp and var to 0777 or use
+the tiny shell script chmod.sh which resides in the root
+directory of the Abstractpage Web Framework.
+
+You need PHP 4.3.x to unleash the full power of Abstractpage.

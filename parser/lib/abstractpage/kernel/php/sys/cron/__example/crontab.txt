@@ -1,0 +1,6 @@
+# this is a sample crontab file
+# comments start with a '#'
+
+*	2	*	*	Sun	samplejob.php	#runs every Sunday at 2am
+
+*/15	*	*	*	Mon-Fri		samplejob.php	#runs every 15 minutes on Monday to Friday

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE recordset [
+   <!ENTITY copy "&#169;">
+   <!ENTITY nbsp "&#160;">
+   <!ENTITY reg  "&#174;">
+]>
+
+<!-- Comment 1 -->
+<recordset>
+   <title>Adressen</title>
+   <returnTo bild="btnStartseite.gif" action="">http://www.google.de</returnTo>
+   <record>
+      <vorname label="Name">Reiner</vorname>
+      <nachname  label="Zuname">Entzminger</nachname>
+      <strasse label="Straße">Musterstrasse 10</strasse>
+      <plz label="Postleitzahl">99999</plz>
+      <ort label="Wohnort">Musterhausen</ort>
+      <land label="Nationalität">Germany</land>
+   </record>
+   <record>
+      <vorname label="Name">Makus</vorname>
+      <nachname  label="Zuname">Hauser</nachname>
+      <strasse label="Straße">Musterstrasse 23</strasse>
+      <plz label="Postleitzahl">99999</plz>
+      <ort label="Wohnort">Musterhausen</ort>
+      <land label="Nationalität">Germany</land>
+   </record>
+   <!-- Comment 2 -->
+   <record>
+      <vorname label="Name">Mirko</vorname>
+      <nachname  label="Zuname">Walter</nachname>
+      <strasse label="Straße">Musterstrasse 23</strasse>
+      <plz label="Postleitzahl">99999</plz>
+      <ort label="Wohnort">Musterhausen</ort>
+      <land label="Nationalität">Germany</land>
+   </record>
+   <record>
+      <vorname label="Name">Rainer</vorname>
+      <nachname  label="Zuname">Suibeom</nachname>
+      <strasse label="Straße">Musterstrasse 23</strasse>
+      <plz label="Postleitzahl">99999</plz>
+      <ort label="Wohnort">Musterhausen</ort>
+      <land label="Nationalität">Germany</land>
+   </record>
+</recordset>

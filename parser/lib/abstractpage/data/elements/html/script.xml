@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+
+<tag name="SCRIPT" endtag="yes">
+	<tagformat nlbeforetag="1" nlbeforecontents="0" nlaftercontents="0" nlaftertag="1" formatcontents="no"/>
+
+	<attributes>
+		<attrib name="language" type="Enumerated" casesensitive="yes">
+			<opt value="JavaScript" caption="JavaScript"/>
+			<opt value="JavaScript1.1" caption="JavaScript1.1"/>
+			<opt value="JavaScript1.2" caption="JavaScript1.2"/>
+			<opt value="JavaScript1.3" caption="JavaScript1.3"/>
+			<opt value="JavaScript1.4" caption="JavaScript1.4"/>
+			<opt value="JScript" caption="JScript"/>
+			<opt value="VBScript" caption="VBScript"/>
+			<opt value="php" caption="PHP"/>
+			<opt value="C#" caption="C#"/>
+			<opt value="VB" caption="VB"/>
+		</attrib>
+
+		<attrib name="SRC" type="Relativepath"/>
+
+		<attrib name="TYPE" type="Enumerated">
+			<opt value="text/javascript" caption="text/javascript"/>
+			<opt value="text/jscript" caption="text/jscript"/>
+			<opt value="text/vbscript" caption="text/vbscript"/>
+			<opt value="text/livescript" caption="text/livescript"/>
+			<opt value="text/php" caption="text/php"/>
+			<opt value="text/tcl" caption="text/tcl"/>
+		</attrib>
+
+		<attrib name="runat" type="Enumerated">
+			<opt value="server" caption="server"/>
+		</attrib>
+
+		<attrib name="DEFER" type="Flag"/>
+  	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

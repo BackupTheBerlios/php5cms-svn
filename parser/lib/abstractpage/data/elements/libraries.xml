@@ -1,0 +1,251 @@
+<?xml version='1.0'?>
+
+<libraries>
+
+<library name="HTML Tags" library="html/_library.xml" id="html">
+	<tag name="a" file="html/a.xml"/>
+	<tag name="abbr" file="html/abbr.xml"/>
+	<tag name="acronym" file="html/acronym.xml"/>
+	<tag name="address" file="html/address.xml"/>
+	<tag name="applet" file="html/applet.xml"/>
+	<tag name="area" file="html/area.xml"/>
+	<tag name="b" file="html/b.xml"/>
+	<tag name="base" file="html/base.xml"/>
+	<tag name="basefont" file="html/basefont.xml"/>
+	<tag name="bdo" file="html/bdo.xml"/>
+	<tag name="bgsound" file="html/bgsound.xml"/>
+	<tag name="big" file="html/big.xml"/>
+	<tag name="blockquote" file="html/blockquote.xml"/>
+	<tag name="body" file="html/body.xml"/>
+	<tag name="br" file="html/br.xml"/>
+	<tag name="button" file="html/button.xml"/>
+	<tag name="caption" file="html/caption.xml"/>
+	<tag name="center" file="html/center.xml"/>
+	<tag name="cite" file="html/cite.xml"/>
+	<tag name="code" file="html/code.xml"/>
+	<tag name="col" file="html/col.xml"/>
+	<tag name="colgroup" file="html/colgroup.xml"/>
+	<tag name="dd" file="html/dd.xml"/>
+	<tag name="del" file="html/del.xml"/>
+	<tag name="dfn" file="html/dfn.xml"/>
+	<tag name="directive" file="html/directive.xml" prefix="&lt;!"/>
+	<tag name="div" file="html/div.xml"/>
+	<tag name="dl" file="html/dl.xml"/>
+	<tag name="dt" file="html/dt.xml"/>
+	<tag name="em" file="html/em.xml"/>
+	<tag name="embed" file="html/embed.xml"/>
+	<tag name="fieldset" file="html/fieldset.xml"/>
+	<tag name="font" file="html/font.xml"/>
+	<tag name="form" file="html/form.xml"/>
+	<tag name="frame" file="html/frame.xml"/>
+	<tag name="frameset" file="html/frameset.xml"/>
+	<tag name="h1" file="html/h1.xml"/>
+	<tag name="h2" file="html/h2.xml"/>
+	<tag name="h3" file="html/h3.xml"/>
+	<tag name="h4" file="html/h4.xml"/>
+	<tag name="h5" file="html/h5.xml"/>
+	<tag name="h6" file="html/h6.xml"/>
+	<tag name="head" file="html/head.xml"/>
+	<tag name="hr" file="html/hr.xml"/>
+	<tag name="html" file="html/html.xml"/>
+	<tag name="i" file="html/i.xml"/>
+	<tag name="iframe" file="html/iframe.xml"/>
+	<tag name="ilayer" file="html/ilayer.xml"/>
+	<tag name="img" file="html/img.xml"/>
+	<tag name="input" file="html/input.xml"/>
+	<tag name="ins" file="html/ins.xml"/>
+	<tag name="kbd" file="html/kbd.xml"/>
+	<tag name="label" file="html/label.xml"/>
+	<tag name="layer" file="html/layer.xml"/>
+	<tag name="legend" file="html/legend.xml"/>
+	<tag name="li" file="html/li.xml"/>
+	<tag name="link" file="html/link.xml"/>
+	<tag name="map" file="html/map.xml"/>
+	<tag name="marquee" file="html/marquee.xml"/>
+	<tag name="meta" file="html/meta.xml"/>
+	<tag name="multicol" file="html/multicol.xml"/>
+	<tag name="noframes" file="html/noframes.xml"/>
+	<tag name="noscript" file="html/noscript.xml"/>
+	<tag name="object" file="html/object.xml"/>
+	<tag name="ol" file="html/ol.xml"/>
+	<tag name="option" file="html/option.xml"/>
+	<tag name="optgroup" file="html/optgroup.xml"/>
+	<tag name="p" file="html/p.xml"/>
+	<tag name="param" file="html/param.xml"/>
+	<tag name="pre" file="html/pre.xml"/>
+	<tag name="q" file="html/q.xml"/>
+	<tag name="samp" file="html/samp.xml"/>
+	<tag name="script" file="html/script.xml"/>
+	<tag name="select" file="html/select.xml"/>
+	<tag name="small" file="html/small.xml"/>
+	<tag name="sound" file="html/sound.xml"/>
+	<tag name="spacer" file="html/spacer.xml"/>
+	<tag name="span" file="html/span.xml"/>
+	<tag name="strong" file="html/strong.xml"/>
+	<tag name="style" file="html/style.xml"/>
+	<tag name="sub" file="html/sub.xml"/>
+	<tag name="sup" file="html/sup.xml"/>
+	<tag name="table" file="html/table.xml"/>
+	<tag name="tbody" file="html/tbody.xml"/>
+	<tag name="td" file="html/td.xml"/>
+	<tag name="textarea" file="html/textarea.xml"/>
+	<tag name="tfoot" file="html/tfoot.xml"/>
+	<tag name="th" file="html/th.xml"/>
+	<tag name="thead" file="html/thead.xml"/>
+	<tag name="title" file="html/title.xml"/>
+	<tag name="tr" file="html/tr.xml"/>
+	<tag name="tt" file="html/tt.xml"/>
+	<tag name="ul" file="html/ul.xml"/>
+	<tag name="var" file="html/var.xml"/>
+</library>
+
+<library name="ASP Tags" library="asp/_library.xml" id="asp">
+	<tag name="expression" file="asp/expression.xml" prefix="&lt;%="/>
+	<tag name="scriptlet" file="asp/scriptlet.xml" prefix="&lt;%"/>
+</library>
+
+<library name="ASP.NET Tags" prefix="&lt;asp:" library="aspnet/_library.xml" id="aspnet">
+	<tag name="adrotator" file="aspnet/adrotator.xml"/>
+	<tag name="boundcolumn" file="aspnet/boundcolumn.xml"/>
+	<tag name="button" file="aspnet/button.xml"/>
+	<tag name="buttoncolumn" file="aspnet/buttoncolumn.xml"/>
+	<tag name="calendar" file="aspnet/calendar.xml"/>    
+	<tag name="checkbox" file="aspnet/checkbox.xml"/>    
+	<tag name="checkboxlist" file="aspnet/checkboxlist.xml"/>    
+	<tag name="comparevalidator" file="aspnet/comparevalidator.xml"/>    
+	<tag name="customvalidator" file="aspnet/customvalidator.xml"/>    
+	<tag name="dropdownlist" file="aspnet/dropdownlist.xml"/>    
+	<tag name="datagrid" file="aspnet/datagrid.xml"/>    
+	<tag name="datalist" file="aspnet/datalist.xml"/>    
+	<tag name="editcommandcolumn" file="aspnet/editcommandcolumn.xml"/>    
+	<tag name="hyperlink" file="aspnet/hyperlink.xml"/>    
+	<tag name="hyperlinkcolumn" file="aspnet/hyperlinkcolumn.xml"/>    
+	<tag name="image" file="aspnet/image.xml"/>    
+	<tag name="imagebutton" file="aspnet/imagebutton.xml"/>    
+	<tag name="label" file="aspnet/label.xml"/>    
+	<tag name="linkbutton" file="aspnet/linkbutton.xml"/>    
+	<tag name="listbox" file="aspnet/listbox.xml"/>    
+	<tag name="listitem" file="aspnet/listitem.xml"/>    
+	<tag name="literal" file="aspnet/literal.xml"/>    
+	<tag name="panel" file="aspnet/panel.xml"/>    
+	<tag name="placeholder" file="aspnet/placeholder.xml"/>    
+	<tag name="radiobutton" file="aspnet/radiobutton.xml"/>    
+	<tag name="radiobuttonlist" file="aspnet/radiobuttonlist.xml"/>    
+	<tag name="rangevalidator" file="aspnet/rangevalidator.xml"/>    
+	<tag name="regularexpressionvalidator" file="aspnet/regularexpressionvalidator.xml"/>    
+	<tag name="repeater" file="aspnet/repeater.xml"/>    
+	<tag name="requiredfieldvalidator" file="aspnet/requiredfieldvalidator.xml"/>    
+	<tag name="table" file="aspnet/table.xml"/>    
+	<tag name="tablecell" file="aspnet/tablecell.xml"/>    
+	<tag name="tableheadercell" file="aspnet/tableheadercell.xml"/>    
+	<tag name="tablerow" file="aspnet/tablerow.xml"/>    
+	<tag name="textbox" file="aspnet/textbox.xml"/>    
+	<tag name="templatecolumn" file="aspnet/templatecolumn.xml"/>    
+	<tag name="validationsummary" file="aspnet/validationsummary.xml"/>    
+	<tag name="xml" file="aspnet/xml.xml"/>    
+	<tag name="dataset" file="aspnet/dataset.xml" prefix="&lt;mm:dataset"/>
+	<tag name="delete" file="aspnet/delete.xml" prefix="&lt;mm:delete"/>
+	<tag name="if" file="aspnet/if.xml" prefix="&lt;mm:if"/>
+	<tag name="insert" file="aspnet/insert.xml" prefix="&lt;mm:insert"/>
+	<tag name="pagebind" file="aspnet/pagebind.xml" prefix="&lt;mm:pagebind"/>
+	<tag name="parameter" file="aspnet/parameter.xml" prefix="&lt;parameter"/>    
+	<tag name="parameters" file="aspnet/parameters.xml" prefix="&lt;parameters"/>    
+	<tag name="update" file="aspnet/update.xml" prefix="&lt;mm:update"/>
+	<tag name="alternatingitemstyle" file="aspnet/alternatingitemstyle.xml" prefix="&lt;alternatingitemstyle" />
+	<tag name="edititemstyle" file="aspnet/edititemstyle.xml" prefix="&lt;edititemstyle"/>
+	<tag name="footerstyle" file="aspnet/footerstyle.xml" prefix="&lt;footerstyle"/>
+	<tag name="headerstyle" file="aspnet/headerstyle.xml" prefix="&lt;headerstyle"/>
+	<tag name="itemstyle" file="aspnet/itemstyle.xml" prefix="&lt;itemstyle"/>
+	<tag name="pagerstyle" file="aspnet/pagerstyle.xml" prefix="&lt;pagerstyle"/>
+	<tag name="selecteditemstyle" file="aspnet/selecteditemstyle.xml" prefix="&lt;selecteditemstyle"/>
+	<tag name="tablestyle" file="aspnet/tablestyle.xml" prefix="&lt;tablestyle"/>    
+	<tag name="tableitemstyle" file="aspnet/tableitemstyle.xml" prefix="&lt;tableitemstyle"/>    
+	<tag name="alternatingitemtemplate" file="aspnet/alternatingitemtemplate.xml" prefix="&lt;alternatingitemtemplate"/>
+	<tag name="columns" file="aspnet/columns.xml" prefix="&lt;columns"/>
+	<tag name="contentstemplate" file="aspnet/contentstemplate.xml" prefix="&lt;contentstemplate"/>
+	<tag name="edititemtemplate" file="aspnet/edititemtemplate.xml" prefix="&lt;edititemtemplate"/>
+	<tag name="failuretemplate" file="aspnet/failuretemplate.xml" prefix="&lt;failuretemplate"/>
+	<tag name="footertemplate" file="aspnet/footertemplate.xml" prefix="&lt;footertemplate"/>
+	<tag name="headertemplate" file="aspnet/headertemplate.xml" prefix="&lt;headertemplate"/>
+	<tag name="itemtemplate" file="aspnet/itemtemplate.xml" prefix="&lt;itemtemplate"/>
+	<tag name="selecteditemtemplate" file="aspnet/selecteditemtemplate.xml" prefix="&lt;selecteditemtemplate"/>
+	<tag name="separatortemplate" file="aspnet/separatortemplate.xml" prefix="&lt;separatortemplate"/>
+	<tag name="successtemplate" file="aspnet/successtemplate.xml" prefix="&lt;successtemplate"/>    
+</library>    
+
+<library name="JSP Tags" prefix="&lt;jsp:" library="jsp/_library.xml" id="jsp">
+	<tag name="declaration" file="jsp/declaration.xml" prefix="&lt;%!"/>
+	<tag name="include directive" file="jsp/directive.include.xml" prefix="&lt;%@ include"/>
+	<tag name="page directive" file="jsp/directive.page.xml" prefix="&lt;%@ page"/>
+	<tag name="taglib directive" file="jsp/directive.taglib.xml" prefix="&lt;%@ taglib"/>
+	<tag name="expression" file="jsp/expression.xml" prefix="&lt;%="/>
+	<tag name="fallback" file="jsp/fallback.xml"/>
+	<tag name="forward" file="jsp/forward.xml"/>
+	<tag name="getProperty" file="jsp/getproperty.xml"/>
+	<tag name="include" file="jsp/include.xml"/>
+	<tag name="param" file="jsp/param.xml"/>
+	<tag name="params" file="jsp/params.xml"/>
+	<tag name="plugin" file="jsp/plugin.xml"/>
+	<tag name="scriptlet" file="jsp/scriptlet.xml" prefix="&lt;%"/>
+	<tag name="setProperty" file="jsp/setproperty.xml"/>
+	<tag name="useBean" file="jsp/usebean.xml"/>
+</library>
+
+<library name="PHP Tags" library="php_mysql/_library.xml" id="php">
+	<tag name="processing instruction" file="phpmysql/directive.processing.xml" prefix="&lt;?"/>
+	<tag name="php echo" file="phpmysql/directive.phpecho.xml" prefix="&lt;?php echo"/>
+	<tag name="echo" file="phpmysql/directive.echo.xml" prefix="&lt;?echo"/>
+	<tag name="space echo" file="phpmysql/directive.spaceecho.xml" prefix="&lt;? echo"/>
+	<tag name="php print" file="phpmysql/directive.phpprint.xml" prefix="&lt;?php print"/>
+	<tag name="print" file="phpmysql/directive.print.xml" prefix="&lt;?print"/>
+	<tag name="space print" file="phpmysql/directive.spaceprint.xml" prefix="&lt;? print"/>
+</library>
+
+<library name="WML Tags" library="wml/_library.xml" id="wml">
+	<tag name="a" file="wml/a.xml"/>
+	<tag name="access" file="wml/access.xml"/>
+	<tag name="anchor" file="wml/anchor.xml"/>
+	<tag name="async" file="wml/async.xml"/>
+	<tag name="b" file="wml/b.xml"/>
+	<tag name="big" file="wml/big.xml"/>
+	<tag name="br" file="wml/br.xml"/>
+	<tag name="card" file="wml/card.xml"/>
+	<tag name="catch" file="wml/catch.xml"/>
+	<tag name="do" file="wml/do.xml"/>
+	<tag name="em" file="wml/em.xml"/>
+	<tag name="exit" file="wml/exit.xml"/>
+	<tag name="fieldset" file="wml/fieldset.xml"/>
+	<tag name="go" file="wml/go.xml"/>
+	<tag name="head" file="wml/head.xml"/>
+	<tag name="i" file="wml/i.xml"/>
+	<tag name="img" file="wml/img.xml"/>
+	<tag name="input" file="wml/input.xml"/>
+	<tag name="link" file="wml/link.xml"/>
+	<tag name="meta" file="wml/meta.xml"/>
+	<tag name="noop" file="wml/noop.xml"/>
+	<tag name="onevt" file="wml/onevt.xml"/>
+	<tag name="optgroup" file="wml/optgroup.xml"/>
+	<tag name="option" file="wml/option.xml"/>
+	<tag name="p" file="wml/p.xml"/>
+	<tag name="postfield" file="wml/postfield.xml"/>
+	<tag name="prev" file="wml/prev.xml"/>
+	<tag name="receive" file="wml/receive.xml"/>
+	<tag name="refresh" file="wml/refresh.xml"/>
+	<tag name="reset" file="wml/reset.xml"/>
+	<tag name="select" file="wml/select.xml"/>
+	<tag name="send" file="wml/send.xml"/>
+	<tag name="setvar" file="wml/setvar.xml"/>
+	<tag name="small" file="wml/small.xml"/>
+	<tag name="spawn" file="wml/spawn.xml"/>
+	<tag name="strong" file="wml/strong.xml"/>
+	<tag name="table" file="wml/table.xml"/>
+	<tag name="td" file="wml/td.xml"/>
+	<tag name="template" file="wml/template.xml"/>
+	<tag name="throw" file="wml/throw.xml"/>
+	<tag name="timer" file="wml/timer.xml"/>
+	<tag name="tr" file="wml/tr.xml"/>
+	<tag name="u" file="wml/u.xml"/>
+	<tag name="wml" file="wml/wml.xml"/>
+</library>
+
+</libraries>

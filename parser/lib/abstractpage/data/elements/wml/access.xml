@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+
+<tag name="access" endtag="no" casesensitive="yes">
+	<tagformat nlbeforetag="0" nlaftertag="0"/>
+	
+  	<attributes>
+    	<attrib name="domain" casesensitive="yes"/>
+    	<attrib name="path" casesensitive="yes"/>
+    	<attrib name="id" casesensitive="yes"/>
+    	<attrib name="class" casesensitive="yes"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

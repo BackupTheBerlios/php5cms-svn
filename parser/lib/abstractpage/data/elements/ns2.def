@@ -1,0 +1,480 @@
+# Netscape Navigator 2.0 Definition
+
+[definition]
+
+[elements]
+<!ELEMENT A >
+<!ATTLIST A
+		HREF
+		Name
+		OnClick
+		OnMouseOver
+		Target
+>
+
+<!ELEMENT Acronym >
+
+<!ELEMENT Address >
+
+<!ELEMENT APPLET >
+<!ATTLIST APPLET
+		Align ( top | middle | bottom | left | right | absmiddle | absbottom | baseline | texttop )
+		Alt
+		Code
+		Codebase
+		Height
+		HSpace
+		Name
+		VSpace
+		Width
+>
+        
+<!ELEMENT AREA >
+<!ATTLIST AREA
+		Alt
+		Coords
+		HREF
+		NoHREF
+		Shape
+		Target
+>
+
+<!ELEMENT AU >
+
+<!ELEMENT B >
+
+<!ELEMENT Banner >
+
+<!ELEMENT Base >
+<!ATTLIST Base
+		HREF
+		Target
+>
+
+<!ELEMENT BaseFont >
+<!ATTLIST BaseFont
+		Size
+>
+
+<!ELEMENT Big >
+
+<!ELEMENT Blink >
+
+<!ELEMENT Blockquote > 
+
+<!ELEMENT Body >
+<!ATTLIST Body
+		ALink
+		Background
+		BGColor
+		Link
+		OnLoad
+		OnUnload
+		Text
+		TracingOpacity
+		TracingSrc
+		TracingX
+		TracingY
+		VLink
+>
+
+<!ELEMENT BR >
+<!ATTLIST BR
+		Clear ( none | left | right | all )
+>
+
+<!ELEMENT CAPTION >
+<!ATTLIST CAPTION
+		Align   ( top | bottom )
+
+>
+
+<!ELEMENT Center >
+
+<!ELEMENT CITE >
+
+<!ELEMENT CODE >
+
+<!ELEMENT DD >
+<!ATTLIST DD
+    	Align     
+		Class     
+    	Clear     
+    	Height    
+		ID        
+		Nowrap    
+		Style     
+		Width     
+>
+
+<!ELEMENT DFN >
+
+<!ELEMENT DIR >
+
+<!ELEMENT DIV >
+<!ATTLIST DIV
+		Align ( left | center | right )
+>
+
+<!ELEMENT DL >
+<!ATTLIST DL
+		Align     
+		Class     
+		Clear     
+		Compact   
+		Dir       
+		Height    
+		ID          
+		Lang      
+		Style     
+		Width     
+>
+
+<!ELEMENT DT >
+<!ATTLIST DT
+		Align     
+		Class     
+		Clear     
+		Height    
+		ID        
+		Nowrap    
+		Style     
+		Width     
+>
+
+<!ELEMENT EM >
+<!ATTLIST EM
+		Class     
+		ID        
+		Style     
+ >
+
+<!ELEMENT EMBED >
+<!ATTLIST EMBED
+		BGColor
+		Height
+		Loop
+		Name
+		Palette
+		Play
+		Pluginspage
+		Quality
+		SAlign
+		Scale
+		Src
+		Type
+		Width
+		Class  		
+		ID			
+		Style   	
+>
+
+<!ELEMENT Font >
+<!ATTLIST Font
+		Face
+		Color   
+		Size
+>
+
+<!ELEMENT Form >
+<!ATTLIST Form
+		Action
+		EncType
+		Method ( get | post )
+		Name
+		Target
+>
+
+<!ELEMENT Frame >
+<!ATTLIST Frame
+		MarginHeight
+		MarginWidth
+		Name
+		NoResize
+		Scrolling ( yes | no | auto )
+		Src
+>
+
+<!ELEMENT FrameSet >
+<!ATTLIST FrameSet
+		Cols
+		OnLoad
+		OnUnload
+		Rows
+>
+
+<!ELEMENT H1 >
+<!ATTLIST H1
+		Align ( left | center | right )
+>
+
+<!ELEMENT H2 >
+<!ATTLIST H2
+		Align ( left | center | right )
+>
+
+<!ELEMENT H3 >
+<!ATTLIST H3
+		Align ( left | center | right )
+>
+
+<!ELEMENT H4 >
+<!ATTLIST H4
+		Align ( left | center | right )
+>
+
+<!ELEMENT H5 >
+<!ATTLIST H5
+		Align ( left | center | right )
+>
+
+<!ELEMENT H6 >
+<!ATTLIST H6
+		Align ( left | center | right )
+>
+
+<!ELEMENT HEAD >
+
+<!ELEMENT HR >
+<!ATTLIST HR
+		Align ( left | center | right )
+		NoShade
+		Size
+		Width
+>
+
+<!ELEMENT HTML >
+
+<!ELEMENT I >
+
+<!ELEMENT IBOBJECT >
+<!ATTLIST IBOBJECT
+		Class
+		Name
+>
+
+<!ELEMENT ILayer  >
+
+<!ELEMENT IMG >
+<!ATTLIST IMG
+		Align ( left | right | top | bottom )
+		Alt
+		Border
+		Height
+		HSpace
+		ISMap
+		LowSrc
+		Name
+		Src
+		UseMap
+		VSpace
+		Width
+>
+
+<!ELEMENT INPUT >
+<!ATTLIST INPUT
+		Type ( text | password | checkbox | radio | submit | reset | hidden | image | file | button )
+		Name
+		Value
+		Checked
+		Height
+		Align ( left | right | top | texttop | middle | absmiddle | baseline | bottom | absbottom )
+		Src
+		Width
+		MaxLength
+		OnBlur
+		OnClick
+		OnChange
+		OnFocus
+		OnSelect
+		Size
+>
+
+<!ELEMENT ISINDEX >
+<!ATTLIST ISINDEX
+		Action
+		Prompt
+>
+
+<!ELEMENT KBD >
+
+<!ELEMENT LAYER  >
+
+<!ELEMENT LI >
+<!ATTLIST LI
+		Type ( A | a | I | i | 1 | disc | square | circle )
+		Value
+>
+
+<!ELEMENT Listing >
+
+<!ELEMENT MAP >
+<!ATTLIST MAP
+		Name
+>
+
+
+<!ELEMENT Menu >
+
+<!ELEMENT Meta >
+<!ATTLIST Meta
+		Content
+		HTTP-Equiv
+		Name
+>
+
+<!ELEMENT NOBR >
+
+<!ELEMENT NOEMBED >
+
+<!ELEMENT NOFRAMES >
+
+<!ELEMENT OL >
+<!ATTLIST OL
+		Start
+		Type ( A | a | I | i | 1 )
+>
+
+<!ELEMENT OPTION >
+<!ATTLIST OPTION
+		Selected
+		Value
+>
+
+<!ELEMENT P >
+<!ATTLIST P
+		Align ( center | left | right )
+>
+
+<!ELEMENT PARAM >
+<!ATTLIST PARAM
+		Name
+		Value
+>
+
+<!ELEMENT PlainText >
+
+<!ELEMENT PRE >
+
+<!ELEMENT SAMP >
+
+<!ELEMENT Script >
+<!ATTLIST Script
+		Language
+		Src
+>
+
+<!ELEMENT SELECT >
+<!ATTLIST SELECT
+		Multiple
+		Name
+		OnBlur
+		OnChange
+		OnFocus
+		Size
+>
+
+<!ELEMENT Small >
+
+<!ELEMENT Spacer >
+<!ATTLIST Spacer
+		Align ( left | right | Ttop | texttop | middle | absmiddle | baseline | bottom | absbottom )
+		Height
+		Size
+		Type ( horizontal | vertical | block )
+		Width
+>
+
+
+<!ELEMENT SPAN  >
+
+<!ELEMENT STRIKE >
+
+<!ELEMENT Strong >
+
+<!ELEMENT SUB >
+<!ATTLIST SUB
+		Class
+		ID
+		Style
+>
+
+<!ELEMENT SUP >
+<!ATTLIST SUP
+		Class
+		ID
+		Style
+>
+
+<!ELEMENT Table >
+<!ATTLIST Table
+		Align ( left | center | right )
+		Border
+		CellPadding
+		CellSpacing
+		Cols
+		Height
+		Name
+		Width
+>
+
+<!ELEMENT TD >
+<!ATTLIST TD
+		Align ( left | center | right )
+		ColSpan
+		Height
+		NoWrap
+		RowSpan
+		VAlign ( top | middle | bottom | baseline )
+		Width
+>
+
+<!ELEMENT TextArea >
+<!ATTLIST TextArea
+		Cols
+		Name
+		Rows
+		Wrap ( off | virtual | physical )
+		onBlur
+		onChange
+		onFocus
+		onSelect
+>
+
+<!ELEMENT TH >
+<!ATTLIST TH
+		Align ( left | center | right )
+		ColSpan
+		Height
+		NoWrap
+		RowSpan
+		VAlign ( top | middle | bottom | baseline )
+		Width
+>
+
+
+<!ELEMENT Title >
+
+<!ELEMENT TR >
+<!ATTLIST TR
+		Align ( left | center | right )
+		VAlign ( top | middle | bottom | baseline )
+>
+
+<!ELEMENT TT >
+
+<!ELEMENT UL >
+<!ATTLIST UL
+		Type ( disc | circle | square )
+>
+
+<!ELEMENT VAR >
+
+<!ELEMENT WBR >
+
+<!ELEMENT XMP >
+<!ATTLIST XMP
+		Class   	
+		ID        
+		Style   	
+>

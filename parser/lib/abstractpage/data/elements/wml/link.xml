@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+
+<tag name="link" endtag="no" casesensitive="yes">
+	<tagformat nlbeforetag="1" nlaftertag="1"/>
+
+  	<attributes>
+    	<attrib name="href" casesensitive="yes"/>
+    	<attrib name="rel" casesensitive="yes"/>
+    
+		<attrib name="sendreferer" TYPE="Enumerated" casesensitive="yes">
+      		<opt VALUE="true" caption="true"/>
+      		<opt VALUE="false" caption="false (default)"/>
+		</attrib>
+    
+		<attrib name="id" casesensitive="yes"/>
+    	<attrib name="class" casesensitive="yes"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

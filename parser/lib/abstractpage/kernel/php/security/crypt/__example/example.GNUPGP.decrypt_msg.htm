@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<h3>To encrypt a message, enter the crypted message, user name and the passphrase.</h3>
+
+<form action="process.php" method="post">
+<table border=1>
+	<tr><td colspan=2>Message:</td></tr>
+	<tr><td colspan=2><textarea name="message" rows="20" cols="80"></textarea></td></tr>
+	<tr><td>Email: </td><td><input type="text" name="userEmail"></td></tr>
+	<tr><td>Passphrase: </td><td><input type="text" name="passphrase"></td></tr>
+	<tr><td colspan=2><input type="submit" name="action" value="decrypt_msg"></td></tr>
+</table>
+</form>
+
+</body>
+</html>

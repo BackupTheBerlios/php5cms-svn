@@ -1,0 +1,163 @@
+<!--
++----------------------------------------------------------------------+
+|This program is free software; you can redistribute it and/or modify  |
+|it under the terms of the GNU General Public License as published by  |
+|the Free Software Foundation; either version 2 of the License, or     |
+|(at your option) any later version.                                   |
+|                                                                      |
+|This program is distributed in the hope that it will be useful,       |
+|but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+|MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the          |
+|GNU General Public License for more details.                          |
+|                                                                      |
+|You should have received a copy of the GNU General Public License     |
+|along with this program; if not, write to the Free Software           |
+|Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.             |
++----------------------------------------------------------------------+
+|Authors: Markus Nix <mnix@docuverse.de>                               |
++----------------------------------------------------------------------+
+-->
+
+
+<PUBLIC:COMPONENT>
+
+<PUBLIC:ATTACH EVENT="oncontentready" ONEVENT="init()"/>
+<PUBLIC:PROPERTY NAME="handler"/>
+
+<script language="JavaScript">
+
+/**
+ * @access public
+ */
+var path_to_iconset = "../img/misc/iconset.gif";
+
+/**
+ * @access public
+ */
+var iconset_width = 512;
+
+/**
+ * @access public
+ */
+var iconset_height = 512;
+
+/**
+ * @access public
+ */
+var icon_width = 16;
+
+/**
+ * @access public
+ */
+var icon_height = 16;
+
+/**
+ * @access public
+ */
+var iconset = 
+{
+	"_default":			{ x:   0, y:   0 },
+	"_blank":			{ x:  16, y:   0 },
+	"_shortcut":		{ x:  32, y:   0 },
+	"abstractpage":		{ x:  48, y:   0 }
+};
+
+
+/**
+ * @access public
+ */
+function init()
+{
+	element.width  = icon_width;
+	element.height = icon_height;
+	
+	// use specific source?
+	if ( !element.src )
+		element.src = path_to_iconset;
+	
+	// handle attribute set?
+	if ( !element.handle )
+		element.handle = "_default";
+		
+	var which = ( iconset[element.handle] && ( element.handle.indexOf( "_" ) != 0 ) )? iconset[element.handle] : iconset["_default"];
+	
+	element.width  = iconset_width;
+	element.height = iconset_height;
+	
+	element.style.marginLeft = -which.x;
+	element.style.marginTop  = -which.y;
+	
+	// create container
+	var container = document.createElement( "DIV" );
+	container.style.width    = icon_width;
+	container.style.height   = icon_height;
+	container.style.overflow = "hidden";
+		
+	// display as shortcut
+	if ( element.shortcut != null )
+	{
+		if ( element.handle.indexOf( "_" ) != 0 )
+		{
+			var shortcut = document.createElement( "IMG" );
+			shortcut.src = element.src;
+			shortcut.style.position = "absolute";
+			shortcut.style.left     = -iconset["_shortcut"].x;
+			shortcut.style.top      = -iconset["_shortcut"].y;
+			shortcut.style.width    = element.width;
+			shortcut.style.height   = element.height;
+		}
+			
+		element.parentNode.insertBefore( container, element );
+		container.appendChild( element );
+		
+		if ( element.handle.indexOf( "_" ) != 0 )
+			container.appendChild( shortcut );
+	}
+	else if ( element.more == "bottom" )
+	{
+		if ( element.handle.indexOf( "_" ) != 0 )
+		{
+			var more = document.createElement( "IMG" );
+			more.src = element.src;
+			more.style.position = "absolute";
+			more.style.left     = -iconset["_more_bottom"].x;
+			more.style.top      = -iconset["_more_bottom"].y;
+			more.style.width    = element.width;
+			more.style.height   = element.height;
+		}
+			
+		element.parentNode.insertBefore( container, element );
+		container.appendChild( element );
+		
+		if ( element.handle.indexOf( "_" ) != 0 )
+			container.appendChild( more );
+	}
+	else if ( element.more == "right" )
+	{
+		if ( element.handle.indexOf( "_" ) != 0 )
+		{
+			var more = document.createElement( "IMG" );
+			more.src = element.src;
+			more.style.position = "absolute";
+			more.style.left     = -iconset["_more_right"].x;
+			more.style.top      = -iconset["_more_right"].y;
+			more.style.width    = element.width;
+			more.style.height   = element.height;
+		}
+			
+		element.parentNode.insertBefore( container, element );
+		container.appendChild( element );
+		
+		if ( element.handle.indexOf( "_" ) != 0 )
+			container.appendChild( more );
+	}
+	else
+	{
+		element.parentNode.insertBefore( container, element );
+		container.appendChild( element );
+	}
+};
+
+</script>
+
+</PUBLIC:COMPONENT>

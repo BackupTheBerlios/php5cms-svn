@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+
+<title>Menu Example</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link type="text/css" rel="StyleSheet" href="css/winclassic.css" />
+
+<style type="text/css">
+
+p
+{
+	font: Message-Box;
+	font: MessageBox;
+	margin:	10px;
+}
+
+</style>
+
+<script language="JavaScript" src="../../../../../../prepend.js"></script>
+
+<script language="JavaScript">
+
+set_library_path( '../../../../../../kernel/js/' );
+using( 'util.PosLib' );
+using( 'gui.button.ScrollButton' );
+using( 'gui.menu.lib.Menu' );
+using( 'gui.menu.lib.MenuBar' );
+using( 'gui.menu.lib.MenuItem' );
+using( 'gui.menu.lib.MenuBar_button' );
+using( 'gui.menu.lib.MenuCollection' );
+using( 'gui.menu.lib.MenuItem_checkbox' );
+using( 'gui.menu.lib.MenuItem_info' );
+using( 'gui.menu.lib.MenuItem_infoseparator' );
+using( 'gui.menu.lib.MenuItem_pane' );
+using( 'gui.menu.lib.MenuItem_radiobutton' );
+using( 'gui.menu.lib.MenuItem_separator' );
+using( 'gui.menu.lib.MenuLoadHelper' );
+using( 'gui.menu.lib.MenuPane' );
+
+</script>
+
+<script language="JavaScript">
+
+Menu.prototype.cssFile = "css/winclassic.css";
+
+
+// test menu
+
+var tmp, tmp2;
+var testMenu = new Menu();
+
+testMenu.add( tmp = new MenuItem( "New Window", document.location.href ) );
+tmp.target   = "_blank";
+tmp.mnemonic = 'n';
+tmp.shortcut = "Ctrl+N";
+
+testMenu.add( tmp = new MenuItem( "Alert", function() { alert("Clicked " + this.text); } ) );
+tmp.mnemonic = 'a';
+
+testMenu.add( new MenuItem_separator );
+
+testMenu.add( tmp = new MenuItem( "Close", function() { window.close();  }) );
+tmp.mnemonic = 'c';
+
+
+// Check box menu
+
+var cbm = new Menu();
+
+function onCheckBoxChanged()
+{
+	alert( "The menu item with the text " + this.text +
+		" is now " + ( this.checked? "checked" : "unchecked" ) );
+}
+
+cbm.add( new MenuItem_checkbox( "Check Me 1", false, onCheckBoxChanged ) );
+cbm.add( new MenuItem_checkbox( "Check Me 2", false, onCheckBoxChanged ) );
+
+
+// Radio Menu
+
+var rm = new Menu();
+
+function onRadioChanged()
+{	
+	var text;
+
+	if ( rb1.checked )
+		text = rb1.text;
+	else if ( rb2.checked )
+		text = rb2.text;
+	else if ( rb3.checked )
+		text = rb3.text;
+		
+	alert( "You selected " + text );
+};
+
+var rb1 = new MenuItem_radiobutton( "Vanilla",    false, "flavorGroup", onRadioChanged );
+var rb2 = new MenuItem_radiobutton( "Chocolate",  true,  "flavorGroup", onRadioChanged );
+var rb3 = new MenuItem_radiobutton( "Strawberry", false, "flavorGroup", onRadioChanged );
+
+rm.add( rb1 );
+rm.add( rb2 );
+rm.add( rb3 );
+
+
+// sub menus
+
+var sm = new Menu();
+
+// manual
+var sm2 = new Menu();
+sm.add( tmp = new MenuItem( "Item with sub", null, null, sm2 ) );
+sm2.add( new MenuItem( "Item inside sub menu" ) );
+
+sm.add( new MenuItem_separator() );
+
+// loop
+for ( var i = 0; i < 5; i++ )
+{
+	tmp = new Menu;
+	sm.add( new MenuItem( "Sub Menu " + i, null, null, tmp ) );
+	
+	for ( var j = 0; j < 5; j++ )
+	{
+		tmp2 = new Menu();
+		tmp.add( new MenuItem( "Item " + i + "." + j, null, null, tmp2 ) );
+		
+		for ( var k = 0; k < 5; k++ )
+			tmp2.add( new MenuItem( "Item " + i + "." + j + "." + k ) );	
+	}	
+}
+
+
+// menu bar
+
+var menuBar = new MenuBar();
+
+var testButton = new MenuBar_button( "Test", testMenu );
+testButton.mnemonic = "t";
+menuBar.add( testButton );
+
+menuBar.add( tmp = new MenuBar_button( "Check Box Menu", cbm ) );
+tmp.mnemonic = 'c';
+
+menuBar.add( tmp = new MenuBar_button( "Radio Menu", rm ) );
+tmp.mnemonic = 'r';
+
+menuBar.add( tmp = new MenuBar_button( "Sub Menus", sm ) );
+tmp.mnemonic = 's';
+
+</script>
+
+</head>
+
+<body>
+
+<script language="JavaScript">
+menuBar.write();
+</script>
+
+</body>
+</html>

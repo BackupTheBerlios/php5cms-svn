@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+
+<tag name="PARAM" endtag="no">
+	<tagformat nlbeforetag="1" nlaftertag="1"/>
+
+	<attributes>
+
+		<attrib name="NAME"/>
+		<attrib name="VALUE"/>
+
+		<attrib name="VALUETYPE" type="Enumerated">
+			<opt value="data" caption="data - default"/>
+			<opt value="ref" caption="ref"/>
+			<opt value="object" caption="object"/>
+		</attrib>
+
+		<attrib name="TYPE" type="Enumerated">
+			<opt value="text/html" caption="text/html"/>
+			<opt value="text/plain" caption="text/plain"/>
+			<opt value="application/msword" caption="application/msword"/>
+			<opt value="application/msexcel" caption="application/msexcel"/>
+			<opt value="application/postscript" caption="application/postscript"/>
+			<opt value="application/x-zip-compressed" caption="application/x-zip-compressed"/>
+			<opt value="application/pdf" caption="application/pdf"/>
+			<opt value="application/rtf" caption="application/rtf"/>
+			<opt value="video/x-msvideo" caption="video/x-msvideo"/>
+			<opt value="video/quicktime" caption="video/quicktime"/>
+			<opt value="video/x-mpeg2" caption="video/x-mpeg2"/>
+			<opt value="audio/x-pn/realaudio" caption="audio/x-pn/realaudio"/>
+			<opt value="audio/x-mpeg" caption="audio/x-mpeg"/>
+			<opt value="audio/x-waw" caption="audio/x-waw"/>
+			<opt value="audio/x-aiff" caption="audio/x-aiff"/>
+			<opt value="audio/basic" caption="audio/basic"/>
+			<opt value="image/tiff" caption="image/tiff"/>
+			<opt value="image/jpeg" caption="image/jpeg"/>
+			<opt value="image/gif" caption="image/gif"/>
+			<opt value="image/x-png" caption="image/x-png"/>
+			<opt value="image/x-photo-cd" caption="image/x-photo-cd"/>
+			<opt value="image/x-MS-bmp" caption="image/x-MS-bmp"/>
+			<opt value="image/x-rgb" caption="image/x-rgb"/>
+			<opt value="image/x-portable-pixmap" caption="image/x-portable-pixmap"/>
+			<opt value="image/x-portable-greymap" caption="image/x-portable-greymap"/>
+			<opt value="image/x-portablebitmap" caption="image/x-portablebitmap"/>
+		</attrib>
+
+		<attrib name="ID"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

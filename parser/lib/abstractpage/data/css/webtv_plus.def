@@ -1,0 +1,197 @@
+# WebTV Plus CSS Definition
+#
+# Based on http://developer.webtv.net/authoring/css/
+# Style sheets are supported only on the WebTV Plus 
+# Receiver. The WebTV Classic Internet Terminal does not 
+# support style sheets in any form. 
+
+[definition]
+NamedColors=1
+SystemColors=0
+RGBColors=1
+
+[at-rules]
+@font-face=0
+@import=0
+@media=0
+@page=0
+
+[known types]
+<units>			= (pt|in|pc|mm|cm|px)
+<generic-family>	= (monospace)
+<absolute-size> 	= (xx\-small|x\-small|small|medium|large|x\-large|xx\-large)
+
+[selectors]
+Class=Y
+ID=Y
+Contextual=Y
+Child=N
+Descendant=N
+Sibling=N
+Attribute=N
+Universal=N
+
+[pseudo]
+:link
+:visited
+
+[groups]
+Color and Background
+Box
+Font
+Positioning
+Text
+
+[properties]
+background
+background-color
+background-image
+color
+font
+font-family
+font-size
+font-style
+font-weight
+height
+left
+margin-left
+position
+text-align
+text-decoration
+top
+vertical-align
+visibility
+width
+z-index
+
+[background]
+inherited=0
+initial=
+group=Color and Background
+value1=<background-color>
+
+[background-color]
+inherited=0
+initial=
+group=Color and Background
+value1=<color>
+
+[background-image]
+inherited=0
+initial=
+group=Color and Background
+value1=<url>
+
+[color]
+inherited=0
+initial=
+group=Color and Background
+value1=<color>
+
+[font]
+inherited=0
+initial=
+group=Font
+value1=<font-size>
+value2=<font-style>
+value3=<font-weight>
+value4=<font-family>
+
+[font-family]
+inherited=0
+initial=
+multiple=1
+group=Font
+value1=monospace|<family-name>
+
+[font-size]
+inherited=0
+initial=
+group=Font
+value1=<absolute-size>|<percentage>|<length>
+
+[font-style]
+inherited=0
+initial=
+group=Font
+value1=normal|italic
+
+[font-weight]
+inherited=0
+initial=
+group=Font
+value1=normal|bold|bolder|lighter
+
+[height]
+inherited=0
+initial=
+group=Positioning
+value1=<length>
+
+[left]
+inherited=0
+initial=
+group=Positioning
+value1=<length>
+
+[margin-left]
+inherited=0
+initial=
+group=Box
+value1=<percentage>|<length>
+
+[position]
+inherited=0
+initial=
+group=Positioning
+value1=absolute
+
+[text-align]
+inherited=0
+initial=
+group=Text
+value1=left|right|center
+
+[text-decoration]
+inherited=0
+initial=
+group=Text
+value1=none|underline|line\-through|relief|shadow|emboss
+
+[top]
+inherited=0
+initial=
+group=Positioning
+value1=<length>
+
+[vertical-align]
+inherited=0
+initial=
+group=Text
+value1=sub|super
+
+[visibility]
+inherited=0
+initial=
+group=Positioning
+value1=visible|hidden
+
+[width]
+inherited=0
+initial=
+group=Positioning
+value1=<length>
+
+[z-index]
+inherited=0
+initial=
+group=Positioning
+value1=<integer>
+
+[browser-tips]
+property = background-color
+message  = Margins, padding, and borders are ignored when background colors are applied to inline elements.
+property = background-image
+message  = This property is supported only on BODY, TD and DIV elements.
+property = height|width|z-index|visibility|length|position
+message  = %property% is only applicable on DIV elements

@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+
+<tag name="BASEFONT" endtag="no">
+	<tagformat nlbeforetag="1" nlaftertag="1"/>
+	
+	<attributes>
+		<attrib name="SIZE" type="Enumerated">
+			<opt value="1" caption=" 1"/>
+			<opt value="2" caption=" 2"/>
+			<opt value="3" caption=" 3 (standard)"/>
+			<opt value="4" caption=" 4"/>
+			<opt value="5" caption=" 5"/>
+			<opt value="6" caption=" 6"/>
+			<opt value="7" caption=" 7"/>
+		</attrib>
+		
+		<attrib name="FACE" type="Font"/>
+		<attrib name="COLOR" type="Color"/>
+		<attrib name="ID"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

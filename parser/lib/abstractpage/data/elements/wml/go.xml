@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+
+<tag name="go" endtag="yes" casesensitive="yes">
+	<tagformat nlbeforetag="0" nlbeforecontents="0" nlaftercontents="0" nlaftertag="0"/>
+
+  	<attributes>
+    	<attrib name="href" casesensitive="yes"/>
+    	<attrib name="accept" casesensitive="yes"/>
+    	
+		<attrib name="method" TYPE="Enumerated" casesensitive="yes">
+      		<opt VALUE="post" caption="post"/>
+      		<opt VALUE="get" caption="get (default)"/>
+		</attrib>
+    
+		<attrib name="sendreferer" TYPE="Enumerated" casesensitive="yes">
+      		<opt VALUE="true" caption="true"/>
+      		<opt VALUE="false" caption="false (default)"/>
+		</attrib>
+    	
+		<attrib name="id" casesensitive="yes"/>
+    	<attrib name="class" casesensitive="yes"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- <!DOCTYPE document SYSTEM "pdftag.dtd"> -->
+<document author="Markus Nix" title="Sample #2 for pdfTag" subject="Sample #2">
+	<page format="A4" color="1,0,0" font="Courier-Bold" size="15" encoding="winansi">
+		<openimagefile id="p" type="jpeg" src="debian.jpg"/>
+		<openimagefile id="img2" type="png" src="openlogo-nd-50.png" />
+		<openimagefile id="thumb" type="png" src="thumb.png"/>
+		<addthumbnail id="thumb" />
+		<outline id="sample2"><![CDATA[Sample 2]]></outline>
+		<outline id="page1" parent="sample2">Page 1</outline>
+		<showxy x="60" y="650" font="Courier" size="20" encoding="winansi">
+Use of german Umlaute (&#196;)
+		</showxy>
+
+		<showxy x="150" y="260">more complex sample for a rectangle</showxy>
+		<rect x="150" y="100" width="300" height="150" color="1.0,0.5,0.5" linewidth="3.0" fillcolor="0,1,0" filled="filled" border="border"/>
+
+		<showboxed x="20" y="300" width="400" height="200" mode="fulljustify">
+With the element &lt;showboxed&gt; text is filled with a specified mode, like fulljustify, in a box like you see here.
+		</showboxed>
+	</page>
+
+	<!-- here you see the definition of an template -->
+	<template id="t1" width="100" height="100">
+		<moveto x="10" y="10" color="0,1,0"/>
+		<lineto x="90" y="90" />
+		<stroke/>
+		<set linecap="1"/>
+		<moveto x="10" y="90" />
+		<lineto x="90" y="10" />
+		<stroke/>
+		<save>
+			<moveto x="10" y="90" color="0,0,1" fillcolor="0,0,1"/>
+			<lineto x="50" y="10"/>
+			<lineto x="90" y="90"/>
+			<lineto x="10" y="90" />
+			<stroke filled="filled"/>
+		</save>
+		<showxy x="10" y="40" font="Helvetica-Bold" size="20" encoding="winansi" color="0.5,0.5,1.0">Template</showxy>
+	</template>
+
+	<page format="A5" orientation="landscape">
+		<outline id="page2" parent="sample2">Page 2</outline>
+		<addthumbnail id="thumb" />
+		<showxy x="150" y="350" font="Courier" size="20" encoding="winansi" charspacing="4">Pageformat DIN A5 landscape</showxy>
+		<showxy x="100" y="290" font="Courier" size="20" encoding="winansi">using a template with scale attribute</showxy>
+		<settemplate id="t1" x="100" y="230" scale="0.5" color="1,0,0"/>
+	</page>
+
+	<page format="A5" orientation="portrait" font="Courier" size="20" encoding="winansi" color="0,0,1">
+		<outline id="page3" parent="sample2">Page 3, template &amp; images</outline>
+		<outline id="page3.2" parent="page1">Page 3 under Page 1</outline>
+		<addthumbnail id="thumb" />
+		<showxy x="200" y="520">image #1</showxy>
+		<placeimage id="p" x="10" y="500" />
+		<showxy x="200" y="420">image #2</showxy>
+		<placeimage id="img2" x="10" y="400" />
+		<settemplate id="t1" x="0" y="0" scale="2"/>
+	</page>
+</document>

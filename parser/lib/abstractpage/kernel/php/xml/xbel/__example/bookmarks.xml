@@ -1,0 +1,1523 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE xbel PUBLIC "+//IDN python.org//DTD XML Bookmark Exchange Language 1.0//EN//XML"
+	"http://www.python.org/topics/xml/dtds/xbel-1.0.dtd">
+
+<xbel id="maintable">
+  <info>
+    <metadata owner="bassie" />
+  </info>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>BIOS and Drivers</title>
+
+    <desc>All topics about BIOS</desc>
+
+    <bookmark
+    href="http://support.3com.com/infodeli/tools/nic/3c509/3c5096.1.htm"
+     visited="10-10-2000 2:41:28">
+      <title>3Com Software Library - Network Interface
+      Cards</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark
+    href="http://www.a7vtroubleshooting.com/info/bios/index.htm"
+    visited="28-7-2001 1:53:14">
+      <title>A7V Troubleshooting</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark href="http://www.abios.com/"
+    visited="9-10-2000 18:12:17">
+      <title>All Bios World - ABIT, ASUS, ATREND, EPOX, SOYO,
+      GIGABYTE, SOLTEK, TYAN Bios &amp; Board Manuals</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark href="http://www.asuscom.de/"
+    visited="22-5-2001 2:46:55">
+      <title>ASUS Deutschland GmbH</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Buy Sell Trade</title>
+
+    <desc>
+    </desc>
+
+    <bookmark href="http://www.aoaonline.org/acda/9a.htm"
+    visited="14-12-2001 17:19:26">
+      <title>100+ web sites for the appraiser</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Culture</title>
+
+    <desc>
+    </desc>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Entertainment</title>
+
+    <desc>
+    </desc>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Gamers</title>
+
+    <desc>
+    </desc>
+
+    <bookmark
+    href="http://dialspace.dial.pipex.com/town/estate/dh69/clear/"
+     visited="5-6-2001 13:40:18">
+      <title>CLEAR - the Campaign to Leave Emulation Alone (plus
+      an R)</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark href="http://www.pcgamer.com/"
+    visited="1-1-1990 9:00:00">
+      <title>PC Gamer</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <folder>
+      <title>Abondenware</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.tuol.org/"
+      visited="22-10-2000 19:57:22">
+        <title>-.the ultimate oldgames linkpage.-</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.dosgamesarchive.com/index.html"
+      visited="28-12-2001 3:12:06">
+        <title>DOS Games Archive download free MS-DOS
+        games</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.dosgames.com/index.php"
+      visited="28-12-2001 2:46:29">
+        <title>Free games Over 200 DOS games. Shareware and
+        freeware, downloads, reviews, links, and more!</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://superultra2.tripod.com/games.html"
+      visited="1-2-2000 22:52:13">
+        <title>games</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.retro64.com/index.html"
+      visited="27-12-2001 2:53:04">
+        <title>Retro64, Freeware and Shareware Games</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.classicgaming.com/"
+      visited="21-5-2000 11:11:57">
+        <title>Welcome to ClassicGaming.com</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Consoles</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.avault.com"
+      visited="1-1-1990 9:00:00">
+        <title>Avault (Games)</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.gamecenter.com/"
+      visited="1-1-1990 9:00:00">
+        <title>GameCenter</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.happypuppy.com/"
+      visited="1-1-1990 9:00:00">
+        <title>Happypuppy Games</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Docs and Manuals</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.gamefaqs.com/"
+      visited="19-9-1999 14:36:40">
+        <title>GameFAQs</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://guides.ign.com/"
+      visited="27-12-2001 4:57:16">
+        <title>guides.ign.com</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://skyscraper.fortunecity.com/fatbit/720/index.htm"
+       visited="8-10-1999 0:32:18">
+        <title>
+        http$$$skyscraper.fortunecity.com$fatbit$720$index.htm</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Online</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.playsite.com/"
+      visited="1-1-1990 9:00:00">
+        <title>Playsite</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.robobombo.com/game.htm"
+      visited="14-12-2001 14:03:26">
+        <title>ROBOBOMBO GAME WINDOW</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Sims</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.chocobogo.free-online.co.uk/"
+      visited="3-6-2000 12:40:49">
+        <title>Chocobogo's RollerCoaster Tycoon Pages, Info,
+        Saves, Downloads, Tracks, screenshots, RollerCoasters,
+        Chris Sawyer</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.sc3000.com/"
+      visited="7-9-2000 0:34:49">
+        <title>SimCity 3000 Resource Center - Welcome!</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>General Chat</title>
+
+    <desc>
+    </desc>
+
+    <bookmark href="http://messenger.msn.com/"
+    visited="10-12-2001 15:52:35">
+      <title>.NET Messenger Service -- Free Instant Messaging
+      service</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark href="http://www.aim.com/index.adp"
+    visited="10-12-2001 15:54:30">
+      <title>AOL Instant Messenger (TM)</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark
+    href="http://www.microsoft.com/windows/ie/default.asp"
+    visited="10-12-2001 15:55:28">
+      <title>Internet Explorer Home Page</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark href="http://www.opera.com/"
+    visited="10-12-2001 15:55:49">
+      <title>Opera Software - the Best Internet
+      Experience</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark
+    href="http://home.netscape.com/computing/download/index.html?cp=hophb2"
+     visited="10-12-2001 15:58:07">
+      <title>Upgrade to Netscape 6.2</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark href="http://messenger.yahoo.com/"
+    visited="10-12-2001 15:53:38">
+      <title>Yahoo! Messenger</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Jokes and Humor</title>
+
+    <desc>
+    </desc>
+
+    <bookmark
+    href="http://www.topsitelists.com/bestsites/wbaustin/topsites.html"
+     visited="29-12-2001 0:40:44">
+      <title>Famous Quotes and Famous Sayings Top Sites. Top
+      Rated Quotations collections</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Mutimedia</title>
+
+    <desc>
+    </desc>
+
+    <bookmark href="http://www.mediabuilder.com/"
+    visited="5-6-2001 21:05:17">
+      <title>Media Builder Image Libraries and On-line
+      Tools</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <folder>
+      <title>Animation</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.flashkit.com/"
+      visited="7-3-2001 4:24:39">
+        <title>Flash Kit, A Flash Developer Resource - Online
+        resource for Macromedia Flash Tutorials SWF FLA images
+        clip art Sounds WAVS Anim</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.macromedia.com/"
+      visited="7-3-2001 4:25:28">
+        <title>Macromedia</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Fonts</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.freepcfonts.com/index.html"
+      visited="18-3-2001 17:01:52">
+        <title>Download Free Fonts @ Free PC Fonts</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.fontfreak.com/index2.htm"
+      visited="18-3-2001 15:57:18">
+        <title>Font Freak - Free true type fonts and dingbats for
+        both PC and Mac</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://cgm.cs.mcgill.ca/~luc/fontmanagers.html"
+      visited="21-12-2001 1:01:16">
+        <title>Font managers</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://www.staffassoc.com/dpfonts/links_aa.htm"
+      visited="18-3-2001 16:46:48">
+        <title>Fonts by Dennis Palumbo, A1, Links to Font Related
+        Web Sites</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.chank.com/freefonts.php"
+      visited="12-12-2001 3:31:36">
+        <title>FREE CHANK FONTS!</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.freewarefonts.com/index.html"
+      visited="18-3-2001 16:59:20">
+        <title>Free Fonts @ Freeware fonts</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.pcfonts.com/"
+      visited="18-3-2001 17:03:16">
+        <title>PCFonts.Com</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.dingbatpages.com/"
+      visited="18-3-2001 16:29:57">
+        <title>the Dingbat pages</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Music</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.audiomelody.com/"
+      visited="12-12-2001 3:53:35">
+        <title>AudioMelody - Reviewing FREE audio software, music
+        tools, programs, drum machines, audio, editors, players,
+        file sharing, vst,</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://www.hitsquad.com/smm/win95/FORMAT_CONVERTERS/"
+      visited="9-12-2001 13:54:17">
+        <title>Windows 95-98-2000-NT Music Software FORMAT
+        CONVERTERS [Shareware Music Machine]</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Pics</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.freefoto.com/"
+      visited="14-12-2001 21:01:39">
+        <title>For Free Pictures the Number One Choice is
+        FreeFoto.Com</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.pics4fun.com/"
+      visited="14-12-2001 20:53:41">
+        <title>funny pictures gallery hundreds of funny pictures,
+        dirty cartoons and animated gifs</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://www.iconbazaar.com/molecules/resources.html"
+      visited="13-7-2001 0:46:53">
+        <title>IconBAZAAR - Molecules - WWW Resources on
+        Molecular Modeling</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.iconbazaar.com/index.html"
+      visited="5-6-2001 20:50:44">
+        <title>IconBAZAAR</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.insanepictures.com/"
+      visited="14-12-2001 20:58:36">
+        <title>Insane Pictures - funny pictures, photos, comics,
+        cartoons and jokes!</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.intcon.net/~songbird/"
+      visited="14-12-2001 23:44:44">
+        <title>MUSIC GRAPHICS GALORE - Free, music-related
+        graphics, images, icons, clipart and backgrounds.</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Net and Security</title>
+
+    <desc>
+    </desc>
+
+    <bookmark href="http://www.epanorama.net/"
+    visited="22-4-2001 12:46:47">
+      <title>ePanorama.net</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <bookmark
+    href="http://www.alw.nih.gov/Security/security.html"
+    visited="10-12-2001 16:09:48">
+      <title>Security Information Portal</title>
+
+      <desc>
+      </desc>
+    </bookmark>
+
+    <folder>
+      <title>Broadband</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.dslreports.com/?401"
+      visited="25-4-2001 18:09:32">
+        <title>DSL - DSLreports.com - the place for
+        BROADBAND</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Firewalls</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.firewall-net.com/index.en.php"
+      visited="8-12-2001 16:07:55">
+        <title>Firewall.net - Guide to install &amp; configure a
+        PC Mac or Linux Firewall</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.hackyourself.com/newindex.dyn"
+      visited="11-12-2001 23:20:14">
+        <title>Hack Yourself Remote Computer Network Security
+        Scan</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.nessus.org/index.html"
+      visited="20-4-2001 19:56:37">
+        <title>Nessus</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://homepage.ntlworld.com/susan.todd3/index.htm"
+      visited="18-12-2001 21:39:25">
+        <title>The Unofficial Sygate Firewall Website</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.wilders.org/"
+      visited="18-12-2001 21:38:39">
+        <title>wilders.org</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Proxyservers</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.peddat.no/autonet.htm"
+      visited="8-3-2000 22:16:30">
+        <title>AutoNet, the free ISDN router - modem
+        router</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://www.jana-server.ocm.de/Englisch/FrameSet.htm"
+      visited="20-4-2001 18:34:44">
+        <title>Jana Server a free Proxy Server - Http Server and
+        Email Server</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://serverwatch.internet.com/proxyservers.html"
+      visited="11-12-2001 23:35:39">
+        <title>Proxy Servers - ServerWatch Proxy Servers</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.proxyplus.cz/"
+      visited="7-11-2000 5:54:55">
+        <title>Proxy+</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Security sites</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.infosyssec.net/index.html"
+      visited="11-12-2001 23:14:38">
+        <title>Hacking and Hackers - Computer Security Programs
+        Downloading Search Engines Portal News</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.iwar.org.uk/"
+      visited="7-6-2001 18:48:14">
+        <title>IWS - The Information Warfare Site</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://neworder.box.sk/"
+      visited="7-12-2000 6:39:54">
+        <title>NEWORDER</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.qenesis.com/training/index.html"
+      visited="23-12-2001 5:07:16">
+        <title>Qenesis Solaris Training</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="https://www.safeweb.com/"
+      visited="6-6-2001 18:09:16">
+        <title>SafeWeb Startpage</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.vmyths.com/index.cfm"
+      visited="4-7-2001 10:25:16">
+        <title>Vmyths.com- Truth About Computer Virus Myths &amp;
+        Hoaxes</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>spam</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://mail-abuse.org/"
+      visited="29-12-2001 14:27:53">
+        <title>Mail Abuse Prevention System LLC</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://mail-abuse.org/tsi/ar-fix.html"
+      visited="29-12-2001 16:34:16">
+        <title>MAPS TSI Anti-Relay How Can I Fix the
+        Problem</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Tracing Services</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.all-nettools.com/en.htm"
+      visited="21-4-2001 13:26:41">
+        <title>All Nettools</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.analogx.com/contents/news.htm"
+      visited="5-12-2001 13:22:50">
+        <title>AnalogX - News</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://samspade.org/"
+      visited="12-7-2001 22:37:53">
+        <title>SamSpade.org</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://cities.lk.net/trlist.html"
+      visited="11-11-2001 17:42:02">
+        <title>Traceroute List by States. Backbone Maps
+        List.</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Workings</title>
+
+      <desc>
+      </desc>
+
+      <bookmark
+      href="http://som.csudh.edu/cis/lpress/history/arpamaps/"
+      visited="20-5-2001 23:35:04">
+        <title>ARPANET Maps</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://www.ittc.ukans.edu/~ldasilva/table/tips.html"
+      visited="20-5-2001 23:06:54">
+        <title>ATM CHECKLIST</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://www.cisco.com/univercd/home/home.htm"
+      visited="31-5-2001 22:48:26">
+        <title>Cisco Connection Documentation</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.ep.net/"
+      visited="21-5-2001 17:03:37">
+        <title>http--www.ep.net-</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.ietf.org/"
+      visited="22-5-2001 20:39:23">
+        <title>IETF Home Page</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://navigators.com/internet_architecture.html"
+      visited="11-12-2001 23:38:03">
+        <title>Internet The Big Picture (by Russ Haynal)</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.boardwatch.com/"
+      visited="20-5-2001 23:37:06">
+        <title>ISPworld Main Page</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.packetfactory.net/libnet/"
+      visited="23-12-2001 13:58:46">
+        <title>Libnet - Packet Assembly System</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://www.cis.ohio-state.edu/~jain/index.html"
+      visited="22-4-2001 16:47:44">
+        <title>Raj Jain - Professor of Computer and Information
+        Science</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.nwfusion.com/research/dns.html"
+      visited="30-5-2001 1:08:01">
+        <title>Research Domain Name System</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://navigators.com/isp.html"
+      visited="11-12-2001 23:43:11">
+        <title>Russ Haynal's ISP Page</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.caida.org/home/"
+      visited="11-12-2001 23:49:55">
+        <title>The CAIDA Web Site - CAIDA HOME</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Software</title>
+
+    <desc>
+    </desc>
+
+    <folder>
+      <title>Download</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.mp3-converter.com/"
+      visited="21-11-2001 20:34:56">
+        <title>MP3 Converter Software</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.networldwide.com/"
+      visited="21-4-2001 13:43:09">
+        <title>NET Worldwide Network Enterprise
+        Technologies</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://passtheshareware.com/index.htm"
+      visited="18-3-2001 21:11:01">
+        <title>PassTheShareware.com for shareware, freeware,
+        freebies, games, top websites and more</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.tucows.com/"
+      visited="7-3-2001 6:06:43">
+        <title>TUCOWS - software, music, themes and games
+        download sites</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>emulators</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://fms.komkon.org/comp/"
+      visited="28-12-2001 16:33:12">
+        <title>Computer History and Emulation Homepage</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark
+      href="http://ei.cs.vt.edu/~history/emulators.html"
+      visited="28-12-2001 16:17:43">
+        <title>Emulators of Historical Systems</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.emulators.com/"
+      visited="28-12-2001 15:51:15">
+        <title>Emulators Online - Run Mac OS on Windows!</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.emuunlim.com/"
+      visited="28-12-2001 16:14:32">
+        <title>EmuUnlim.com - Join the Revolution...</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Freeware</title>
+
+      <desc>
+      </desc>
+
+      <bookmark
+      href="http://www.completelyfreesoftware.com/index_all.html"
+      visited="28-12-2001 3:18:40">
+        <title>Completely FREE Software - Windows &amp; DOS
+        Freeware</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://moedos.net/"
+      visited="28-12-2001 3:15:33">
+        <title>MOE-DOS - Really great free DOS 4U!</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.freedos.org/"
+      visited="28-12-2001 2:26:04">
+        <title>The FreeDOS Project Welcome!</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://ourworld.cs.com/wazware/"
+      visited="11-12-2001 6:09:42">
+        <title>Wayne Hall's WazWare Homepage</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Sports</title>
+
+    <desc>
+    </desc>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Wellness</title>
+
+    <desc>
+    </desc>
+  </folder>
+
+  <seperator>
+  </seperator>
+
+  <folder>
+    <title>Wisdom</title>
+
+    <desc>
+    </desc>
+
+    <folder>
+      <title>Archives</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://marc.theaimsgroup.com/?w=2"
+      visited="19-4-2001 1:45:35">
+        <title>MARC Mailing list ARChives at AIMS</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>News</title>
+
+      <desc>
+      </desc>
+
+      <bookmark
+      href="http://www.vertexdev.com/HeadlineViewer/index.html"
+      visited="22-12-2001 2:26:29">
+        <title>Headline Viewer Home Page</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.intelbrief.com/"
+      visited="7-6-2001 14:36:07">
+        <title>Intelligence Brief information and intelligence
+        from the internet.</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://www.slashdot.org/"
+      visited="21-7-2001 1:52:51">
+        <title>Slashdot News for nerds, stuff that
+        matters</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+    </folder>
+
+    <folder>
+      <title>Searching</title>
+
+      <desc>
+      </desc>
+
+      <bookmark href="http://www.allsearchengines.com/"
+      visited="26-7-2000 4:12:22">
+        <title>!! AllSearchEngines !!</title>
+
+        <desc>De meeste zoekmachines van het net.</desc>
+      </bookmark>
+
+      <bookmark href="http://ftpsearchengines.com/"
+      visited="18-11-2001 0:18:26">
+        <title>ftp search engines</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://dmoz.org/"
+      visited="5-6-2001 13:58:13">
+        <title>ODP - Open Directory Project</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://searchenginewatch.com/"
+      visited="12-10-2000 19:58:05">
+        <title>Search Engine Watch$ Tips About Internet Search
+        Engines &amp; Search Engine Submission</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <bookmark href="http://cuiwww.unige.ch/meta-index.html"
+      visited="18-12-1999 15:34:14">
+        <title>W3 Search Engines</title>
+
+        <desc>
+        </desc>
+      </bookmark>
+
+      <folder>
+        <title>Directories</title>
+
+        <desc>
+        </desc>
+
+        <bookmark href="http://www.anywho.com/index.html"
+        visited="10-12-2001 16:32:11">
+          <title>AnyWho Internet Directory Assistance; Yellow
+          Pages, White Pages, Toll-Free Numbers, Maps and
+          Directions</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://bigbook.com"
+        visited="1-1-1990 9:00:00">
+          <title>BigBook</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.dogpile.com"
+        visited="1-1-1990 9:00:00">
+          <title>Dogpile</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.infospace.com"
+        visited="1-1-1990 9:00:00">
+          <title>InfoSpace</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.switchboard.com"
+        visited="1-1-1990 9:00:00">
+          <title>SwitchBoard</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.eyp.co.uk/"
+        visited="1-1-1990 9:00:00">
+          <title>UK Yellow Pages</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.whatis.com"
+        visited="1-1-1990 9:00:00">
+          <title>What Is$</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.whowhere.lycos.com/"
+        visited="1-1-1990 9:00:00">
+          <title>WhoWhere</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+      </folder>
+
+      <folder>
+        <title>Normal</title>
+
+        <desc>
+        </desc>
+
+        <bookmark href="http://www.altavista.digital.com/"
+        visited="7-9-2000 1:47:26">
+          <title>AltaVista</title>
+
+          <desc>De beste zoekmachine van het net.</desc>
+        </bookmark>
+
+        <bookmark href="http://www.askjeeves.com/"
+        visited="10-12-2001 16:41:23">
+          <title>Ask Jeeves - Ask.com</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.beaucoup.com/engbig.html"
+        visited="1-1-1990 9:00:00">
+          <title>Beaucoup!</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.excite.com/"
+        visited="1-1-1990 9:00:00">
+          <title>Excite</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.google.com/"
+        visited="18-6-2001 20:31:44">
+          <title>Google</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark
+        href="http://service.bfast.com/bfast/click?bfmid=253985&amp;bfsiteid=19273588&amp;bfpage=searchbox8"
+         visited="1-1-1990 9:00:00">
+          <title>GoTo!</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.highway61.com/"
+        visited="1-1-1990 9:00:00">
+          <title>Highway 61 (meta search)</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.hotbot.com"
+        visited="1-1-1990 9:00:00">
+          <title>HotBot</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://guide-p.infoseek.com"
+        visited="1-1-1990 9:00:00">
+          <title>Infoseek</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.looksmart.com/r?l3p&amp;h1"
+        visited="1-1-1990 9:00:00">
+          <title>LookSmart</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.lycos.com/"
+        visited="1-1-1990 9:00:00">
+          <title>Lycos</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.mckinley.com/"
+        visited="1-1-1990 9:00:00">
+          <title>Magellan</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://metacrawler.com"
+        visited="1-1-1990 9:00:00">
+          <title>MetaCrawler</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.nlsearch.com/"
+        visited="1-1-1990 9:00:00">
+          <title>Northern Light</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.yahoo.com"
+        visited="1-1-1990 9:00:00">
+          <title>Yahoo</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+      </folder>
+
+      <folder>
+        <title>Special</title>
+
+        <desc>
+        </desc>
+
+        <bookmark
+        href="http://www.leidenuniv.nl/ub/biv/specials.htm"
+        visited="21-9-2000 12:23:43">
+          <title>A collection of (mainly) special search
+          engines</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://astalavista.box.sk/"
+        visited="10-12-2001 16:41:53">
+          <title>ASTALAVISTA.BOX.SK</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.deja.com"
+        visited="1-1-1990 9:00:00">
+          <title>Deja (Usenet archives)</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.iaf.net/"
+        visited="1-1-1990 9:00:00">
+          <title>Email address lookup</title>
+
+          <desc>Gives you e-mail addresses.</desc>
+        </bookmark>
+
+        <bookmark href="http://www.extreme-dm.com/"
+        visited="1-1-1990 9:00:00">
+          <title>Extreme</title>
+
+          <desc>hey have 56 search engines they contact and give
+          you their suggestions both in form of answers and
+          links</desc>
+        </bookmark>
+
+        <bookmark href="http://www.searchlores.org/"
+        visited="7-12-2000 6:34:38">
+          <title>index.htm$ Fravia's web-searching lore
+          (&#175;`&#183;.&#184;(&#175;`&#183;.&#184; Main
+          entrance
+          &#184;.&#183;&#180;&#175;)&#184;.&#183;&#180;&#175;)</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://internet800directory.com"
+        visited="1-1-1990 9:00:00">
+          <title>Internet 800 Directory</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://mesa.rrzn.uni-hannover.de/"
+        visited="18-12-1999 15:19:26">
+          <title>MESA</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.spyonit.com/Home"
+        visited="5-7-2000 21:16:29">
+          <title>Spyonit.com - Home</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark
+        href="http://www.virtualfreesites.com/search.internet.html"
+         visited="10-12-2001 16:28:40">
+          <title>Virtual Internet Search Engines - 1,000
+          Specialized Search Engines</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.surfwax.com/"
+        visited="22-2-2000 16:16:40">
+          <title>Welcome to SurfWax(TM) VORT Corporation &#169;
+          1998-2000</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://www.warezcrawler.net/"
+        visited="10-12-2001 16:44:01">
+          <title>Welcome To WarezCrawler</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+
+        <bookmark href="http://people.yahoo.com"
+        visited="1-1-1990 9:00:00">
+          <title>Yahoo! People Search</title>
+
+          <desc>
+          </desc>
+        </bookmark>
+      </folder>
+    </folder>
+  </folder>
+</xbel>

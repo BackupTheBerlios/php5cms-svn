@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+
+<implementation name="rxml">
+	<group name="Database tags" description="">
+		<fn>&lt;sqloutput ascii= database= host= parse= password= query= quiet= user&gt;</fn>
+		<fn>&lt;sqlquery ascii= database= host= parse= password= query= quiet= user&gt;</fn>
+		<fn>&lt;sqltable ascii= database= host= parse= password= query= quiet= user&gt;</fn>
+	</group>
+	
+	<group name="Graphics tags" description="">	
+		<fn>&lt;config_tablist alt= bgcolor= border= selected&gt;</fn>
+		<fn>&lt;diagram 3d= background= bgcolor= center= eng= font= fontsize= height= horgrid= labelcolor= legendfontsize= name= namecolor= namefont= namesize= neng= notrans= rotate= textcolor= tonedbox= turn= type= vertgrid= voidsep= width= xgridspace= ygridspace= separator= form= lineseparator= noparse= xnames= xnamesvert= start= stop= quantity= orient&gt;</fn>
+		<fn>&lt;gclock background_image= delay= time_offset&gt;</fn>
+		<fn>&lt;gtext gh= amfang= alpha= alt= background= bevel= pressed= bg= black= bold= border= fadein= fg= fs= fuzz= ghost= glow= href= italic= light= magic= magic_X= magicbg= maxlen= mirrortil= move= nfont= notrans= opaque= quant= rescale= rotate= scale= scolor= scroll= shadow= size= spacing= split= talign= textbelow= textbox= texture= tile= turbulence= verbatim= xpad= xsize= xspacing= ysiza= yspacing&gt;</fn>
+		<fn>&lt;imgs src&gt;</fn>
+		<fn>&lt;pimage bg_color= xs= ys&gt;</fn>
+	</group>
+	
+	<group name="If tags" description="">
+		<fn>&lt;elif &gt;</fn>
+		<fn>&lt;else &gt;</fn>
+		<fn>&lt;elseif &gt;</fn>
+		<fn>&lt;false &gt;</fn>
+		<fn>&lt;if accept= config= cookie= date= defined= domain= host= language= match= name= prestate= referrer= supports= user= variable= after= and= before= file= inclusive= wwwfile= not= or&gt;</fn>
+		<fn>&lt;true &gt;</fn>
+	</group>
+	
+	<group name="Information tags" description="">
+		<fn>&lt;accept-language full&gt;</fn>
+		<fn>&lt;accessed add= addreal= capitalize= cheat= date= factor= file= lang= lower= part= per= prec= reset= silent= since= time= type= upper&gt;</fn>
+		<fn>&lt;available_languages &gt;</fn>
+		<fn>&lt;clientname full&gt;</fn>
+		<fn>&lt;configimage align= hpsace= src= vspace&gt;</fn>
+		<fn>&lt;configurl &gt;</fn>
+		<fn>&lt;countdown day= hour= iso= mday= min= month= sec= year= combined= days= dogyears= hours= lang= minutes= months= nowp= prec= seconds= since= type= weeks= when= years&gt;</fn>
+		<fn>&lt;date brief= capitalize= date= day= hour= lang= lower= minute= part= second= time= type= unix_time&gt;</fn>
+		<fn>&lt;file raw&gt;</fn>
+		<fn>&lt;help for&gt;</fn>
+		<fn>&lt;language type&gt;</fn>
+		<fn>&lt;line &gt;</fn>
+		<fn>&lt;list-tags verbose&gt;</fn>
+		<fn>&lt;modified by= capitalize= date= file= lang= lower= part= realfile= time= type&gt;</fn>
+		<fn>&lt;number language= type&gt;</fn>
+		<fn>&lt;pr size= color= align&gt;</fn>
+		<fn>&lt;referrer alt&gt;</fn>
+		<fn>&lt;unavailable_language type&gt;</fn>
+		<fn>&lt;user name= realname= email= link= nolink&gt;</fn>
+		<fn>&lt;version &gt;</fn>
+	</group>
+	
+	<group name="Programming tags" description="">
+		<fn>&lt;catch &gt;</fn>
+		<fn>&lt;crypt &gt;</fn>
+		<fn>&lt;debug off= on&gt;</fn>
+		<fn>&lt;default value= name&gt;</fn>
+		<fn>&lt;for from= step= to= variable&gt;</fn>
+		<fn>&lt;gauge &gt;</fn>
+		<fn>&lt;nooutput &gt;</fn>
+		<fn>&lt;noparse &gt;</fn>
+		<fn>&lt;pike &gt;</fn>
+		<fn>&lt;random separator&gt;</fn>
+		<fn>&lt;realfile &gt;</fn>
+		<fn>&lt;scope extend&gt;</fn>
+		<fn>&lt;sed append= chars= lines= prepend= split= suppress&gt;</fn>
+		<fn>&lt;strlen &gt;</fn>
+		<fn>&lt;throw &gt;</fn>
+		<fn>&lt;trace &gt;</fn>
+		<fn>&lt;vfs &gt;</fn>
+		<fn>&lt;wizard cancel= cancel-label= done= name= next-label= ok-label= page-label= previous-label= &lt;page&gt; &lt;var&gt; &lt;cvar&gt;&gt;</fn>
+	</group>
+		
+	<group name="SSI tags" description="">
+		<fn>&lt;!--#config errmsg= sizefmt= timefmt --&gt;</fn>
+		<fn>&lt;!--#echo var --&gt;</fn>
+		<fn>&lt;!--#exec cgi= cmd --&gt;</fn>
+		<fn>&lt;!--#flastmod file= virtual --&gt;</fn>
+		<fn>&lt;!--#fsize file= virtual --&gt;</fn>
+		<fn>&lt;!--#include file= virtual --&gt;</fn>
+	</group>
+	
+	<group name="String tags" description="">
+		<fn>&lt;ai name&gt;</fn>
+		<fn>&lt;autoformat nobr= pre&gt;</fn>
+		<fn>&lt;case lower= upper= capitalize&gt;</fn>
+		<fn>&lt;comment &gt;</fn>
+		<fn>&lt;doc pre&gt;</fn>
+		<fn>&lt;obox align= bgcolor= left= outlinecolor= outlinewidth= right= spacing= style= textcolor= titlecolor= width&gt;</fn>
+		<fn>&lt;smallcaps size= small= space&gt;</fn>
+		<fn>&lt;sort separator&gt;</fn>
+		<fn>&lt;source separator&gt;</fn>
+		<fn>&lt;spell warn&gt;</fn>
+		<fn>&lt;tablify cellalign= cellseparator= fields= modulo= nice= nicer= rowalign= rowseparator&gt;</fn>
+		<fn>&lt;trimlines &gt;</fn>
+	</group>
+	
+	<group name="Url tags" description="">
+		<fn>&lt;aconf &gt;</fn>
+		<fn>&lt;apre href&gt;</fn>
+		<fn>&lt;auth-required type&gt;</fn>
+		<fn>&lt;expire_time hours= minutes= seconds= days= months= years&gt;</fn>
+		<fn>&lt;header value&gt;</fn>
+		<fn>&lt;killframe &gt;</fn>
+		<fn>&lt;redirect to&gt;</fn>
+		<fn>&lt;remove_cookie name&gt;</fn>
+		<fn>&lt;return code= text&gt;</fn>
+		<fn>&lt;set_cookie name= path= persistent= value&gt;</fn>
+	</group>
+	
+	<group name="Variable tags" description="">
+		<fn>&lt;append define= from= other= value= variable&gt;</fn>
+		<fn>&lt;cset define= eval= expr= from= other= value= variable&gt;</fn>
+		<fn>&lt;define container= default_attribute= name= tag= #args#= &amp;argument= &amp;tagname&gt;</fn>
+		<fn>&lt;formoutput quote&gt;</fn>
+		<fn>&lt;insert cookie= cookies= define= file= fromword&gt;</fn>
+		<fn>&lt;undefine container= name= tag&gt;</fn>
+		<fn>&lt;unset variable&gt;</fn>
+		<fn>&lt;use file= package&gt;</fn>
+	</group>
+</implementation>

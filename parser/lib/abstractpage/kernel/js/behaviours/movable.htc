@@ -1,0 +1,451 @@
+<!--
++----------------------------------------------------------------------+
+|This program is free software; you can redistribute it and/or modify  |
+|it under the terms of the GNU General Public License as published by  |
+|the Free Software Foundation; either version 2 of the License, or     |
+|(at your option) any later version.                                   |
+|                                                                      |
+|This program is distributed in the hope that it will be useful,       |
+|but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+|MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the          |
+|GNU General Public License for more details.                          |
+|                                                                      |
+|You should have received a copy of the GNU General Public License     |
+|along with this program; if not, write to the Free Software           |
+|Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.             |
++----------------------------------------------------------------------+
+|Authors: Markus Nix <mnix@docuverse.de>                               |
++----------------------------------------------------------------------+
+-->
+
+
+<PROPERTY NAME="movable"/>
+<PROPERTY NAME="direction"/>
+<PROPERTY NAME="snapable"/>
+<PROPERTY NAME="selectable"/>
+    
+<METHOD NAME="moveTo"/>
+<METHOD NAME="snapToGrid"/>
+    
+<EVENT NAME="ondrag"      ID="drag"/>
+<EVENT NAME="ondragstart" ID="dragstart"/>
+<EVENT NAME="ondragend"   ID="dragend"/>
+<EVENT NAME="onerror"     ID="error"/>
+
+<ATTACH EVENT="onmouseup"       HANDLER="DoMouseUp"/>
+<ATTACH EVENT="onmousedown"     HANDLER="DoMouseDown"/>
+<ATTACH EVENT="onclick"         HANDLER="DoSelect"/>
+<ATTACH EVENT="onselectstart"   HANDLER="DoSelect"/>
+<ATTACH EVENT="ondocumentready" HANDLER="SetDefaults"/>
+
+
+<script language="JavaScript">
+
+/**
+ * @access public
+ */
+var iOffsetX;
+
+/**
+ * @access public
+ */
+var iOffsetY;
+
+/**
+ * @access public
+ */
+var normZindex = style.zIndex;
+
+/**
+ * @access public
+ */
+var zBound = new Array(
+	'Top', 
+	'Right', 
+	'Bottom', 
+	'Left'
+);
+
+
+/**
+ * @access public
+ */
+function SetDefaults()
+{
+    // Required CSS properties
+    style.left = offsetLeft;
+    style.top  = offsetTop;
+    style.position = "absolute";
+
+    style['mvBoundary'] = currentStyle['mv--boundary'];
+    style['mvGrid'] = currentStyle['mv--grid'];
+
+    //  Custom CSS Property Defaults
+    CustomDefault('mv--boundary-left','mvBoundaryLeft',null);
+    CustomDefault('mv--boundary-right','mvBoundaryRight',null);
+    CustomDefault('mv--boundary-top','mvBoundaryTop',null);
+    CustomDefault('mv--boundary-bottom','mvBoundaryBottom',null);
+    CustomDefault('mv--grid-rows','mvGridRows',null);
+    CustomDefault('mv--grid-cols','mvGridCols',null);
+
+    FormatGrid();
+    FormatBoundary();
+
+    attachEvent("onpropertychange", DoPropChange);
+};
+
+/**
+ * @access public
+ */
+function CustomDefault(sCSSName, sScriptName, sDefault)
+{
+    if (currentStyle[sCSSName] == null)
+		style[sCSSName] = sDefault;
+    else
+		style[sCSSName] = currentStyle[sCSSName];
+    
+    style[sScriptName] = style[sCSSName];
+};
+
+/**
+ * @access public
+ */
+function FormatGrid()
+{
+    if (style['mvGrid'] != null)
+    {
+        if (style['mvGridCols'] == null)
+			style['mvGridCols'] = parseInt( style['mvGrid'].substring( 0,style['mvGrid'].indexOf( " " ) ) );
+    
+        if (style['mvGridRows'] == null)
+			style['mvGridRows'] = parseInt( style['mvGrid'].substring( style['mvGrid'].indexOf( " " ) + 1, style['mvGrid'].length ) );
+    }
+
+    snapToGrid();
+};
+
+/**
+ * @access public
+ */
+function FormatBoundary()
+{
+    if (style['mvBoundary'] != null)
+    {
+        var iStart = 0;
+        var iEnd   = style['mvBoundary'].indexOf( " " );
+                
+        for (i=0; i<zBound.length; i++)
+        {
+            style['mvBoundary' + zBound[i]] = style['mvBoundary'].substring( iStart, iEnd );
+                
+            if ( iEnd == style['mvBoundary'].length )
+				break;
+            
+            iStart = iEnd + 1;
+            iEnd   = style['mvBoundary'].indexOf(" ", iStart);
+            
+			if ( iEnd == -1 )
+				iEnd = style['mvBoundary'].length;
+        }
+    }
+
+    SetBoundary();
+};
+
+/**
+ * @access public
+ */
+function DoPropChange()
+{
+    var propertyName = window.event.propertyName;
+
+    if ( propertyName.substring( 0, 5 ) == "style" )
+    {
+		switch( propertyName )
+        {
+            case "style.zIndex":
+                normZindex = style.zIndex;
+                break;
+                
+            case "style.position":
+                style.position = "absolute";
+                break;
+   
+            case "style.mvGridRows":
+                snapToGrid();
+                break;
+                
+            case "style.mvGridCols":
+                snapToGrid();
+                break;
+                
+             case "style.mvGrid":
+                FormatGrid();
+                break;               
+                
+            case "style.mvBoundaryLeft":
+                SetBoundary();
+                break;
+
+            case "style.mvBoundaryTop":
+                SetBoundary();
+                break;
+                
+            case "style.mvBoundaryRight":
+                SetBoundary();
+                break;
+                
+            case "style.mvBoundaryBottom":
+                SetBoundary();
+                break;
+                               
+            case "style.mvBoundary":
+                FormatBoundary();
+                break;
+        }
+    }
+    else
+    {
+        detachEvent( "onpropertychange", DoPropChange );
+        
+        switch( propertyName )
+        {
+            case "movable":
+                break;
+              
+            case "direction":
+                break;
+                
+            case "snapable":
+                if ( snapable == true || snapable == "true" )
+					snapToGrid();
+                
+				break;
+                
+            case "selectable":
+                break;    
+
+            default:
+                ReturnError( propertyName + " not a valid property" );
+                break;
+        }
+        
+        // Re-attach the onpropertychange event
+        attachEvent( "onpropertychange", DoPropChange );
+    }
+};
+
+/**
+ * @access public
+ */
+function moveTo(iNewX, iNewY)
+{
+    if ( movable == false || movable == "false" )
+		return true;
+
+    iNewX = parseInt( iNewX );
+    iNewY = parseInt( iNewY );
+
+    if ( isNaN( iNewX ) && isNaN( iNewY ) )
+		return false;
+    
+    // Call MoveElement to move the piece
+    MoveElement( iNewX, iNewY );
+};
+
+/**
+ * @access public
+ */
+function snapToGrid()
+{
+    MoveElement( offsetLeft, offsetTop, true );
+};
+
+/**
+ * @access public
+ */
+function SetBoundary()
+{
+    if ( style.mvBoundaryRight != null && style.mvBoundaryRight < style.posLeft + offsetWidth )
+ 		style.left = style.mvBoundaryRight - offsetWidth;
+    
+    if ( style.mvBoundaryLeft && style.mvBoundaryLeft > style.posLeft )
+		style.left = style.mvBoundaryLeft;
+    
+    if ( style.mvBoundaryBottom && style.mvBoundaryBottom < style.posTop + offsetHeight )
+		style.top = style.mvBoundaryBottom - offsetHeight;
+
+    if ( style.mvBoundaryTop && style.mvBoundaryTop > style.posTop )
+		style.top = style.mvBoundaryTop;
+    
+    // If the element is snapable, call snapToGrid to snap it.
+    if ( snapable == true || snapable == "true" )
+		snapToGrid();
+};
+
+/**
+ * @access public
+ */
+function MoveElement(iNewX, iNewY, bSnapTo)
+{
+    if ( direction != "vertical" && iNewX != null )
+    {
+        if ( ( snapable == true || snapable == "true" || bSnapTo == true ) && style.mvGridCols != null )
+        {
+            // Find the closest grid
+            var iSnapX = ( Math.round( iNewX / style.mvGridCols ) ) * style.mvGridCols;
+
+            // If the piece is outside of the boundaries, put on a grid inside
+            if ( style.mvBoundaryLeft != null && iSnapX < style.mvBoundaryLeft )
+				iSnapX = ( Math.ceil( style.mvBoundaryLeft / style.mvGridCols ) ) * style.mvGridCols;
+            else if ( style.mvBoundaryRight != null && iSnapX > style.mvBoundaryRight - offsetWidth )
+ 				iSnapX = ( Math.floor( ( style.mvBoundaryRight - offsetWidth ) / style.mvGridCols ) ) * style.mvGridCols;
+			
+            iNewX = iSnapX;
+        }
+        else if ( style.mvBoundaryLeft != null && iNewX < style.mvBoundaryLeft )
+        {
+            iNewX = style.mvBoundaryLeft;
+        }
+        else if ( style.mvBoundaryRight != null && iNewX > style.mvBoundaryRight - offsetWidth )
+        {
+            iNewX = style.mvBoundaryRight - offsetWidth;
+        }
+
+        // Put the piece in it's (possibly adjusted) position
+        style.left = iNewX;
+    }
+
+    if ( direction != "horizontal" && iNewY != null )
+    {
+        if ( ( snapable == true || snapable == "true" || bSnapTo == true ) && style.mvGridRows != null )
+        {
+            // Find the closest grid
+            var iSnapY = ( Math.round( iNewY / style.mvGridRows ) ) * style.mvGridRows;
+
+            //  If the piece is outside of the boundaries, put on a grid inside
+            if ( style.mvBoundaryTop != null && iSnapY < style.mvBoundaryTop )
+				iSnapY = ( Math.ceil( style.mvBoundaryTop / style.mvGridRows ) ) * style.mvGridRows;
+            else if ( style.mvBoundaryBottom != null && iSnapY > style.mvBoundaryBottom - offsetHeight )
+				iSnapY = ( Math.floor( ( style.mvBoundaryBottom - offsetHeight ) / style.mvGridRows ) ) * style.mvGridRows;
+            
+            iNewY = iSnapY;
+        }
+        else if ( style.mvBoundaryTop != null && iNewY < style.mvBoundaryTop )
+        {
+            iNewY = style.mvBoundaryTop;
+        }
+        else if ( style.mvBoundaryBottom != null && iNewY > style.mvBoundaryBottom - offsetHeight )
+        {
+            iNewY = style.mvBoundaryBottom - offsetHeight;
+        }
+    
+        // Put the piece in it's (possibly adjusted) position
+        style.top = iNewY;
+    }
+};
+
+/**
+ * @access public
+ */
+function DoMouseDown()
+{
+    //  If the piece is not movable, don't allow it to be moved
+    if ( movable == false || movable == "false" )
+		return true;
+
+    //  Capture the mouse
+    setCapture();
+
+	iOffsetX = window.event.x - element.style.pixelLeft;
+	iOffsetY = window.event.y - element.style.pixelTop;
+
+    //  Start tracking the mousemove
+	attachEvent( "onmousemove", DoMouseMove );
+	dragstart.fire();
+};
+
+/**
+ * @access public
+ */
+function DoMouseMove()
+{
+	if ( direction != "vertical" ) 
+	{
+	    // Set position based on mouse movement
+	    var iNewX = window.event.x - iOffsetX;
+    
+        // Obey left boundary
+	    if ( style.mvBoundaryLeft != null && iNewX < style.mvBoundaryLeft )
+			iNewX = style.mvBoundaryLeft;
+	    
+	    // Obey right boundary
+	    if ( style.mvBoundaryRight != null && iNewX > style.mvBoundaryRight - offsetWidth )
+			iNewX = style.mvBoundaryRight - offsetWidth;
+
+        // Place element
+	    style.left = iNewX;
+	}
+
+	if ( direction != "horizontal" )
+	{
+	    // Set position based on mouse movement
+	    var iNewY = window.event.y - iOffsetY;
+	    
+	    // Obey top boundary
+	    if ( style.mvBoundaryTop != null && iNewY < style.mvBoundaryTop )
+			iNewY = style.mvBoundaryTop;
+	    
+	    // Obey bottom boundary
+	    if ( style.mvBoundaryBottom != null && iNewY > style.mvBoundaryBottom - offsetHeight )
+			iNewY = style.mvBoundaryBottom - offsetHeight;
+	    
+	    //  Place element
+	    style.top = iNewY;
+	}
+	
+	drag.fire();
+};
+
+/**
+ * @access public
+ */
+function DoMouseUp()
+{
+    // Return the zIndex to its previous value
+	style.zIndex = normZindex;
+
+    // Stop tracking the onmousemove event
+	detachEvent ("onmousemove", DoMouseMove);
+	
+	// Release the mouse
+	releaseCapture();
+
+    // If it's snapable, snap it now
+	if ( snapable == "true" || snapable == true )
+		snapToGrid();
+
+    window.event.srcElement.click();
+	dragend.fire();
+};
+
+/**
+ * @access public
+ */
+function DoSelect()
+{
+    if ( selectable != "true" && selectable != true )
+		window.event.returnValue = false;
+};
+
+/**
+ * @access public
+ */
+function ReturnError( sMsg )
+{
+    var oEvent = createEventObject();
+    oEvent.setAttribute( "error", sMsg );
+    error.fire( oEvent );
+};
+
+</script>

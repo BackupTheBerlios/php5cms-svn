@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <!DOCTYPE phrasebook [
+ <!ELEMENT phrasebook (dictionary)*>
+ <!ELEMENT dictionary (phrase)*>
+ <!ATTLIST dictionary name CDATA #REQUIRED>
+ <!ELEMENT phrase (#PCDATA)>
+ <!ATTLIST phrase name CDATA #REQUIRED>
+ ]>
+
+ <phrasebook>
+  <dictionary name="EN">
+   <phrase name="MISUSE_OF_MANUAL_TEMPLATE_NAME">
+     The name $name can be used only as manual template
+   </phrase>
+   ...
+  </dictionary>
+  <dictionary name="NL">
+   <phrase name="MISUSE_OF_MANUAL_TEMPLATE_NAME">
+    De naam $name mag enkle gebriuk worden als webboek template
+   </phrase>
+   ...
+  </dictionary> 
+ </phrasebook>

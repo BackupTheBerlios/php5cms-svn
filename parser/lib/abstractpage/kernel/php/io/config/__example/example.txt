@@ -1,0 +1,21 @@
+section =	{
+	name	=	my sectionname
+	page	=	{
+		id 		=	10
+		title 	=	This is my testpage
+		css 	=	{
+			background-color =	#ffffff
+			font =	{
+				family	=	{
+					default		=	Verdana
+					alternative	=	Arial
+				}
+				size	=	12px
+			}
+			font.weight = bolder
+			color 	=	#000000
+			padding =	0px 0px 0px 0px
+		}
+	}
+	page.header	=	this is my header
+}

@@ -1,0 +1,202 @@
+<!--
++----------------------------------------------------------------------+
+|This program is free software; you can redistribute it and/or modify  |
+|it under the terms of the GNU General Public License as published by  |
+|the Free Software Foundation; either version 2 of the License, or     |
+|(at your option) any later version.                                   |
+|                                                                      |
+|This program is distributed in the hope that it will be useful,       |
+|but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+|MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the          |
+|GNU General Public License for more details.                          |
+|                                                                      |
+|You should have received a copy of the GNU General Public License     |
+|along with this program; if not, write to the Free Software           |
+|Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.             |
++----------------------------------------------------------------------+
+|Authors: Markus Nix <mnix@docuverse.de>                               |
++----------------------------------------------------------------------+
+-->
+
+
+<html xmlns:ie>
+<?import namespace=ie implementation="../js/behaviours/colorbuttons.htc" />
+
+<head>
+
+<public:component tagName="colorOptions">
+	<public:attach event="oncontentready" onevent="_createPopUp()" />
+	<public:method name="showPopUp" />
+	<public:property name="selectedColor" put="setColor" get="returnColor" />
+	<public:event name="oncolorSelected" id="updtId" />
+</public:component>
+
+<body>
+
+<div id="dispColor" style="font-size:0;height:50;width:70;background-color:#dfdfdf;border:1 solid black;padding:2">
+	<span style="padding:2;border:0 outset black;height:20;width:20"></span>
+	<span style="padding:2;border:0 outset black;height:20;width:20"></span>
+	<span style="padding:2;border:0 outset black;height:20;width:20"></span>
+	<span style="padding:2;border:0 outset black;height:20;width:20"></span>
+	<span style="padding:2;border:0 outset black;height:20;width:20"></span>
+	<span style="padding:2;border:0 outset black;height:20;width:20"></span>
+</div>
+
+</body>
+
+<script language="JavaScript">
+
+/**
+ * @access public
+ */
+var colorSrc;
+
+/**
+ * @access public
+ */
+var selColor = "";
+
+/**
+ * @access public
+ */
+var s = null;
+
+/**
+ * @access public
+ */
+var popUp = null;
+
+/**
+ * @access public
+ */
+var popup_body = null;
+
+/**
+ * @access public
+ */
+var iWidth = 0;
+
+/**
+ * @access public
+ */
+var iHeight = 0;
+
+/**
+ * @access public
+ */
+var ix = 0;
+
+/**
+ * @access public
+ */
+var iy = 0;
+
+/**
+ * @access public
+ */
+var disp_children = null;
+
+/**
+ * @access public
+ */
+var bgColor = new Array();
+
+/**
+ * @access public
+ */
+var szColorBehInit = "<?import namespace=ie implementation=../js/behaviours/colorbuttons.htc declareNamespace" + "/>";
+	szColorBehInit += "<ie:colorButton style='" + "background-color:";
+
+/**
+ * @access public
+ */
+var szColorBehEnd = "'></" + "ie:colorButton>";
+
+
+/**
+ * @access public
+ */
+function showTip( oObj )
+{
+	s = event.srcElement;
+	s.title = s.style.backgroundColor;
+};
+
+/**
+ * @access public
+ */
+function showPopUp()
+{
+	popUp = window.createPopup();
+	popup_body = popUp.document.body;
+	popup_body.innerHTML = dispColor.outerHTML;
+	disp_children = popup_body.children[0];
+	
+	for ( var i = 0; i < disp_children.children.length; i++ )
+	{
+		disp_children.children[i].onclick = hidePopup;
+		disp_children.children[i].innerHTML = szColorBehInit + bgColor[i] + szColorBehEnd;
+	}
+	
+	iWidth  = parseInt( dispColor.style.width  );
+	iHeight = parseInt( dispColor.style.height );
+	
+	ix = 2;
+	iy = parseInt( element.parentElement.offsetHeight );
+
+	popUp.show( ix, iy, iWidth, iHeight, element.parentElement );
+};
+
+/**
+ * @access public
+ */
+function hidePopup()
+{
+	popUp.hide();
+	window.status = popUp.document.parentWindow.event.srcElement.tagName;
+	colorSrc = popUp.document.parentWindow.event.srcElement;
+	
+	if ( colorSrc.tagName == "colorButton")
+	{
+		window.status = colorSrc.style.backgroundColor;
+		selColor = colorSrc.style.backgroundColor;
+	}
+	
+	updtId.fire();
+};
+
+/**
+ * @access public
+ */
+function setColor( oValue )
+{
+	selColor = oValue;
+};
+
+/**
+ * @access public
+ */
+function returnColor()
+{
+	return selColor;
+};
+
+/**
+ * @access private
+ */
+function _createPopUp()
+{
+	bgColor[0] = "Black";
+	bgColor[1] = "White";
+	bgColor[2] = "Red";
+	bgColor[3] = "Blue";
+	bgColor[4] = "Green";
+	bgColor[5] = "Yellow";
+	bgColor[6] = "Cyan";
+	bgColor[7] = "Lime";	
+};
+
+</script>
+
+</head>
+</html>

@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+
+<tag name="LAYER"endtag="yes">
+	<tagformat nlbeforetag="1" nlbeforecontents="0" nlaftercontents="0" nlaftertag="1"/>
+	
+	<attributes>
+		<attrib name="NAME"/>
+		<attrib name="LEFT"/>
+		<attrib name="TOP"/>
+		<attrib name="PAGEX"/>
+		<attrib name="PAGEY"/>
+		<attrib name="ABOVE"/>
+		<attrib name="BELOW"/>
+		<attrib name="Z-INDEX"/>
+		<attrib name="WIDTH"/>
+		<attrib name="HEIGHT"/>
+	
+		<attrib name="VISIBILITY" type="Enumerated">
+			<opt value="inherit" caption="inherit (default)"/>
+			<opt value="show" caption="show"/>
+			<opt value="hide" caption="hide"/>
+		</attrib>
+	
+		<attrib name="CLIP"/>
+		<attrib name="BGCOLOR" type="Color"/>
+		<attrib name="BACKGROUND" type="Relativepath"/>
+		<attrib name="SRC" type="Relativepath"/>
+		<attrib name="onFocus" casesensitive="yes"/>
+		<attrib name="onBlur" casesensitive="yes"/>
+		<attrib name="onLoad" casesensitive="yes"/>
+		<attrib name="onMouseOver" casesensitive="yes"/>
+		<attrib name="onMouseOut" casesensitive="yes"/>
+
+		<evt name="onFocus"/>
+		<evt name="onBlur"/>
+		<evt name="onLoad"/>
+		<evt name="onMouseOver"/>
+		<evt name="onMouseOut"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

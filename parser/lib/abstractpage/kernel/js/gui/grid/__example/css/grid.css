@@ -1,0 +1,26 @@
+BODY, SPAN, P, TD 
+{ 
+	font-family: 		Verdana;
+	font-size: 			11px; 
+	cursor: 			default; 
+}
+
+.hierarchical-grid-header
+{
+	background-color: 	white;
+	border-color:		#999999;
+	border-width:		1px;
+	border-style:		none;
+	border-collapse:	collapse;
+	z-index: 			100;
+}
+	
+
+.hierarchical-grid-somevalue
+{
+	position: 			absolute;
+	left: 				16px; 
+	top: 				8px
+	font-weight:		bold;
+	z-index: 			1000;
+}
