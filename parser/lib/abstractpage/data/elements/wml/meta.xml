@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+
+<tag name="meta" endtag="no" casesensitive="yes">
+	<tagformat nlbeforetag="1" nlaftertag="1"/>
+
+  	<attributes>
+    	<attrib name="http_equiv" TYPE="Enumerated" casesensitive="yes">
+      		<opt VALUE="cache-control" caption="cache-control"/>
+		</attrib>
+    
+		<attrib name="name" TYPE="Enumerated" casesensitive="yes">
+      		<opt VALUE="vnd.up.markable" caption="vnd.up.markable"/>
+      		<opt VALUE="vnd.up.bookmark" caption="vnd.up.bookmark"/>
+		</attrib>
+    
+		<attrib name="content" TYPE="Enumerated" casesensitive="yes">
+      		<opt VALUE="max-age=" caption="max-age="/>
+      		<opt VALUE="must-revalidate" caption="must-revalidate"/>
+      		<opt VALUE="no-cache" caption="no-cache"/>
+      		<opt VALUE="true" caption="true"/>
+      		<opt VALUE="false" caption="false"/>
+		</attrib>
+    
+		<attrib name="scheme" casesensitive="yes"/>
+    
+		<attrib name="forua" TYPE="Enumerated" casesensitive="yes">
+      		<opt VALUE="true" caption="true"/>
+      		<opt VALUE="false" caption="false"/>
+		</attrib>
+    
+		<attrib name="id" casesensitive="yes"/>
+    	<attrib name="class" casesensitive="yes"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

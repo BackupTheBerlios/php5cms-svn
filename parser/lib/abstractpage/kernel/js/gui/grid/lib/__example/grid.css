@@ -1,0 +1,173 @@
+.grid
+{
+	border-width: 		1px;
+	border-style: 		solid;
+	border-color: 		threedshadow threedhighlight threedhighlight threedshadow;
+	width: 				100%;
+	height:	 			100%;
+	overflow: 			hidden;
+}
+.gridMainCorner 
+{
+	position: 			absolute;
+	top: 				0px;
+	left:	 			0px;
+	width: 				35px;
+	height: 			16px;
+	overflow: 			hidden;
+	background: 		buttonface;
+	border-width: 		1px;
+	border-style: 		solid;
+	border-color: 		threedhighlight threedshadow threedshadow threedhighlight;
+	cursor: 			hand;
+	font: 				menu;
+}
+.gridMainCorner nobr 
+{
+	width: 				100%;
+	text-align: 		right;
+}
+.gridMainCorner span 
+{
+	position: 			absolute;
+	top: 				1px;
+	left: 				0px;
+	margin-left: 		5px;
+	font-family: 		Marlett;
+}
+.gridMainHeader 
+{
+	height: 			16px;
+	overflow: 			hidden;
+	background: 		buttonface;
+	position: 			absolute;
+	top: 				0px;
+	left: 				0px;
+}
+.gridMainHeader span 
+{
+	margin-left: 		5px;
+	font-family: 		Marlett;
+}
+.gridMainIdCol 
+{
+	width: 				35px;
+	overflow: 			hidden;
+	background: 		buttonface;
+	position: 			absolute;
+	top: 				0px;
+	left: 				0px;
+}
+.gridMain 
+{
+	width: 				100%;
+	height: 			100%;
+	background: 		buttonface;
+	overflow: 			scroll;
+	scrollbar-3dlight-color: threedhighlight;
+	scrollbar-darkshadow-color: threedshadow;
+	scrollbar-highlight-color: buttonface;
+	scrollbar-shadow-color: buttonface;
+	padding: 			14px 0px 0px 34px;
+}
+.gridMain table, 
+.gridMainHeader table, 
+.gridMainIdCol table 
+{
+	table-layout: 		fixed;
+	width: 				100%;
+	empty-cells: 		show;
+}
+.gridMain table 
+{
+	border-width: 		1px;
+	border-style: 		solid;
+	border-color: 		threedhighlight threedshadow threedshadow threedhighlight;
+	border-collapse: 	collapse;
+	background: 		window;
+}
+.gridMain table td, 
+.gridMainHeader table td, 
+.gridMainIdCol table td 
+{
+	font: 				menu;
+	empty-cells: 		show;
+	white-space: 		nowrap;
+	overflow: 			hidden;
+}
+.gridMain table td 
+{
+	border-style: 		solid;
+	border-color: 		threedshadow;
+	border-width: 		1px 1px 0px 0px;
+	height: 			16px;
+	white-space: 		nowrap;
+	padding: 			1px;
+}
+.gridMain table td span 
+{
+	display: 			block;
+	width: 				100%;
+	height:	 			100%;
+	white-space: 		nowrap;
+	overflow: 			hidden;
+	text-overflow: 		ellipsis;
+	font: 				menu;
+	cursor: 			hand;
+	padding: 			0px;
+	border: 			0px;
+}
+.gridMain table tr.odd td 
+{
+	background: 		infobackground;
+}
+.gridMain table tr.even td 
+{
+	background: 		window;
+}
+.gridMain table tr.selected td 
+{
+	border-style: 		solid;
+	border-color: 		threedshadow;
+	border-width: 		1px 1px 0px 0px;
+	background:   		#A9B2CA;
+	color: 				windowtext;
+	padding: 			0px;
+}
+.gridMain table tr.selected td span 
+{
+  border-style: 		solid;
+  border-color: 		window;
+  border-width: 		1px 0px 1px 0px;
+  padding: 				0px 1px 0px 1px;
+}
+.gridMain table tr.selected td.selected 
+{
+}
+.gridMainHeader table td, 
+.gridMainIdCol table td 
+{
+	border-width: 		1px;
+	border-style: 		solid;
+	border-color: 		buttonhighlight buttonshadow buttonshadow buttonhighlight;
+}
+.gridMainHeader table td 
+{
+	height: 			16px;
+	cursor: 			hand;
+}
+.gridMainIdCol table td 
+{
+	height: 			16px;
+	padding:	 		0px 0px 2px 2px;
+	text-align: 		right;
+}
+.gridBox 
+{
+	position: 			absolute;
+	top: 				0px;
+	left: 				0px;
+	font: 				menu;
+	border: 			0px;
+	display: 			none;
+}

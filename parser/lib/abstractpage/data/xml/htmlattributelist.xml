@@ -1,0 +1,182 @@
+<?xml version = "1.0" ?>
+
+<!DOCTYPE htmlattributelist [
+	<!ELEMENT htmlattributelist (attdef*)>
+    <!ELEMENT attdef            (values,attribute)>
+    <!ELEMENT values            (#PCDATA)>
+    <!ELEMENT attribute         (#PCDATA)>
+]>
+
+<htmlattributelist>
+
+	<attdef>
+		<values>virtual,physical,off</values>
+		<attribute>wrap</attribute>
+	</attdef>
+
+	<attdef>
+		<values>col,row,colgroup,rowgroup</values>
+		<attribute>scope</attribute>
+	</attdef>
+
+	<attdef>
+		<values>none,rows,cols,groups,all</values>
+		<attribute>tablerules</attribute>
+	</attdef>
+
+	<attdef>
+		<values>box,border,void,above,below,hsides,vsides,lhs,rhs</values>
+		<attribute>tableframe</attribute>
+	</attdef>
+
+	<attdef>
+		<values>vertical,horizontal,block</values>
+		<attribute>spacer</attribute>
+	</attdef>
+
+	<attdef>
+		<values>JavaScript,VBScript,JScript,JavaScript1&#x2E;2</values>
+		<attribute>scriptlang</attribute>
+	</attdef>
+
+	<attdef>
+		<values>text&#x2F;css,text&#x2F;javascript</values>
+		<attribute>csslang</attribute>
+	</attdef>
+
+	<attdef>
+		<values>contents,chapter,section,subsection,index,glossary,appendix,copyright,next,prev,start,help,bookmark,stylesheet,alternate,fontdef</values>
+		<attribute>relation</attribute>
+	</attdef>
+
+	<attdef>
+		<values>rtl,ltr</values>
+		<attribute>rtlltr</attribute>
+	</attdef>
+
+	<attdef>
+		<values>de,en,es,fr,it</values>
+		<attribute>language</attribute>
+	</attdef>
+
+	<attdef>
+		<values>show,hide</values>
+		<attribute>visibility</attribute>
+	</attdef>
+
+	<attdef>
+		<values>GET,POST</values>
+		<attribute>formmethod</attribute>
+	</attdef>
+
+	<attdef>
+		<values>foreground,background</values>
+		<attribute>palette</attribute>
+	</attdef>
+
+	<attdef>
+		<values>pixels,en</values>
+		<attribute>units</attribute>
+	</attdef>
+
+	<attdef>
+		<values>true,false</values>
+		<attribute>boolean</attribute>
+	</attdef>
+
+	<attdef>
+		<values>yes,no</values>
+		<attribute>yesno</attribute>
+	</attdef>
+
+	<attdef>
+		<values>yes,no,auto</values>
+		<attribute>yesnoauto</attribute>
+	</attdef>
+
+	<attdef>
+		<values>left,right,center</values>
+		<attribute>halign</attribute>
+	</attdef>
+
+	<attdef>
+		<values>left,right,center,char</values>
+		<attribute>colalign</attribute>
+	</attdef>
+
+	<attdef>
+		<values>top,bottom,middle,baseline</values>
+		<attribute>valign</attribute>
+	</attdef>
+
+	<attdef>
+		<values>left,right,top,bottom,middle</values>
+		<attribute>imgalign</attribute>
+	</attdef>
+
+	<attdef>
+		<values>all,left,right</values>
+		<attribute>clear</attribute>
+	</attdef>
+
+	<attdef>
+		<values>fixed</values>
+		<attribute>bgprop</attribute>
+	</attdef>
+
+	<attdef>
+		<values>&#x5F;top,&#x5F;blank,&#x5F;parent,&#x5F;self</values>
+		<attribute>target</attribute>
+	</attdef>
+
+	<attdef>
+		<values>application&#x2F;acad,application&#x2F;dxf,application&#x2F;mif,application&#x2F;msword,application&#x2F;mspowerpoint,application&#x2F;msexcel,application&#x2F;mshelp,application&#x2F;octet-stream,application&#x2F;pdf,application&#x2F;postscript,application&#x2F;rtf,application&#x2F;x-sh,application&#x2F;x-csh,application&#x2F;x-latex,application&#x2F;x-mif,application&#x2F;x-tar,application&#x2F;x-cpio,application&#x2F;x-bcpio,application&#x2F;x-sv4cpio,application&#x2F;x-sv4crc,application&#x2F;x-hdf,application&#x2F;x-ustar,application&#x2F;x-shar,application&#x2F;x-tcl,application&#x2F;x-dvi,application&#x2F;x-texinfo,application&#x2F;x-troff,application&#x2F;x-troff-man,application&#x2F;x-troff-me,application&#x2F;x-troff-ms,application&#x2F;x-netcdf,application&#x2F;x-wais-source,application&#x2F;x-www-form-urlencoded,audio&#x2F;basic,audio&#x2F;x-aiff,audio&#x2F;x-dspeeh,audio&#x2F;x-midi,audio&#x2F;x-pn-realaudio,audio&#x2F;x-pn-realaudio-plugin,image&#x2F;cmu-raster,image&#x2F;x-freehand,image&#x2F;gif,image&#x2F;ief,image&#x2F;jpeg,image&#x2F;x-portable-anymap,image&#x2F;x-portable-bitmap,image&#x2F;x-portable-graymap,image&#x2F;x-portable-pixmap,image&#x2F;x-rgb,image&#x2F;x-windowdump,image&#x2F;tiff,text&#x2F;css,text&#x2F;html,text&#x2F;javascript,text&#x2F;plain,text&#x2F;richtext,text&#x2F;tab-separated-values,text&#x2F;x-setext,text&#x2F;x-sgml,video&#x2F;mpeg,video&#x2F;quicktime,video&#x2F;x-msvideo,video&#x2F;x-sgi-movie,x-world&#x2F;x-vrml</values>
+		<attribute>mimetype</attribute>
+	</attdef>
+
+	<attdef>
+		<values>author,description,keywords,date,robots,generator,revisit-after</values>
+		<attribute>metalist</attribute>
+	</attdef>
+
+	<attdef>
+		<values>content-type,content-language,Content-Script-Type,Content-Style-Type,expires,refresh,pragma,ext-cache,revisit-after</values>
+		<attribute>advmetalist</attribute>
+	</attdef>
+
+	<attdef>
+		<values>a,A,I,i,1</values>
+		<attribute>oltype</attribute>
+	</attdef>
+
+	<attdef>
+		<values>circle,square,disk</values>
+		<attribute>ultype</attribute>
+	</attdef>
+
+	<attdef>
+		<values>circle,rect,polygon</values>
+		<attribute>shape</attribute>
+	</attdef>
+
+	<attdef>
+		<values>left,right</values>
+		<attribute>leftright</attribute>
+	</attdef>
+
+	<attdef>
+		<values>alternate</values>
+		<attribute>behavior</attribute>
+	</attdef>
+
+	<attdef>
+		<values>submit,reset,password,text,file,hidden,button,checkbox,image,radio</values>
+		<attribute>inputtype</attribute>
+	</attdef>
+
+	<attdef>
+		<values>true,false</values>
+		<attribute>truefalse</attribute>
+	</attdef>
+
+</htmlattributelist>

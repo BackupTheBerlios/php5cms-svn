@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+
+<title>Menu Example</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- using doc write to read query string
+<link type="text/css" rel="StyleSheet" href="css/officexp/officexp.css" />
+-->
+
+<style type="text/css">
+
+body
+{
+	background:	ThreeDFace;
+	border: 0;
+	margin:	0;
+	overflow: hidden;
+}
+html
+{
+	border:	0;
+	overflow: hidden;
+}
+a
+{
+	color: blue;
+}
+textarea
+{
+	margin:	10px;
+	display: block;
+	width: auto;
+}
+p
+{
+	font: Message-Box;
+	font: MessageBox;
+	margin:	10px;
+}
+
+.menu-bar
+{
+	border-bottom:	2px groove;
+}
+
+</style>
+
+<script language="JavaScript" src="../../../../../../prepend.js"></script>
+
+<script language="JavaScript">
+
+set_library_path( '../../../../../../kernel/js/' );
+using( 'util.PosLib' );
+using( 'gui.button.ScrollButton' );
+using( 'gui.menu.lib.Menu' );
+using( 'gui.menu.lib.MenuBar' );
+using( 'gui.menu.lib.MenuItem' );
+using( 'gui.menu.lib.MenuBar_button' );
+using( 'gui.menu.lib.MenuCollection' );
+using( 'gui.menu.lib.MenuItem_checkbox' );
+using( 'gui.menu.lib.MenuItem_info' );
+using( 'gui.menu.lib.MenuItem_infoseparator' );
+using( 'gui.menu.lib.MenuItem_pane' );
+using( 'gui.menu.lib.MenuItem_radiobutton' );
+using( 'gui.menu.lib.MenuItem_separator' );
+using( 'gui.menu.lib.MenuLoadHelper' );
+using( 'gui.menu.lib.MenuPane' );
+
+</script>
+
+<script language="JavaScript">
+
+var cssFile = getQueryString( "css" );
+
+if ( cssFile == "" )
+	cssFile = "css/winclassic.css";
+
+Menu.prototype.cssFile = cssFile;
+	
+	
+function getQueryString( sProp )
+{
+	var re = new RegExp( sProp + "=([^\\&]*)", "i" );
+	var a  = re.exec( document.location.search );
+	
+	if ( a == null )
+		return "";
+	
+	return a[1];
+}
+function changeCssFile( sCssFile )
+{
+	var loc = String(document.location);
+	var search = document.location.search;
+	
+	if ( search != "" )
+		loc = loc.replace( search, "" );
+	
+	loc = loc + "?css=" + sCssFile;
+	document.location.replace( loc );
+}
+
+document.write("<link type=\"text/css\" rel=\"StyleSheet\" href=\"" + cssFile + "\" />" );
+
+</script>
+
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+var tmp;
+var m = new Menu();
+
+for ( var y = 0; y < 100; y++ )
+{
+	m.add( tmp = new MenuItem( "Menu Item " + y, null, "img/paste.png" ) );
+
+	if ( ( y + 1 ) % 20 == 0 )
+		tmp.disabled = true;
+}
+
+
+var mb = new MenuBar;
+mb.add( new MenuBar_button( "Menu", m ) );
+
+mb.write();
+
+</script>
+
+<p><a href="#" onclick="window.open(window.document.location,'','toolbar=0,resizable=1,width=270,height=170'); return false">New Win</a></p>
+<p>Use <b>Esc</b> for keyboard navigation of the menu</p>
+
+<p>
+<select id="cssSelect">
+	<option value="css/winclassic.css">Windows Classic</option>
+	<option value="css/winxp.css">Windows XP</option>
+	<option value="css/office.css">Office</option>
+	<option value="css/officexp/officexp.css">Office XP</option>
+	<option value="css/qnx/qnx.css">QNX</option>
+</select>&nbsp;
+<button onclick="changeCssFile( document.getElementById('cssSelect').value )">Change</button>
+</p>
+
+<textarea ID="Textarea1">Textarea to test focus</textarea>
+
+</body>
+</html>

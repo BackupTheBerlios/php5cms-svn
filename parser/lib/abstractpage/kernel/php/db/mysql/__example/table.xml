@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<database name="there19" if_not_exists="yes">
+	<table name="xmltest" if_not_exists="yes" options="TYPE=ISAM">
+		<field name="p_key" type="int" size="10" null="no" default="0" extra="AUTO_INCREMENT" />
+		<field name="name" type="char" size="10" null="no" />
+		<field name="surname" type="char" size="10" null="no" />
+		
+		<key type="primary" field="p_key" />
+		<key type="unique" field="surname" name="idx_surname" />
+		<key type="index" field="name" name="idx_name" />
+	</table>
+</database>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+<title>CollapsablePanel Example</title>
+
+<link href="css/collapsiblepanel.css" type="text/css" rel="stylesheet">
+
+<script language="JavaScript" src="../../../../../prepend.js"></script>
+
+<script language="JavaScript">
+
+set_library_path( '../../../../../kernel/js/' );
+using( 'gui.panel.CollapsiblePanelGroup' );
+using( 'gui.panel.CollapsiblePanel' );
+
+</script>
+
+</head>
+
+<body bgcolor="#BFC2D1">
+
+<script language="JavaScript">
+
+var cg = new CollapsiblePanelGroup();
+
+var cp1 = new CollapsiblePanel( "System Tasks", true );
+cp1.addItem( "View system information", function() 
+{ 
+	alert( 'View system information' ) 
+}, "img/xp_check.gif" );
+cp1.addItem( "Add or remove programs", function() 
+{ 
+	alert( 'Add or remove programs' ) 
+}, "img/xp_programs.gif" );
+cp1.addItem( "Change a setting", function() 
+{ 
+	alert( 'Change a setting' ) 
+}, "img/xp_setting.gif" );
+cp1.addItem( "Delete Windows", function() 
+{ 
+	alert( 'Delete Windows' ) 
+} );
+
+var cp2 = new CollapsiblePanel( "User Management", false );
+cp2.addItem( "Add User", function() 
+{ 
+	alert( 'Add User' ) 
+} );
+cp2.addItem( "Remove User", function() 
+{ 
+	alert( 'Remove User' ) 
+} );
+
+var cp3 = new CollapsiblePanel( "Applications", true );
+cp3.addItem( "View system information", function() 
+{ 
+	alert( 'View system information' ) 
+}, "img/xp_check.gif" );
+cp3.addItem( "Add or remove programs", function() 
+{ 
+	alert( 'Add or remove programs' ) 
+}, "img/xp_programs.gif" );
+cp3.addItem( "Change a setting", function() 
+{ 
+	alert( 'Change a setting' ) 
+}, "img/xp_setting.gif" );
+cp3.addItem( "Delete Windows", function() 
+{ 
+	alert( 'Delete Windows' ) 
+} );
+
+cg.addPanel( cp1 );
+cg.addPanel( cp2 );
+cg.addPanel( cp3 );
+
+document.write( cg.toHTML() );
+cg.init();
+
+</script>
+
+<div style="position:absolute; left: 300px; top: 16px;">
+	<button onclick="alert(cp1.isExpanded())">no 1 expanded?</button><br><br>
+	<button onclick="alert(cp1.isCollapsed())">no 1 collapsed?</button><br><br>
+	<button onclick="cp1.expand()">no 1 - expand</button><br><br>
+	<button onclick="cp1.collapse()">no 1 - collapse</button><br><br>
+	<button onclick="cg.toggleAll()">toggle all</button><br><br>
+	<button onclick="cg.expandAll()">expand all</button><br><br>
+	<button onclick="cg.collapseAll()">collapse all</button><br><br>
+</div>
+
+</body>
+</html>

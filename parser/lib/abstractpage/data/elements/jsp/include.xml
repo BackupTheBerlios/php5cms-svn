@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+
+<tag name="include" casesensitive="yes" endtag="no">
+	<tagformat nlbeforetag="1" nlaftertag="1"/>
+  
+  	<attributes>
+    	<attrib name="page" type="RELATIVEPATH" casesensitive="yes">    <attrib name="flush" type="ENUMERATED" casesensitive="yes">
+      		<opt value="true"/>
+      		<opt value="false"/>
+    	</attrib>
+  	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

@@ -1,0 +1,35 @@
+<html>
+<body>
+
+<h3>Form to generate a key</h3>
+
+<pre>
+To make an local test, you need to generate a minimum of 2 keys.
+
+Click in Gen Key, at menu, fill the form and click in the gen_key button. (wait to gen the key).
+
+The key geration is a slow process (principaly if this is on a remot server), dont worry.
+wait the complet key geration. After, the confirmation, make this process again with one other key different.
+
+If all its ok, its all ok! :-)
+
+If you need to see what keys are in your keyring, click in the List Key (in the menu) and anter the email.
+This will show an table with the all keys in the keyring.
+
+etc, etc, etc...
+</pre>
+
+<form action="process.php" method="post">
+<table border=1>
+	<tr><td>Name:</td><td><input type="text" name="userName"></td></tr>
+	<tr><td>Comment:</td><td><input type="text" name="comment"></td></tr>
+	<tr><td>Email:</td><td> <input type="text" name="userEmail"></td></tr>
+	<tr><td>Passphrase:</td><td><input type="text" name="passphrase"></td></tr>
+	<tr><td colspan=2><input type="submit" name="action" value="gen_key"></td></tr>
+</table>
+</form>
+
+<pre>* All the fields are obligatory, except the comment field.</pre>
+
+</body>
+</html>

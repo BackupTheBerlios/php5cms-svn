@@ -1,0 +1,125 @@
+<!--
++----------------------------------------------------------------------+
+|This program is free software; you can redistribute it and/or modify  |
+|it under the terms of the GNU General Public License as published by  |
+|the Free Software Foundation; either version 2 of the License, or     |
+|(at your option) any later version.                                   |
+|                                                                      |
+|This program is distributed in the hope that it will be useful,       |
+|but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+|MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the          |
+|GNU General Public License for more details.                          |
+|                                                                      |
+|You should have received a copy of the GNU General Public License     |
+|along with this program; if not, write to the Free Software           |
+|Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.             |
++----------------------------------------------------------------------+
+|Authors: Markus Nix <mnix@docuverse.de>                               |
++----------------------------------------------------------------------+
+-->
+
+
+<script language="JavaScript">
+
+/**
+ * @access public
+ */
+var cacheRollover;
+
+/**
+ * @access public
+ */
+var cacheClicked;
+
+/**
+ * @access public
+ */
+var originalsrc = element.src;
+
+/**
+ * @access public
+ */
+var state = "normal";
+
+
+if (element.hoversrc)
+{
+	cacheRollover = new Image();
+	cacheRollover.src = element.hoversrc;
+}
+
+if (element.pressedsrc)
+{
+  cacheClicked = new Image();
+  cacheClicked.src = element.pressedsrc;
+}
+
+
+/**
+ * @access public
+ */
+function fnOnMouseOver()
+{
+	state = "hover";
+	
+	if (element.hoversrc)
+		element.src = element.hoversrc;
+};
+
+/**
+ * @access public
+ */
+function fnOnMouseOut()
+{
+	state = "normal";
+	element.src = originalsrc;
+};
+
+/**
+ * @access public
+ */
+function fnOnMouseDown()
+{
+	state = "clicked";
+	
+	if ( element.pressedsrc )
+		element.src = element.pressedsrc;
+};
+
+/**
+ * @access public
+ */
+function fnOnMouseUp()
+{
+	state = "hover";
+
+	if ( element.hoversrc )
+		element.src = element.hoversrc;
+	else
+		element.src = originalsrc;
+};
+
+/**
+ * @access public
+ */
+function fnOnPropertyChange()
+{
+	if ( ( window.event.src == "pressedsrc") && ( state == "normal" ) )
+		originalsrc = element.src;
+	
+	if ( ( window.event.propertyName == "hoversrc" ) && ( state == "hover" ) )
+		element.src = element.hoversrc;
+	
+	if ( ( window.event.propertyName == "pressedsrc" ) && ( state == "clicked" ) )
+		element.src = element.pressedsrc;
+};
+
+
+/* Attach to mouse events and setup global variables */
+element.attachEvent( "onmouseover",      fnOnMouseOver );
+element.attachEvent( "onmouseout",       fnOnMouseOut  );
+element.attachEvent( "onmousedown",      fnOnMouseDown );
+element.attachEvent( "onmouseup",        fnOnMouseUp   );
+element.attachEvent( "onpropertychange", fnOnPropertyChange );
+
+</script>

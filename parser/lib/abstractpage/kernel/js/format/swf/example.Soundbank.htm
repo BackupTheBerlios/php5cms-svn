@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<title>Soundbank Example</title>
+
+<script language="JavaScript" src="../../../../prepend.js"></script>
+
+<script language="JavaScript">
+
+set_library_path( '../../../../kernel/js/' );
+using( 'util.Dictionary' );
+using( 'format.swf.Flash' );
+using( 'format.swf.Soundbank' );
+
+</script>
+
+<script language="JavaScript">
+
+var sound;
+
+Env.onLoad = function()
+{
+	sound = new Soundbank( "soundbank.swf" );
+}
+
+</script>
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<a href="#" onclick="javascript:sound.play('audiologo')">audiologo</a><br>
+<a href="#" onclick="javascript:sound.play('alert')">alert</a><br>
+<a href="#" onclick="javascript:sound.play('critical')">critical</a><br>
+<a href="#" onclick="javascript:sound.play('ding')">ding</a><br>
+<a href="#" onclick="javascript:sound.play('error')">error</a><br>
+<a href="#" onclick="javascript:sound.play('menu')">menu</a><br>
+<a href="#" onclick="javascript:sound.play('minimize')">minimize</a><br>
+<a href="#" onclick="javascript:sound.play('newmail')">newmail</a><br>
+<a href="#" onclick="javascript:sound.play('notify')">notify</a><br>
+<a href="#" onclick="javascript:sound.play('online')">online</a><br>
+<a href="#" onclick="javascript:sound.play('printed')">printed</a><br>
+<a href="#" onclick="javascript:sound.play('restore')">restore</a><br>
+<a href="#" onclick="javascript:sound.play('trash')">trash</a><br>
+
+</body>
+</html>

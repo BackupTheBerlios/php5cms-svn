@@ -1,0 +1,104 @@
+<!--
++----------------------------------------------------------------------+
+|This program is free software; you can redistribute it and/or modify  |
+|it under the terms of the GNU General Public License as published by  |
+|the Free Software Foundation; either version 2 of the License, or     |
+|(at your option) any later version.                                   |
+|                                                                      |
+|This program is distributed in the hope that it will be useful,       |
+|but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+|MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the          |
+|GNU General Public License for more details.                          |
+|                                                                      |
+|You should have received a copy of the GNU General Public License     |
+|along with this program; if not, write to the Free Software           |
+|Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.             |
++----------------------------------------------------------------------+
+|Authors: Markus Nix <mnix@docuverse.de>                               |
++----------------------------------------------------------------------+
+-->
+
+
+<public:component>
+<public:attach event="onpropertychange" onevent="propertyChanged()" />
+
+<script language="JavaScript">
+
+/**
+ * @access public
+ */
+var realSrc;
+
+/**
+ * @access public
+ */
+var supported = /MSIE (5\.5)|[6789]/.test( navigator.userAgent ) && navigator.platform == "Win32";
+
+/**
+ * @access public
+ */
+var blankSrc = "img/pngbehaviour/blank.gif";
+
+
+if ( supported )
+	fixImage();
+
+	
+/**
+ * @access public
+ */
+function propertyChanged()
+{
+	if ( !supported )
+		return;
+	
+	var pName = event.propertyName;
+
+	if ( pName != "src" )
+		return;
+	
+	// if not set to blank
+	if ( !new RegExp( blankSrc ).test( src ) )
+		fixImage();
+};
+
+/**
+ * @access public
+ */
+function fixImage()
+{
+	// get src
+	var src = element.src;
+
+	// check for real change
+	if ( src == realSrc )
+	{
+		element.src = blankSrc;
+		return;
+	}
+
+	if ( !new RegExp( blankSrc ).test( src ) )
+	{
+		// backup old src
+		realSrc = src;
+	}
+	
+	// test for png
+	if ( /\.png$/.test( realSrc.toLowerCase() ) )
+	{
+		// set blank image
+		element.src = blankSrc;
+		
+		// set filter
+		element.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + src + "',sizingMethod='scale')";
+	}
+	else
+	{
+		// remove filter
+		element.runtimeStyle.filter = "";
+	}
+};
+
+</script>
+
+</public:component>

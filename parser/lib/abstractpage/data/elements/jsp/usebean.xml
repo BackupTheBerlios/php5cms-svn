@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+
+<tag name="useBean" casesensitive="yes" endtag="no">
+	<tagformat nlbeforetag="1" nlbeforecontents="1" nlaftercontents="1" nlaftertag="1"/>
+  
+  	<attributes>
+    	<attrib name="id" type="TEXT" casesensitive="yes">
+		
+		<attrib name="scope" type="ENUMERATED" casesensitive="yes">
+      		<opt value="page"/>
+      		<opt value="request"/>
+      		<opt value="session"/>
+      		<opt value="application"/>
+    	</attrib>
+    
+		<attrib name="class" type="TEXT" casesensitive="yes">
+		<attrib name="type" type="TEXT" casesensitive="yes">
+		<attrib name="beanName" type="TEXT" casesensitive="yes">
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

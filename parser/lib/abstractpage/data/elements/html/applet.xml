@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+
+<tag name="APPLET" BIND="CODE" endtag="yes">
+	<tagformat nlbeforetag="1" nlbeforecontents="1" nlaftercontents="1" nlaftertag="1" indentcontents="yes"/>
+	
+	<attributes>
+		<attrib name="CODE" type="Filename"/>
+		<attrib name="CODEBASE" type="Filepath"/>
+		<attrib name="NAME"/>
+		<attrib name="ALT"/>
+		<attrib name="WIDTH"/>
+		<attrib name="HEIGHT"/>
+		<attrib name="HSPACE"/>
+		<attrib name="VSPACE"/>
+	
+		<attrib name="ALIGN" type="Enumerated">
+			<opt value="left" caption="left"/>
+			<opt value="right" caption="right"/>
+			<opt value="top" caption="top"/>
+			<opt value="middle" caption="middle"/>
+			<opt value="bottom" caption="bottom"/>
+			<opt value="texttop" caption="texttop (browser-specific)"/>
+			<opt value="absmiddle" caption="absmiddle (browser-specific)"/>
+			<opt value="baseline" caption="baseline (browser-specific)"/>
+			<opt value="absbottom" caption="absbottom (browser-specific)"/>
+		</attrib>
+	
+		<attrib name="CABBASE" type="Relativepath"/>
+		<attrib name="MAYSCRIPT"/>
+		<attrib name="ARCHIVE"/>
+		<attrib name="CLASS" type="cssStyle"/>
+		<attrib name="ID"/>
+		<attrib name="STYLE" type="Style"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

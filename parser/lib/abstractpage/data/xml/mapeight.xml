@@ -1,0 +1,176 @@
+<?xml version='1.0'?>
+
+<!-- unicode map8 aliases -->
+
+<mapeight>
+	<map name="ANSI_X3.110-1983" aliases="CSA_T500-1983 NAPLPS iso-ir-99"/>
+	<map name="ANSI_X3.4-1968" aliases="ANSI_X3.4-1986 ASCII IBM367 ISO646-US ISO_646.irv:1991 US-ASCII cp367 iso-ir-6 us"/>
+	<map name="ASMO_449" aliases="ISO_9036 arabic7 iso-ir-89"/>
+	<map name="Adobe-Standard" aliases="adobe-standard"/>
+	<map name="Adobe-Symbol" aliases="adobe-symbol"/>
+	<map name="Adobe-Zapf-Dingbats" aliases="adobe-zapf-dingbats"/>
+	<map name="BS_4730" aliases="ISO646-GB gb iso-ir-4 uk"/>
+	<map name="BS_viewdata" aliases="iso-ir-47"/>
+	<map name="CSA_Z243.4-1985-1" aliases="ISO646-CA ca csa7-1 iso-ir-121"/>
+	<map name="CSA_Z243.4-1985-2" aliases="ISO646-CA2 csa7-2 iso-ir-122"/>
+	<map name="CSA_Z243.4-1985-gr" aliases="iso-ir-123"/>
+	<map name="CSN_369103" aliases="iso-ir-139"/>
+	<map name="DEC-MCS" aliases="dec"/>
+	<map name="DIN_66003" aliases="ISO646-DE de iso-ir-21"/>
+	<map name="DS_2089" aliases="DS2089 ISO646-DK dk"/>
+	<map name="ECMA-cyrillic" aliases="iso-ir-111"/>
+	<map name="ES" aliases="ISO646-ES iso-ir-17"/>
+	<map name="ES2" aliases="ISO646-ES2 iso-ir-85"/>
+	<map name="GB_1988-80" aliases="ISO646-CN cn iso-ir-57"/>
+	<map name="GOST_19768-74" aliases="ST_SEV_358-88 iso-ir-153"/>
+	<map name="IBM037" aliases="cp037 ebcdic-cp-ca ebcdic-cp-nl ebcdic-cp-us ebcdic-cp-wt"/>
+	<map name="IBM038" aliases="EBCDIC-INT cp038"/>
+	<map name="IBM1026" aliases="CP1026"/>
+	<map name="IBM273" aliases="CP273"/>
+	<map name="IBM274" aliases="CP274 EBCDIC-BE"/>
+	<map name="IBM275" aliases="EBCDIC-BR cp275"/>
+	<map name="IBM277" aliases="EBCDIC-CP-DK EBCDIC-CP-NO"/>
+	<map name="IBM278" aliases="CP278 ebcdic-cp-fi ebcdic-cp-se"/>
+	<map name="IBM280" aliases="CP280 ebcdic-cp-it"/>
+	<map name="IBM281" aliases="EBCDIC-JP-E cp281"/>
+	<map name="IBM284" aliases="CP284 ebcdic-cp-es"/>
+	<map name="IBM285" aliases="CP285 ebcdic-cp-gb"/>
+	<map name="IBM290" aliases="EBCDIC-JP-kana cp290"/>
+	<map name="IBM297" aliases="cp297 ebcdic-cp-fr"/>
+	<map name="IBM420" aliases="cp420 ebcdic-cp-ar1"/>
+	<map name="IBM424" aliases="cp424 ebcdic-cp-he"/>
+	<map name="IBM437" aliases="437 cp437"/>
+	<map name="IBM500" aliases="CP500 ebcdic-cp-be ebcdic-cp-ch"/>
+	<map name="IBM850" aliases="850 cp850"/>
+	<map name="IBM851" aliases="851 cp851"/>
+	<map name="IBM852" aliases="852 cp852"/>
+	<map name="IBM855" aliases="855 cp855"/>
+	<map name="IBM857" aliases="857 cp857"/>
+	<map name="IBM860" aliases="860 cp860"/>
+	<map name="IBM861" aliases="861 cp-is cp861"/>
+	<map name="IBM862" aliases="862 cp862"/>
+	<map name="IBM863" aliases="863 cp863"/>
+	<map name="IBM864" aliases="cp864"/>
+	<map name="IBM865" aliases="865 cp865"/>
+	<map name="IBM868" aliases="CP868 cp-ar"/>
+	<map name="IBM869" aliases="869 cp-gr cp869"/>
+	<map name="IBM870" aliases="CP870 ebcdic-cp-roece ebcdic-cp-yu"/>
+	<map name="IBM871" aliases="CP871 ebcdic-cp-is"/>
+	<map name="IBM880" aliases="EBCDIC-Cyrillic cp880"/>
+	<map name="IBM891" aliases="cp891"/>
+	<map name="IBM903" aliases="cp903"/>
+	<map name="IBM904" aliases="904 cp904"/>
+	<map name="IBM905" aliases="CP905 ebcdic-cp-tr"/>
+	<map name="IBM918" aliases="CP918 ebcdic-cp-ar2"/>
+	<map name="IEC_P27-1" aliases="iso-ir-143"/>
+	<map name="INIS" aliases="iso-ir-49"/>
+	<map name="INIS-8" aliases="iso-ir-50"/>
+	<map name="INIS-cyrillic" aliases="iso-ir-51"/>
+	<map name="ISO_10367-box" aliases="iso-ir-155"/>
+	<map name="ISO_2033-1983" aliases="e13b iso-ir-98"/>
+	<map name="ISO_5427" aliases="ISO_5427:1981 iso-ir-37 iso-ir-54"/>
+	<map name="ISO_5428" aliases="ISO_5428:1980 iso-ir-55"/>
+	<map name="ISO_646.basic" aliases="ISO_646.basic:1983 ref"/>
+	<map name="ISO_646.irv" aliases="ISO_646.irv:1983 irv iso-ir-2"/>
+	<map name="ISO_6937-2-25" aliases="iso-ir-152"/>
+	<map name="ISO_6937-2-add" aliases="iso-ir-142"/>
+	<map name="ISO_8859-1" aliases="8859-1 CP819 IBM819 ISO-8859-1 ISO_8859-1:1987 iso-ir-100 iso8859-1 l1 latin1"/>
+	<map name="ISO_8859-2" aliases="8859-2 ISO-8859-2 ISO_8859-2:1987 iso-ir-101 iso8859-2 l2 latin2"/>
+	<map name="ISO_8859-3" aliases="8859-3 ISO-8859-3 ISO_8859-3:1988 iso-ir-109 iso8859-3 l3 latin3"/>
+	<map name="ISO_8859-4" aliases="8859-4 ISO-8859-4 ISO_8859-4:1988 iso-ir-110 iso8859-4 l4 latin4"/>
+	<map name="ISO_8859-5" aliases="8859-5 ISO-8859-5 ISO_8859-5:1988 cyrillic iso-ir-144 iso8859-5"/>
+	<map name="ISO_8859-6" aliases="8859-6 ASMO-708 ECMA-114 ISO-8859-6 ISO_8859-6:1987 arabic iso-ir-127 iso8859-6"/>
+	<map name="ISO_8859-6-i" aliases="ISO-8859-6-i"/>
+	<map name="ISO_8859-6-e" aliases="ISO-8859-6-e"/>
+	<map name="ISO_8859-7" aliases="8859-7 ECMA-118 ELOT_928 ISO-8859-7 ISO_8859-7:1987 greek greek8 iso-ir-126 iso8859-7"/>
+	<map name="ISO_8859-8" aliases="8859-8 ISO-8859-8 ISO_8859-8:1988 hebrew iso-ir-138 iso8859-8"/>
+	<map name="ISO_8859-8-i" aliases="ISO-8859-8-i"/>
+	<map name="ISO_8859-8-e" aliases="ISO-8859-8-e"/>
+	<map name="ISO_8859-9" aliases="8859-9 ISO-8859-9 ISO_8859-9:1989 iso-ir-148 iso8859-9 l5 latin5"/>
+	<map name="ISO-8859-10" aliases="8859-10 ISO_8859-10 ISO_8859-10:1993 iso8859-10 iso-ir-157 l6 latin6"/>
+	<map name="ISO_8859-13" aliases="8859-13 ISO-8859-13 ISO_8859-13:1998 iso8859-13 l7 latin7"/>
+	<map name="ISO-8859-14" aliases="8859-14 ISO_8859-14 ISO_8859-14:1998 iso8859-14 l8 latin8"/>
+	<map name="ISO_8859-15" aliases="8859-15 ISO-8859-15 iso8859-15 ISO_8859-15:1998 l9 latin9 l0 latin0"/>
+	<map name="ISO_8859-supp" aliases="iso-ir-154 latin1-2-5"/>
+	<map name="IT" aliases="ISO646-IT iso-ir-15"/>
+	<map name="JIS_C6220-1969-jp" aliases="JIS_C6220-1969 iso-ir-13 katakana x0201-7"/>
+	<map name="JIS_C6220-1969-ro" aliases="ISO646-JP iso-ir-14 jp"/>
+	<map name="JIS_C6229-1984-a" aliases="iso-ir-91 jp-ocr-a"/>
+	<map name="JIS_C6229-1984-b" aliases="ISO646-JP-OCR-B iso-ir-92 jp-ocr-b"/>
+	<map name="JIS_C6229-1984-b-add" aliases="iso-ir-93 jp-ocr-b-add"/>
+	<map name="JIS_C6229-1984-hand" aliases="iso-ir-94 jp-ocr-hand"/>
+	<map name="JIS_C6229-1984-hand-add" aliases="iso-ir-95 jp-ocr-hand-add"/>
+	<map name="JIS_C6229-1984-kana" aliases="iso-ir-96"/>
+	<map name="JIS_X0201" aliases="X0201"/>
+	<map name="JUS_I.B1.002" aliases="ISO646-YU iso-ir-141 js yu"/>
+	<map name="JUS_I.B1.003-mac" aliases="iso-ir-147 macedonian"/>
+	<map name="JUS_I.B1.003-serb" aliases="iso-ir-146 serbian"/>
+	<map name="KSC5636" aliases="ISO646-KR"/>
+	<map name="Latin-greek-1" aliases="iso-ir-27"/>
+	<map name="MSZ_7795.3" aliases="ISO646-HU hu iso-ir-86"/>
+	<map name="NATS-DANO" aliases="iso-ir-9-1"/>
+	<map name="NATS-DANO-ADD" aliases="iso-ir-9-2"/>
+	<map name="NATS-SEFI" aliases="iso-ir-8-1"/>
+	<map name="NATS-SEFI-ADD" aliases="iso-ir-8-2"/>
+	<map name="NC_NC00-10" aliases="ISO646-CU NC_NC00-10:81 cuba iso-ir-151"/>
+	<map name="NF_Z_62-010" aliases="ISO646-FR ISO646-FR1 NF_Z_62-010_(1973) fr iso-ir-25 iso-ir-69"/>
+	<map name="NS_4551-1" aliases="ISO646-NO iso-ir-60 no"/>
+	<map name="NS_4551-2" aliases="ISO646-NO2 iso-ir-61 no2"/>
+	<map name="PT" aliases="ISO646-PT iso-ir-16"/>
+	<map name="PT2" aliases="ISO646-PT2 iso-ir-84"/>
+	<map name="SEN_850200_B" aliases="FI ISO646-FI ISO646-SE iso-ir-10 se"/>
+	<map name="SEN_850200_C" aliases="ISO646-SE2 iso-ir-11 se2"/>
+	<map name="T.101-G2" aliases="iso-ir-128"/>
+	<map name="T.61-7bit" aliases="iso-ir-102"/>
+	<map name="T.61-8bit" aliases="T.61 iso-ir-103"/>
+	<map name="TCVN-5712" aliases="x-viet-tcvn viet-tcvn VN-1 TCVN-5712:1993"/>
+	<map name="TIS-620" aliases="TIS_620-2553 TIS_620-2553:1990"/>
+	<map name="VISCII" aliases="csVISCII"/>
+	<map name="VPS" aliases="x-viet-vps viet-vps"/>
+	<map name="cp037" aliases="IBMUSCanada"/>
+	<map name="cp10000" aliases="MacRoman"/>
+	<map name="cp10006" aliases="MacGreek"/>
+	<map name="cp10007" aliases="MacCyrillic"/>
+	<map name="cp10029" aliases="MacLatin2"/>
+	<map name="cp10079" aliases="MacIcelandic"/>
+	<map name="cp10081" aliases="MacTurkish"/>
+	<map name="cp1026" aliases="IBMLatin5Turkish"/>
+	<map name="cp1250" aliases="WinLatin2 windows-1250"/>
+	<map name="cp1251" aliases="WinCyrillic windows-1251"/>
+	<map name="cp1252" aliases="WinLatin1 windows-1252 ISO-8859-1-Windows-3.1-Latin-1 csWindows31Latin1"/>
+	<map name="cp1253" aliases="WinGreek windows-1253"/>
+	<map name="cp1254" aliases="WinTurkish windows-1254"/>
+	<map name="cp1255" aliases="WinHebrew windows-1255"/>
+	<map name="cp1256" aliases="WinArabic windows-1256"/>
+	<map name="cp1257" aliases="WinBaltic windows-1257"/>
+	<map name="cp1258" aliases="WinVietnamese windows-1258"/>
+	<map name="cp437" aliases="DOSLatinUS"/>
+	<map name="cp500" aliases="IBMInternational"/>
+	<map name="cp737" aliases="DOSGreek"/>
+	<map name="cp775" aliases="DOSBaltRim"/>
+	<map name="cp850" aliases="DOSLatin1"/>
+	<map name="cp852" aliases="DOSLatin2"/>
+	<map name="cp855" aliases="DOSCyrillic"/>
+	<map name="cp857" aliases="DOSTurkish"/>
+	<map name="cp860" aliases="DOSPortuguese"/>
+	<map name="cp861" aliases="DOSIcelandic"/>
+	<map name="cp862" aliases="DOSHebrew"/>
+	<map name="cp863" aliases="DOSCanadaF"/>
+	<map name="cp864" aliases="DOSArabic"/>
+	<map name="cp865" aliases="DOSNordic"/>
+	<map name="cp866" aliases="DOSCyrillicRussian"/>
+	<map name="cp869" aliases="DOSGreek2"/>
+	<map name="cp874" aliases="DOSThai"/>
+	<map name="cp875" aliases="IBMGreek"/>
+	<map name="greek-ccitt" aliases="iso-ir-150"/>
+	<map name="greek7" aliases="iso-ir-88"/>
+	<map name="greek7-old" aliases="iso-ir-18"/>
+	<map name="hp-roman8" aliases="r8 roman8"/>
+	<map name="koi8-r" aliases="csKOI8R KOI8-R"/>
+	<map name="koi8-u" aliases="KOI8-U"/>
+	<map name="latin-greek" aliases="iso-ir-19"/>
+	<map name="latin-lap" aliases="iso-ir-158 lap"/>
+	<map name="latin6" aliases="iso-ir-157 l6"/>
+	<map name="macintosh" aliases="mac"/>
+	<map name="videotex-suppl" aliases="iso-ir-70"/>
+</mapeight>

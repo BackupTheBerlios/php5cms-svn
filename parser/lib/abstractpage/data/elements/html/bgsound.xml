@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+
+<tag name="BGSOUND" endtag="no">
+	<tagformat nlbeforetag="1" nlaftertag="1"/>
+	
+	<attributes>
+		<attrib name="SRC" type="Relativepath"/>
+		
+		<attrib name="LOOP" type="Enumerated">
+			<opt value="-1" caption="infinite (-1: default)"/>
+		</attrib>
+		
+		<attrib name="BALANCE"/>
+		<attrib name="VOLUME"/>
+		<attrib name="DELAY"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

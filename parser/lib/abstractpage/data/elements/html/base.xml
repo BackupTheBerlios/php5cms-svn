@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+
+<tag name="BASE" BIND="HREF" endtag="no">
+	<tagformat nlbeforetag="1" nlaftertag="1"/>
+	
+	<attributes>
+		<attrib name="HREF" type="Relativepath"/>
+		
+		<attrib name="TARGET" type="Enumerated">
+			<opt value="_top" caption="_top"/>
+			<opt value="_parent" caption="_parent"/>
+			<opt value="_self" caption="_self"/>
+			<opt value="_blank" caption="_blank"/>
+		</attrib>
+  	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

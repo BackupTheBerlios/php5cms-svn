@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<h3>Form to remove a key</h3>
+
+<form action="process.php" method="post">
+<table border=1>
+	<tr><td>Remove from the keyring of (email)</td><td><input type="text" name="userEmail"></td></tr>
+	<tr><td>The key with Name ID =</td><td><input type="text" name="nameID"></td></tr>
+	<tr><td>Or the key with Email ID =</td><td><input type="text" name="emailID"></td></tr>
+	<tr><td>Or bether, the key with Key ID =</td><td><input type="text" name="keyID"></td></tr>
+	<tr><td colspan=2><input type="submit" name="action" value="remove_key"></td></tr>
+</table>
+</form>
+
+<pre>
+Enter the name of the user who will be used to retire the key from his keyring.
+You can enter the NameID or EmailID or KeyID to be retired of the keyring.
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+
+<tag name="FRAMESET" endtag="yes">
+	<tagformat nlbeforetag="1" nlbeforecontents="1" nlaftercontents="1" nlaftertag="1" indentcontents="yes"/>
+	
+	<attributes>
+		<attrib name="ROWS"/>
+		<attrib name="COLS"/>
+		<attrib name="FRAMESPACING"/>
+		
+		<attrib name="FRAMEBORDER" type="Enumerated">
+			<opt VALUE="0" caption="0   (Internet Explorer, Netscape)"/>
+			<opt VALUE="1" caption="1   (Internet Explorer, Netscape)"/>
+			<opt VALUE="no" caption="no  (Netscape)"/>
+			<opt VALUE="yes" caption="yes (Netscape)"/>
+		</attrib>
+		
+		<attrib name="BORDER"/>
+		<attrib name="BORDERCOLOR" type="Color"/>
+		<attrib name="CLASS" type="cssStyle"/>
+		<attrib name="ID"/>
+		<attrib name="STYLE" type="Style"/>
+		<attrib name="TITLE"/>
+		<attrib name="onLoad" casesensitive="yes"/>
+		<attrib name="onUnload" casesensitive="yes"/>
+
+		<evt name="onLoad"/>
+		<evt name="onUnload"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+
+<tag name="BR" endtag="no">
+	<tagformat nlbeforetag="0" nlaftertag="1"/>
+	
+	<attributes>
+		<attrib name="CLEAR" type="Enumerated">
+			<opt value="none" caption="none (default)"/>
+			<opt value="left" caption="left"/>
+			<opt value="right" caption="right"/>
+			<opt value="all" caption="all"/>
+		</attrib>
+		
+		<attrib name="CLASS" type="cssStyle"/>
+		<attrib name="ID"/>
+		<attrib name="STYLE" type="Style"/>
+		<attrib name="TITLE"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

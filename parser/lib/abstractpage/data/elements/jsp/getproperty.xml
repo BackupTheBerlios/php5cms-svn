@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+
+<tag name="getProperty" casesensitive="yes" endtag="no">
+	<tagformat nlbeforetag="1" nlaftertag="1"/>
+  
+  	<attributes>
+    	<attrib name="name" type="TEXT" casesensitive="yes"/>
+    	<attrib name="property" type="TEXT" casesensitive="yes"/>
+   	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

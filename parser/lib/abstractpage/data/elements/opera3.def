@@ -1,0 +1,932 @@
+# Opera 3.0 Definition
+
+[definition]
+
+[elements]
+<!ELEMENT A >
+<!ATTLIST A
+    	Accesskey   
+    	Charset     
+		Class       
+    	Dir           
+		HREF
+    	Hreflang    
+		ID          
+    	Lang            
+		Name
+		OnClick
+		onDblClick  
+		onKeyDown   
+		onKeyPress  
+		onKeyUp     
+		onMouseDown 
+		onMouseOut
+		OnMouseOver
+		onMouseUp   
+    	Rel         
+    	Rev         
+		Style            
+    	Supress     
+    	Tabindex          
+		Target
+    	Title
+    	Type        
+>
+
+<!ELEMENT Address >
+
+<!ELEMENT APPLET  >
+        
+<!ELEMENT AREA >
+<!ATTLIST AREA
+    	Accesskey   
+		Alt         
+		Coords
+		HREF
+		NoHREF
+		onClick     
+		onDblClick    
+		onMouseOut  
+		onMouseOver 
+		Shape
+    	Supress     
+    	Tabindex    
+		Target
+		Class       
+		ID                             
+		Style       
+>
+
+<!ELEMENT B >
+<!ATTLIST B
+		Class       
+		ID              
+		Style       
+>
+
+<!ELEMENT Base >
+<!ATTLIST Base
+		HREF
+		Target
+>
+
+<!ELEMENT BaseFont >
+<!ATTLIST BaseFont
+		Class        
+		Color       
+		Face        
+		ID              
+		Size
+		Style       
+>
+
+<!ELEMENT BDO  >
+
+<!ELEMENT BGSOUND >
+<!ATTLIST BGSOUND
+		Balance     
+		Lang        
+		Loop
+		Src
+		Volume      
+>
+
+<!ELEMENT Big >
+<!ATTLIST Big
+		Class       
+		ID              
+		Style       
+>
+
+<!ELEMENT Blink >
+
+<!ELEMENT Blockquote >
+<!ATTLIST Blockquote
+    	Align       
+    	Cite        
+		Class       
+    	Clear       
+    	Height      
+		ID                  
+    	Type            
+		Style       
+    	Width       
+>
+
+<!ELEMENT Body >
+<!ATTLIST Body
+    	Align         
+		ALink         
+		Background
+		BGColor
+		BGProperties  
+    	BottomMargin  
+		Class           
+    	Height          
+		ID                      
+		LeftMargin    
+		Link
+    	MarginHeight  
+    	MarginWidth   
+    	Nowrap        
+		onBlur
+		onFocus                 
+		onLoad
+		onUnload
+    	RightMargin   
+    	Scroll        
+		Style                   
+		Text
+		TopMargin     
+		TracingOpacity
+		TracingSrc
+		TracingX
+		TracingY
+		VLink
+    	Width         
+>
+
+<!ELEMENT BR >
+<!ATTLIST BR
+		Clear ( left | right | all )
+>
+
+<!ELEMENT BUTTON  >
+
+<!ELEMENT CAPTION >
+<!ATTLIST CAPTION
+		Align   ( top | bottom )
+		Class     
+    	Height     
+		ID              
+		Style     
+		VAlign    
+    	Width     
+>
+
+<!ELEMENT Center >
+<!ATTLIST Center
+    	Align   
+		Class   
+    	Height  
+		ID      
+		Style   
+    	Width   
+>
+
+<!ELEMENT CITE >
+<!ATTLIST CITE
+		Class   
+		ID      
+		Style   
+>
+
+<!ELEMENT CODE >
+<!ATTLIST CODE
+		Class   
+		ID      
+		Style   
+>
+
+<!ELEMENT COL  >
+
+<!ELEMENT COLGROUP  >
+
+<!ELEMENT DD >
+<!ATTLIST DD
+    	Align     
+		Class     
+    	Clear     
+    	Height    
+		ID        
+    	Nowrap    
+		Style     
+    	Width     
+>
+
+<!ELEMENT DEL  >
+
+<!ELEMENT DFN >
+<!ATTLIST DFN
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT DIR >
+<!ATTLIST DIR
+    	Align     
+    	Clear     
+		Class     
+    	Compact   
+    	Height    
+		ID        
+    	Start     
+		Style     
+    	Type      
+    	Width     
+>
+
+<!ELEMENT DIV >
+<!ATTLIST DIV
+		Align ( left | center | right )
+		Class     
+    	Clear
+    	Cols      
+    	Gutter    
+    	Height    
+		ID        
+    	Nowrap    
+		Style     
+    	Width     
+>
+
+<!ELEMENT DL >
+<!ATTLIST DL
+    	Align     
+		Class     
+    	Clear
+    	Compact   
+    	Dir       
+    	Height    
+		ID          
+    	Lang      
+		Style     
+    	Width     
+>
+
+<!ELEMENT DT >
+<!ATTLIST DT
+    	Align     
+		Class     
+    	Clear     
+    	Height    
+		ID        
+    	Nowrap    
+		Style     
+    	Width     
+>
+
+<!ELEMENT EM >
+<!ATTLIST EM
+		Class     
+		ID        
+		Style     
+ >
+
+<!ELEMENT EMBED >
+<!ATTLIST EMBED
+    	Align     
+		BGColor
+    	Disabled  
+		Height
+    	Hidden    
+    	Hspace    
+		Loop
+		Name
+		Palette
+    	onLoad
+		Play
+		Pluginspage 
+    	Pluginurl   
+		Quality
+		SAlign
+		Scale
+		Src
+		Type
+    	Vspace      
+		Width
+		Class   
+		ID              
+		Style   
+>
+
+<!ELEMENT FIELDSET >
+
+<!ELEMENT Font >
+<!ATTLIST Font
+		Color   
+		Face        
+    	Font-weight 
+		Point-size  
+		Size
+		Class       
+		ID          
+		Style       
+>
+
+<!ELEMENT Form >
+<!ATTLIST Form
+    	Accept          
+   	 	Accept-charset  
+		Action
+    	Align           
+    	Autocomplete    
+    	Dir             
+		Enctype
+    	Height          
+    	Lang            
+		Method ( get | post )
+		Name            
+		onReset
+		onSubmit        
+		Target
+    	Width           
+		Class           
+		ID              
+		Style           
+>
+
+<!ELEMENT Frame >
+<!ATTLIST Frame
+    	Allowtransparency 
+    	Application       
+    	Border            
+		BorderColor       
+		FrameBorder       
+    	Longdesc          
+		MarginHeight
+		MarginWidth
+		Name
+		NoResize
+		Scrolling ( yes | no | auto )
+		Src
+>
+
+<!ELEMENT FRAMESET >
+<!ATTLIST FRAMESET
+		Border
+		BorderColor     
+		Cols
+		FrameBorder     
+		FrameSpacing    
+		onBlur
+		onFocus
+		onLoad
+    	onUnload
+		Rows
+>
+
+<!ELEMENT H1 >
+<!ATTLIST H1
+		Align ( left | center | right )
+		Class       
+    	Clear
+    	Height      
+		ID              
+		Style       
+    	Width       
+>
+
+<!ELEMENT H2 >
+<!ATTLIST H2
+		Align ( left | center | right )
+		Class       
+    	Clear
+    	Height      
+		ID              
+		Style       
+    	Width       
+>
+
+<!ELEMENT H3 >
+<!ATTLIST H3
+		Align (left | center | right )
+		Class       
+    	Clear
+    	Height      
+		ID              
+		Style       
+    	Width       
+>
+
+<!ELEMENT H4 >
+<!ATTLIST H4
+		Align ( left | center | right )
+		Class       
+    	Clear
+    	Height      
+		ID              
+		Style       
+    	Width       
+>
+
+<!ELEMENT H5 >
+<!ATTLIST H5
+		Align ( left | center | right )
+		Class       
+   	 	Clear
+    	Height      
+		ID              
+		Style       
+    	Width       
+>
+
+<!ELEMENT H6 >
+<!ATTLIST H6
+		Align ( left | center | right )
+		Class       
+    	Clear
+    	Height      
+		ID              
+		Style       
+    	Width       
+>
+
+<!ELEMENT HEAD >
+
+<!ELEMENT HR >
+<!ATTLIST HR
+		Align ( left | center | right )
+    	Clear     
+		Color   	
+		NoShade
+		Size
+		Width
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT HTML >
+
+<!ELEMENT I >
+<!ATTLIST I
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT IBOBJECT >
+<!ATTLIST IBOBJECT
+		Class
+		Name
+>
+
+<!ELEMENT IFrame  >
+
+<!ELEMENT ILayer  >
+
+<!ELEMENT IMG >
+<!ATTLIST IMG
+		Align ( left | right | top | texttop | middle | absmiddle | baseline | bottom | absbottom )
+		Alt
+		Border
+		Controls        
+		DynSrc
+		Height
+		HSpace
+		ISMap
+		Loop 
+		LowSrc          
+		Name
+		onLoad
+		Src
+		Start   	      
+		UseMap
+		VRML    	      
+		VSpace
+		Width
+		Class           
+		ID              
+		Style           
+>
+
+<!ELEMENT INPUT >
+<!ATTLIST INPUT
+		Type ( text | password | checkbox | radio | submit | reset | hidden | image | file | button )
+		Name
+		Value
+		Checked
+		Height
+		Align ( left | right | top | texttop | middle | absmiddle | baseline | bottom | absbottom )
+		Src
+		Width
+		MaxLength
+		OnBlur
+		OnClick
+		OnChange
+		OnFocus
+		Size
+		Class       
+		ID          
+		Style       
+>
+
+<!ELEMENT ISINDEX >
+<!ATTLIST ISINDEX
+		Action
+    	Align       
+    	Enctype     
+    	Height      
+    	Method      
+		Prompt
+    	Target      
+    	Width       
+    	Class       
+    	ID          
+    	Style       
+>
+
+<!ELEMENT KBD  >
+
+<!ELEMENT Keygen >
+<!ATTLIST Keygen
+		Challenge
+    	Keytype        
+		Name              
+		PQG            
+>
+
+<!ELEMENT LABEL  >
+
+<!ELEMENT LAYER  >
+
+<!ELEMENT LEGEND  >
+
+<!ELEMENT LI >
+<!ATTLIST LI
+    	Align     
+    	Clear
+    	Height    
+		Type ( A | a | I | i | 1 | disc | square | circle )
+		Value
+    	Width     
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT Link  >
+
+<!ELEMENT Listing >
+<!ATTLIST Listing
+    	Align     
+    	Height    
+    	Width     
+		Class     
+		ID               
+		Style     
+>
+
+<!ELEMENT MAP >
+<!ATTLIST MAP
+		Name
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT MARQUEE  >
+
+<!ELEMENT Menu >
+<!ATTLIST Menu
+    	Align     
+    	Clear     
+    	Compact   
+    	Height    
+    	Start     
+    	Type      
+    	Width     
+		Class     
+		ID            
+		Style     
+>
+
+<!ELEMENT Meta >
+<!ATTLIST Meta
+		Content
+		HTTP-Equiv
+		Name
+    	Scheme    
+>
+
+<!ELEMENT MULTICOL  >
+
+
+<!ELEMENT NOBR >
+<!ATTLIST NOBR
+		Class      
+		ID        
+		Style     
+>
+
+<!ELEMENT NOEMBED >
+
+<!ELEMENT NOFRAMES >
+
+<!ELEMENT NOLAYER  >
+
+<!ELEMENT NOSCRIPT >
+
+<!ELEMENT Object  >
+
+<!ELEMENT OL >
+<!ATTLIST OL
+    	Align     
+    	Clear
+    	Compact   
+    	Height    
+		Start
+		Type
+    	Width     
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT OPTGROUP  >
+
+<!ELEMENT OPTION >
+<!ATTLIST OPTION
+    	Disabled    
+    	Label       
+		Selected
+		Value
+		Class       
+		ID          
+		Style       
+>
+
+<!ELEMENT P >
+<!ATTLIST P
+		Align
+    	Clear
+    	Height    
+    	Width     
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT PARAM  >
+
+<!ELEMENT PlainText >
+
+<!ELEMENT PRE >
+<!ATTLIST PRE
+    	Clear     
+    	Cols      
+    	Variable  
+    	Width     
+    	Wrap      
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT Q  >
+
+<!ELEMENT RT  >
+
+<!ELEMENT Ruby  >
+
+<!ELEMENT S >
+
+<!ELEMENT SAMP >
+<!ATTLIST SAMP
+		Class     
+		ID                
+		Style     
+>
+
+<!ELEMENT Script >
+<!ATTLIST Script
+    	Archive     
+    	Charset     
+    	Defer       
+    	evt       
+    	For         
+		Language
+		Src
+    	Type        
+>
+
+
+<!ELEMENT SELECT >
+<!ATTLIST SELECT
+    	Accesskey     
+    	Align         
+    	Disabled      
+		Multiple
+		Name
+		OnChange      
+		Size
+    	Tabindex      
+    	Width         
+		Class         
+		ID            
+		Style         
+>
+
+<!ELEMENT Small >
+<!ATTLIST Small
+		Class     
+		ID               
+		Style     
+>
+
+<!ELEMENT Sound  >
+
+<!ELEMENT Spacer  >
+
+<!ELEMENT SPAN  >
+
+<!ELEMENT STRIKE >
+<!ATTLIST STRIKE
+		Class     
+		ID                
+		Style     
+>
+
+<!ELEMENT Strong >
+<!ATTLIST Strong
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT Style  >
+
+<!ELEMENT SUB >
+<!ATTLIST SUB
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT SUP >
+<!ATTLIST SUP
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT Table >
+<!ATTLIST Table
+		Align ( left | center | right )
+		Background        
+		BgColor
+		Border
+		BorderColor       
+		BorderColorDark   
+		BorderColorLight  
+		CellPadding
+		CellSpacing
+    	Clear
+		Cols              
+    	Datapagesize      
+		Frame             
+		Height
+    	Hspace            
+    	Leftpadding       
+    	Rightpadding      
+		Rules             
+    	Summary           
+    	Toppadding        
+    	Vspace            
+		Width
+		Class             
+		ID                
+		Style             
+>
+
+<!ELEMENT TBODY  >
+
+<!ELEMENT TD >
+<!ATTLIST TD
+    	Abbr              
+		Align ( left | center | right )
+    	Axis              
+		Background        
+		BgColor
+		BorderColor       
+		BorderColorDark   
+		BorderColorLight  
+    	Char              
+    	Charoff           
+		ColSpan
+    	Headers           
+		Height
+		NoWrap
+		RowSpan
+    	Scope             
+		VAlign ( top | middle | bottom | baseline )
+		Width
+		Class             
+		ID                
+		Style               
+>
+
+<!ELEMENT TextArea >
+<!ATTLIST TextArea
+    	Accesskey        
+		Cols
+    	Disabled      
+    	Height        
+		Name
+    	Readonly      
+		Rows
+    	Tabindex      
+    	Width         
+		Wrap          
+		onBlur        
+		onChange      
+		onFocus       
+		Class         
+		ID               
+		Style         
+>
+
+<!ELEMENT TFOOT  >
+
+<!ELEMENT TH >
+<!ATTLIST TH
+    	Abbr              
+		Align ( left | center | right )
+    	Axis              
+		Background        
+		BgColor
+		BorderColor       
+		BorderColorDark   
+		BorderColorLight  
+    	Char              
+    	Charoff           
+		ColSpan
+    	Headers           
+		Height
+		NoWrap
+		RowSpan
+    	Scope             
+		VAlign ( top | middle | bottom | baseline )
+		Width
+		Class             
+		ID                
+		Style             
+>
+
+<!ELEMENT THEAD  >
+
+<!ELEMENT Title >
+
+<!ELEMENT TR >
+<!ATTLIST TR
+		Align ( left | center | right )
+    	Background        
+		BgColor
+		BorderColor       
+		BorderColorDark   
+		BorderColorLight  
+    	Char              
+    	Charoff           
+    	Height            
+    	Nowrap
+		VAlign ( top | middle | bottom | baseline )
+		Class             
+		ID                
+		Style             
+>
+
+<!ELEMENT TT >
+<!ATTLIST TT
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT U >
+<!ATTLIST U
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT UL >
+<!ATTLIST UL
+    	Align     
+    	Clear
+    	Compact   
+    	Height    
+    	Start     
+		Type
+    	Width     
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT VAR >
+<!ATTLIST VAR
+		Class     
+		ID        
+		Style     
+>
+
+<!ELEMENT WBR >
+
+<!ELEMENT XMP >
+<!ATTLIST XMP
+		Class     
+		ID        
+		Style     
+>

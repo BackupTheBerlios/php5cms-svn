@@ -1,0 +1,53 @@
+<html>
+<head>
+
+<title>ToolBar Example</title>
+
+<style type="text/css">
+
+.but
+{
+	border: 1px buttonface solid;
+	font-family: MS Sans Serif;
+	font-size: 8 pt;
+}
+
+</style>
+
+<script language="JavaScript" src="../../../../../prepend.js"></script>
+
+<script language="JavaScript">
+
+set_library_path( '../../../../../kernel/js/' );
+using( 'gui.toolbar.Toolbar' );
+
+</script>
+
+<script language="JavaScript">
+
+var bt;
+
+Env.onLoad = function()
+{
+	bt = new Toolbar();
+}
+
+</script>
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<div id="toolbar" nowrap style="background-color:buttonface;width:20;padding:2px;">
+	<button class="but" accesskey="s"><img src="img/stop_off.gif" width="19" height="20" border="0"><br><u>S</u>top</button>
+	<button class="but" accesskey="r"><img src="img/refresh_off.gif" width="17" height="20" border="0"><br><u>R</u>efresh</button>
+	<button class="but" accesskey="h"><img src="img/home_off.gif" width="19" height="20" border="0"><br><u>H</u>ome</button>
+	<button class="but" accesskey="e"><img src="img/search_off.gif" width="20" height="20" border="0"><br>S<u>e</u>arch</button>
+	<button class="but" accesskey="f"><img src="img/favorites_off.gif" width="20" height="20" border="0"><br><u>F</u>avorites</button>
+	<button class="but" accesskey="i"><img src="img/history_off.gif" width="20" height="20" border="0"><br>H<u>i</u>story</button>
+</div>
+
+<br><div id=disp nowrap style="font-family:Arial,sans-serif;font-size:10pt;padding-left:20;width:20">&nbsp;</div>
+
+</body>
+</html>

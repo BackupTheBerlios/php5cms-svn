@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+
+<tag name="img" endtag="no" casesensitive="yes">
+	<tagformat nlbeforetag="0" nlaftertag="0"/>
+
+  	<attributes>
+    	<attrib name="alt" casesensitive="yes"/>
+    	<attrib name="src" casesensitive="yes"/>
+    	<attrib name="localsrc" casesensitive="yes"/>
+    	<attrib name="width" casesensitive="yes"/>
+    	<attrib name="hspace" casesensitive="yes"/>
+    	<attrib name="height" casesensitive="yes"/>
+    	<attrib name="vspace" casesensitive="yes"/>
+    
+		<attrib name="align" TYPE="Enumerated" casesensitive="yes">
+      		<opt VALUE="top" caption="top"/>
+      		<opt VALUE="middle" caption="middle"/>
+      		<opt VALUE="bottom" caption="bottom (default)"/>
+		</attrib>
+    
+		<attrib name="xml:lang" casesensitive="yes"/>
+    	<attrib name="id" casesensitive="yes"/>
+    	<attrib name="class" casesensitive="yes"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

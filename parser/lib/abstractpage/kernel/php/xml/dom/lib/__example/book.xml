@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+
+<book>
+	<author>
+   		<firstName>Brett</firstName>
+   		<lastName>McLaughlin</lastName>
+ 	</author>
+ 
+ 	<booktitle>Java and XML</booktitle>
+ 
+ 	<chapter number="1">
+ 		<headline>Introduction</headline>
+ 		<content>This is the content of the Chapter 1!</content>
+ 	</chapter>
+ 
+ 	<chapter number="2">
+ 		<headline>Creating XML</headline>
+ 		<content>This is the content of the Chapter 2!</content>
+ 	</chapter>
+ 
+ 	<chapter number="3">
+ 		<headline>Parsing XML</headline>
+ 		<content>This is the content of the Chapter 3!</content>
+ 	</chapter>
+</book>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dt="http://foo.org#">
+
+<rdf:Description about="http://foo.org/persons/john">
+  <dt:name>John</dt:name>
+  <dt:age>26</dt:age>
+</rdf:Description>
+
+<rdf:Description about="http://foo.org/persons/Peter">
+  <dt:name>Peter</dt:name>
+  <dt:position>foo2</dt:position>
+  <dt:age>25</dt:age>
+  <dt:friend rdf:resource="http://foo.org/persons/john" />
+  <dt:friend rdf:resource="http://foo.org/persons/Carl" />
+</rdf:Description>
+
+<rdf:Description about="http://foo.org/persons/Micky">
+  <dt:name>Micky</dt:name>
+  <dt:position>foo</dt:position>
+  <dt:age>16</dt:age>
+</rdf:Description>
+
+<rdf:Description about="http://foo.org/persons/Carl">
+  <dt:name>Carl</dt:name>
+  <dt:position>foo</dt:position>
+  <dt:age>28</dt:age>
+  <dt:friend rdf:resource="http://foo.org/persons/Peter" />
+</rdf:Description>
+
+<rdf:Description about="http://foo.org/team">
+  <dt:members>
+   <rdf:Bag>
+    <rdf:li rdf:resource="http://foo.org/persons/Peter" />
+    <rdf:li>Kim</rdf:li>
+    </rdf:Bag>
+  </dt:members>
+</rdf:Description>
+
+</rdf:RDF>

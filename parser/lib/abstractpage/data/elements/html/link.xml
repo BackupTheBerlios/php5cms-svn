@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+
+<tag name="LINK" BIND="HREF" endtag="no">
+	<tagformat nlbeforetag="1" nlbeforecontents="0" nlaftercontents="0" nlaftertag="1"/>
+
+	<attributes>
+		<attrib name="HREF" type="Relativepath"/>
+
+		<attrib name="REL" type="Enumerated">
+			<opt value="alternate" caption="alternate"/>
+			<opt value="appendix" caption="appendix"/>
+			<opt value="bookmark" caption="bookmark"/>
+			<opt value="chapter" caption="chapter"/>
+			<opt value="contents" caption="contents"/>
+			<opt value="copyright" caption="copyright"/>
+			<opt value="glossary" caption="glossary"/>
+			<opt value="help" caption="help"/>
+			<opt value="index" caption="index"/>
+			<opt value="next" caption="next"/>
+			<opt value="prev" caption="prev"/>
+			<opt value="previous" caption="previous (some browsers)"/>
+			<opt value="section" caption="section"/>
+			<opt value="start" caption="start"/>
+			<opt value="stylesheet" caption="stylesheet"/>
+			<opt value="subsection" caption="subsection"/>
+		</attrib>
+
+		<attrib name="REV" type="Enumerated">
+			<opt value="alternate" caption="alternate"/>
+			<opt value="appendix" caption="appendix"/>
+			<opt value="bookmark" caption="bookmark"/>
+			<opt value="chapter" caption="chapter"/>
+			<opt value="contents" caption="contents"/>
+			<opt value="copyright" caption="copyright"/>
+			<opt value="glossary" caption="glossary"/>
+			<opt value="help" caption="help"/>
+			<opt value="index" caption="index"/>
+			<opt value="next" caption="next"/>
+			<opt value="prev" caption="prev"/>
+			<opt value="previous" caption="previous (some browsers)"/>
+			<opt value="section" caption="section"/>
+			<opt value="start" caption="start"/>
+			<opt value="stylesheet" caption="stylesheet"/>
+			<opt value="subsection" caption="subsection"/>
+		</attrib>
+		
+		<attrib name="TITLE"/>
+		
+		<attrib name="TYPE" type="Enumerated">
+			<opt value="text/css" caption="text/css"/>
+			<opt value="text/javascript" caption="text/javascript"/>
+		</attrib>
+		
+		<attrib name="MEDIA" type="Enumerated">
+			<opt value="screen" caption="screen (default)"/>
+			<opt value="tty" caption="tty"/>
+			<opt value="tv" caption="tv"/>
+			<opt value="projection" caption="projection"/>
+			<opt value="handheld" caption="handheld"/>
+			<opt value="print" caption="print"/>
+			<opt value="braille" caption="braille"/>
+			<opt value="aural" caption="aural"/>
+			<opt value="all" caption="all"/>
+		</attrib>
+		
+		<attrib name="DISABLED" type="Flag"/>
+		<attrib name="CLASS" type="cssStyle"/>
+		<attrib name="ID"/>
+		<attrib name="HREFLANG"/>
+		<attrib name="STYLE" type="Style"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+
+<title>Menu Example</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- using doc write to read query string
+<link type="text/css" rel="StyleSheet" href="css/officexp/officexp.css" />
+-->
+
+<style type="text/css">
+
+body
+{
+	background:	ThreeDFace;
+	border:	0;
+	margin:	0;
+	overflow: hidden;
+}
+html
+{
+	border:	0;
+	overflow: hidden;
+}
+p
+{
+	font: Message-Box;
+	font: MessageBox;
+	margin:	10px;
+}
+a
+{
+	color: blue;
+}
+textarea
+{
+	margin:	10px;
+	display: block;
+	width: auto;
+}
+
+.menu-bar
+{
+	border-bottom: 2px groove;
+}
+
+</style>
+
+<script language="JavaScript" src="../../../../../../prepend.js"></script>
+
+<script language="JavaScript">
+
+set_library_path( '../../../../../../kernel/js/' );
+using( 'util.PosLib' );
+using( 'gui.button.ScrollButton' );
+using( 'gui.menu.lib.Menu' );
+using( 'gui.menu.lib.MenuBar' );
+using( 'gui.menu.lib.MenuItem' );
+using( 'gui.menu.lib.MenuBar_button' );
+using( 'gui.menu.lib.MenuCollection' );
+using( 'gui.menu.lib.MenuItem_checkbox' );
+using( 'gui.menu.lib.MenuItem_info' );
+using( 'gui.menu.lib.MenuItem_infoseparator' );
+using( 'gui.menu.lib.MenuItem_pane' );
+using( 'gui.menu.lib.MenuItem_radiobutton' );
+using( 'gui.menu.lib.MenuItem_separator' );
+using( 'gui.menu.lib.MenuLoadHelper' );
+using( 'gui.menu.lib.MenuPane' );
+
+</script>
+
+<script language="JavaScript">
+
+var cssFile = getQueryString( "css" );
+
+if ( cssFile == "" )
+	cssFile = "css/winclassic.css";
+
+Menu.prototype.cssFile = cssFile;
+Menu.prototype.mouseHoverDisabled = false;
+
+
+function getQueryString( sProp )
+{
+	var re = new RegExp( sProp + "=([^\\&]*)", "i" );
+	var a  = re.exec( document.location.search );
+	
+	if ( a == null )
+		return "";
+	
+	return a[1];
+}
+function changeCssFile( sCssFile )
+{
+	var loc = String(document.location);
+	var search = document.location.search;
+
+	if ( search != "" )
+		loc = loc.replace( search, "" );
+
+	loc = loc + "?css=" + sCssFile;
+	document.location.replace( loc );
+}
+
+document.write( "<link type=\"text/css\" rel=\"StyleSheet\" href=\"" + cssFile + "\" />" );
+
+</script>
+
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+var tmp;
+var mb = new MenuBar;
+
+
+	// File Menu
+
+	var fileMenu = new Menu();
+
+		var fileNewMenu = new Menu();
+		fileNewMenu.add( tmp = new MenuItem( "Window" ) );
+		tmp.mnemonic = "w";
+		tmp.shortcut = "Ctrl+N";
+		fileNewMenu.add( new MenuItem_separator() );
+		fileNewMenu.add( tmp = new MenuItem( "Message" ) );
+		tmp.mnemonic = "m";
+		fileNewMenu.add( tmp = new MenuItem( "Post" ) );
+		tmp.mnemonic = "p";
+		fileNewMenu.add( tmp = new MenuItem( "Contact" ) );
+		tmp.mnemonic = "c";
+		fileNewMenu.add( tmp = new MenuItem( "Internet Call" ) );
+		tmp.mnemonic = "i";
+
+	fileMenu.add( tmp = new MenuItem( "New", null, null, fileNewMenu ) );
+	tmp.mnemonic = "n";
+	fileMenu.add( tmp = new MenuItem( "Open.." ) );
+	tmp.mnemonic = "o";
+	tmp.shortcut = "Ctrl+O";
+	fileMenu.add( tmp = new MenuItem( "Save" ) );
+	tmp.mnemonic = "s";
+	tmp.shortcut = "Ctrl+S";
+	tmp.disabled = true;
+	fileMenu.add( tmp = new MenuItem( "Save As..." ) );
+	tmp.mnemonic = "a";
+	tmp.shortcut = "Ctrl+S";
+	fileMenu.add( new MenuItem_separator() );
+	fileMenu.add( tmp = new MenuItem( "Page Setup..." ) );
+	tmp.mnemonic = "u";
+	fileMenu.add( tmp = new MenuItem( "Print..." ) );
+	tmp.mnemonic = "p";
+	tmp.shortcut = "Ctrl+P";
+	fileMenu.add( tmp = new MenuItem( "Print Preview..." ) );
+	tmp.mnemonic = "v";
+	fileMenu.add( new MenuItem_separator() );
+
+		var fileSendMenu = new Menu();
+		fileSendMenu.add( tmp = new MenuItem( "Page by E-mail..." ) );
+		tmp.mnemonic = "p";
+		fileSendMenu.add( tmp = new MenuItem( "Link by E-mail..." ) );
+		tmp.mnemonic = "l";
+		fileSendMenu.add( tmp = new MenuItem( "Shortcut to Desktop" ) );
+		tmp.mnemonic = "s";
+	
+	fileMenu.add( tmp = new MenuItem( "Send", null, null, fileSendMenu ) );
+	tmp.mnemonic = "e";
+	fileMenu.add( tmp = new MenuItem( "Import and Export" ) );
+	tmp.mnemonic = "i";
+	fileMenu.add( new MenuItem_separator() );
+	fileMenu.add( tmp = new MenuItem( "Properties" ) );
+	tmp.mnemonic = "r";
+	fileMenu.add( tmp = new MenuItem( "Close" ) );
+	tmp.mnemonic = "c";
+
+mb.add( tmp = new MenuBar_button( "File", fileMenu ) );
+tmp.mnemonic = "f";
+
+	var editMenu = new Menu();
+	
+	editMenu.add( tmp = new MenuItem( "Cut" ) );
+	tmp.mnemonic = "t";
+	tmp.shortcut = "Ctrl+X";
+	editMenu.add( tmp = new MenuItem( "Copy" ) );
+	tmp.mnemonic = "c";
+	tmp.shortcut = "Ctrl+C";
+	editMenu.add( tmp = new MenuItem( "Paste" ) );
+	tmp.mnemonic = "p";
+	tmp.shortcut = "Ctrl+V";
+	editMenu.add( new MenuItem_separator() );
+	editMenu.add( tmp = new MenuItem( "Select All" ) );
+	tmp.mnemonic = "a";
+	tmp.shortcut = "Ctrl+A";
+	editMenu.add( new MenuItem_separator() );
+	editMenu.add( tmp = new MenuItem( "Find (on This Page)..." ) );
+	tmp.mnemonic = "f";
+	tmp.shortcut = "Ctrl+F";
+	
+mb.add( tmp = new MenuBar_button( "Edit", editMenu ) );
+tmp.mnemonic = "e";
+
+
+	// View Menu
+	
+	var viewMenu = new Menu();
+	
+		var viewToolbarsMenu = new Menu();
+		viewToolbarsMenu.add( tmp = new MenuItem_checkbox( "Standard Buttons", true ) );
+		tmp.mnemonic = "s";
+		viewToolbarsMenu.add( tmp = new MenuItem_checkbox( "Address Bar", true ) );
+		tmp.mnemonic = "a";
+		viewToolbarsMenu.add( tmp = new MenuItem_checkbox( "Links", true ) );
+		tmp.mnemonic = "l";
+		viewToolbarsMenu.add( new MenuItem_separator() );
+		viewToolbarsMenu.add( tmp = new MenuItem_checkbox( "Lock the Toolbars", false ) );
+		tmp.mnemonic = "b";
+		viewToolbarsMenu.add( tmp = new MenuItem( "Customize..." ) );
+		tmp.mnemonic = "c";
+		
+	viewMenu.add( tmp = new MenuItem( "Toolbars", null, null, viewToolbarsMenu ) );
+	tmp.mnemonic = "t";
+	viewMenu.add( tmp = new MenuItem_checkbox( "Statusbar", true ) );
+	tmp.mnemonic = "b";
+	
+		var viewExplorerBarMenu = new Menu();
+		viewExplorerBarMenu.add( tmp = new MenuItem_radiobutton( "Search", false, "explorerBarGroup" ) );
+		tmp.mnemonic = "s";
+		tmp.shortcut = "Ctrl+E";
+		viewExplorerBarMenu.add( tmp = new MenuItem_radiobutton( "Favorites", false, "explorerBarGroup" ) );
+		tmp.mnemonic = "f";
+		tmp.shortcut = "Ctrl+I";
+		viewExplorerBarMenu.add( tmp = new MenuItem_radiobutton( "Media", false, "explorerBarGroup" ) );
+		tmp.mnemonic = "m";
+		viewExplorerBarMenu.add( tmp = new MenuItem_radiobutton( "History", false, "explorerBarGroup" ) );
+		tmp.mnemonic = "o";
+		tmp.shortcut = "Ctrl+H";
+		viewExplorerBarMenu.add( tmp = new MenuItem_radiobutton( "Folders", false, "explorerBarGroup" ) );
+		tmp.mnemonic = "t";
+		viewExplorerBarMenu.add( new MenuItem_separator() );
+		viewExplorerBarMenu.add( tmp = new MenuItem_checkbox( "Tip of The Day", false ) );
+		tmp.mnemonic = "f";
+
+	viewMenu.add( tmp = new MenuItem( "Explorer Bar", null, null, viewExplorerBarMenu ) );
+	tmp.mnemonic = "e";
+	viewMenu.add( new MenuItem_separator() );
+	
+		var viewGoToMenu = new Menu();
+		viewGoToMenu.add( tmp = new MenuItem( "Back" ) );
+		tmp.mnemonic = "b";
+		tmp.shortcut = "Alt+Left Arrow"
+		viewGoToMenu.add( tmp = new MenuItem( "Forward" ) );
+		tmp.mnemonic = "f";
+		tmp.shortcut = "Alt+Right Arrow"
+		tmp.disabled = true;
+		viewGoToMenu.add( new MenuItem_separator() );
+		viewGoToMenu.add( tmp = new MenuItem( "Home" ) );
+		tmp.mnemonic = "";
+		tmp.shortcut = "Alt+Home"
+		viewGoToMenu.add( new MenuItem_separator() );
+		viewGoToMenu.add( tmp = new MenuItem_radiobutton( "Google", false, "goToGroup" ) );
+		
+	viewMenu.add( tmp = new MenuItem( "Go To", null, null, viewGoToMenu ) );
+	tmp.mnemonic = "o";
+	viewMenu.add( tmp = new MenuItem( "Stop" ) );
+	tmp.mnemonic = "p";
+	tmp.shortcut = "Esc";
+	viewMenu.add( tmp = new MenuItem( "Refresh" ) );
+	tmp.mnemonic = "r";
+	tmp.shortcut = "F5";
+	viewMenu.add( new MenuItem_separator() );
+		
+		var viewTextSizeMenu = new Menu();
+		viewTextSizeMenu.add( tmp = new MenuItem_radiobutton( "Largest", false, "textSizeGroup" ) );
+		tmp.mnemonic = "g";
+		viewTextSizeMenu.add( tmp = new MenuItem_radiobutton( "Larger", false, "textSizeGroup" ) );
+		tmp.mnemonic = "l";
+		viewTextSizeMenu.add( tmp = new MenuItem_radiobutton( "Medium", true, "textSizeGroup" ) );
+		tmp.mnemonic = "m";
+		viewTextSizeMenu.add( tmp = new MenuItem_radiobutton( "Smaller", false, "textSizeGroup" ) );
+		tmp.mnemonic = "s";
+		viewTextSizeMenu.add( tmp = new MenuItem_radiobutton( "Smallest", false, "textSizeGroup" ) );
+		tmp.mnemonic = "a";
+	
+	viewMenu.add( tmp = new MenuItem( "Text Size", null, null, viewTextSizeMenu ) );
+	tmp.mnemonic = "x";
+	
+		var viewEncodingMenu = new Menu();
+		viewEncodingMenu.add( new MenuItem( "Auto-Select" ) );
+		viewEncodingMenu.add( new MenuItem_separator() );
+		viewEncodingMenu.add( tmp = new MenuItem( "More" ) );
+		tmp.mnemonic = "m";
+	
+	viewMenu.add( tmp = new MenuItem( "Encoding", null, null, viewEncodingMenu ) );
+	tmp.mnemonic = "d";
+	viewMenu.add( new MenuItem_separator() );
+	viewMenu.add( tmp = new MenuItem( "Source" ) );
+	tmp.mnemonic = "c";
+	viewMenu.add( tmp = new MenuItem( "Privacy Report..." ) );
+	tmp.mnemonic = "p";
+	viewMenu.add( tmp = new MenuItem( "Full Screen" ) );
+	tmp.mnemonic = "f";
+	tmp.shortcut = "F11";
+	
+mb.add( tmp = new MenuBar_button( "View", viewMenu ) );
+tmp.mnemonic = "v";
+
+
+	// Favorites Menu
+
+	var favoritesMenu = new Menu();
+	favoritesMenu.add( tmp = new MenuItem( "Add to Favorites..." ) );
+	tmp.mnemonic = "a";
+	favoritesMenu.add( tmp = new MenuItem( "Organize Favorites..." ) );
+	tmp.mnemonic = "o";
+	favoritesMenu.add( new MenuItem_separator() );
+	
+		var linksMenu = new Menu();
+		linksMenu.add( tmp = new MenuItem( "(Empty)" ) );
+		tmp.disabled = true;
+	
+	favoritesMenu.add( tmp = new MenuItem( "Links", null, "img/folder.png", linksMenu ) );
+	
+mb.add( tmp = new MenuBar_button( "Favorites", favoritesMenu ) );
+tmp.mnemonic = "a";
+
+
+	// Tools Menu
+
+	var toolsMenu = new Menu();
+	
+		var toolsMailAndNewsMenu = new Menu();
+		toolsMailAndNewsMenu.add( tmp = new MenuItem( "Read Mail" ) );
+		tmp.mnemonic = "m";
+		toolsMailAndNewsMenu.add( tmp = new MenuItem( "New Message..." ) );
+		tmp.mnemonic = "w";
+		toolsMailAndNewsMenu.add( tmp = new MenuItem( "Send Link..." ) );
+		tmp.mnemonic = "l";
+		toolsMailAndNewsMenu.add( tmp = new MenuItem( "Send Page..." ) );
+		tmp.mnemonic = "p";
+		toolsMailAndNewsMenu.add( new MenuItem_separator() );
+		toolsMailAndNewsMenu.add( tmp = new MenuItem( "Read News" ) );
+		tmp.mnemonic = "n";
+	
+	toolsMenu.add( tmp = new MenuItem( "Mail and News", null, null, toolsMailAndNewsMenu ) );
+	tmp.mnemonic = "m";
+	
+	toolsMenu.add( tmp = new MenuItem( "Synchronize..." ) );
+	tmp.mnemonic = "s";
+	toolsMenu.add( tmp = new MenuItem( "Windows Update" ) );
+	tmp.mnemonic = "u";
+	toolsMenu.add( new MenuItem_separator() );
+	toolsMenu.add( tmp = new MenuItem( "Messenger" ) );
+	toolsMenu.add( tmp = new MenuItem( "Show Related Links" ) );
+	tmp.mnemonic = "r";
+	toolsMenu.add( new MenuItem_separator() );
+	toolsMenu.add( tmp = new MenuItem( "Internet Options..." ) );
+	tmp.mnemonic = "o";
+
+mb.add( tmp = new MenuBar_button( "Tools", toolsMenu ) );
+tmp.mnemonic = "t";
+
+
+	// Help Menu
+
+	var helpMenu = new Menu();
+	helpMenu.add( tmp = new MenuItem( "Contents and Index" ) );
+	tmp.mnemonic = "c";
+	helpMenu.add( tmp = new MenuItem( "Tip of The Day" ) );
+	tmp.mnemonic = "d";
+	helpMenu.add( tmp = new MenuItem( "For Netscape Users" ) );
+	tmp.mnemonic = "n";
+	helpMenu.add( tmp = new MenuItem( "Online Support" ) );
+	tmp.mnemonic = "s";
+	helpMenu.add( tmp = new MenuItem( "Send Feedback" ) );
+	tmp.mnemonic = "k";
+	helpMenu.add( new MenuItem_separator() );
+	helpMenu.add( tmp = new MenuItem( "About Internet Explorer" ) );
+	tmp.mnemonic = "a";
+
+mb.add( tmp = new MenuBar_button( "Help", helpMenu ) );
+tmp.mnemonic = "h";
+
+// mb.write();
+document.body.appendChild( mb.create() );
+
+</script>
+
+<p><a href="#" onclick="window.open(window.document.location,'','toolbar=0,resizable=1,width=270,height=170'); return false">New Win</a></p>
+<p>Use <b>Esc</b> for keyboard navigation of the menu</p>
+
+<p>
+<select id="cssSelect">
+	<option value="css/winclassic.css">Windows Classic</option>
+	<option value="css/winxp.css">Windows XP</option>
+	<option value="css/office.css">Office</option>
+	<option value="css/officexp/officexp.css">Office XP</option>
+	<option value="css/qnx/qnx.css">QNX</option>
+</select>&nbsp;
+<button onclick="changeCssFile( document.getElementById('cssSelect').value )">Change</button>
+</p>
+
+<textarea>Textarea to test focus</textarea>
+
+</body>
+</html>

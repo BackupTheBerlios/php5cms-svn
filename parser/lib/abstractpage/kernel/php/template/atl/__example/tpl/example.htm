@@ -1,0 +1,48 @@
+<?xml version="1.0"?> 
+
+<html>
+<head>
+  	<title ap:content="title">place for the page title</title>
+</head>
+
+<body>
+
+<h1 ap:content="title">sample title</h1>
+
+
+<div metal:define-macro="main_menu"> 
+  <a href="/">home</a> | 
+  <a href="/products">products</a> |
+  <a href="/contact">contact</a> 
+  <div>
+  last modified : 
+  <span ap:content="mdate">page modification date</span> 
+  </div>
+</div>
+
+<span ap:comment="main_menu template requires 'mdate' variable"
+      ap:define="mdate page/last_modified"/> 
+			
+<span metal:use-macro="main_menu"/>
+
+<table>
+<tr>
+  	<td>name</td>
+    <td>phone</td>
+</tr>
+
+<tr ap:repeat="item result"> 
+    <td ap:content="item/name">item name</td>
+    <td ap:content="item/phone">item phone</td>
+</tr>
+
+<tr ap:repeat="item result2"> 
+    <td ap:content="item/name">item name</td>
+    <td ap:content="item/phone">item phone</td>
+</tr>
+</table>
+
+<span metal:use-macro="main_menu"/>
+
+</body> 
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+
+<title>Menu Example</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link type="text/css" rel="StyleSheet" href="css/officexp/officexp.css" />
+
+<style type="text/css">
+
+html, body
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background:	ThreeDFace;
+	overflow: auto;
+	font: MessageBox;
+	font: message-box;
+}
+fieldset, legend
+{
+	font: MessageBox;
+	font: message-box;
+}
+fieldset
+{
+	padding: 3px;
+}
+p, fieldset, textarea
+{
+	margin:	10px;
+}
+p
+{
+	font: Message-Box;
+	font: MessageBox;
+	margin:	10px;
+}
+a
+{ 
+	color:	blue;
+}
+
+</style>
+
+<script language="JavaScript" src="../../../../../../prepend.js"></script>
+
+<script language="JavaScript">
+
+set_library_path( '../../../../../../kernel/js/' );
+using( 'util.PosLib' );
+using( 'gui.button.ScrollButton' );
+using( 'gui.menu.lib.Menu' );
+using( 'gui.menu.lib.MenuBar' );
+using( 'gui.menu.lib.MenuItem' );
+using( 'gui.menu.lib.MenuBar_button' );
+using( 'gui.menu.lib.MenuCollection' );
+using( 'gui.menu.lib.MenuItem_checkbox' );
+using( 'gui.menu.lib.MenuItem_info' );
+using( 'gui.menu.lib.MenuItem_infoseparator' );
+using( 'gui.menu.lib.MenuItem_pane' );
+using( 'gui.menu.lib.MenuItem_radiobutton' );
+using( 'gui.menu.lib.MenuItem_separator' );
+using( 'gui.menu.lib.MenuLoadHelper' );
+using( 'gui.menu.lib.MenuPane' );
+
+</script>
+
+<script language="JavaScript">
+
+var cssFile = getQueryString( "css" );
+var lastKeyCode = 0;
+
+// used to only change when needed
+var oldOpenState = null;
+
+if ( cssFile == "" )
+	cssFile = "css/winclassic.css";
+	
+// set css file to use for menus
+Menu.prototype.cssFile = cssFile;
+
+
+function rememberKeyCode()
+{
+	lastKeyCode = window.event.keyCode;
+}
+function showContextMenu()
+{
+	var el = window.event.srcElement;
+	
+	// check for edit
+	var showEditMenu = el != null && ( el.tagName == "INPUT" || el.tagName == "TEXTAREA" );
+	
+	// check for anchor	
+	while ( el != null && el.tagName != "A" )
+		el = el.parentNode;
+	
+	var showOpenItems = ( ( el != null ) && ( el.tagName == "A" ) );
+	
+	if ( showOpenItems != oldOpenState )
+	{
+		openItem.visible		= showOpenItems;
+		openNewWinItem.visible	= showOpenItems;
+		backItem.visible		= !showOpenItems;
+		forwardItem.visible		= !showOpenItems;
+		refreshItem.visible		= !showOpenItems;
+		
+		oldOpenState = showOpenItems;
+	}
+	
+	if ( showOpenItems )
+		openItem.action = openNewWinItem.action = el.href;
+	
+	// find left and top
+	var left, top;
+	
+	if ( showEditMenu )
+		el = window.event.srcElement;
+	else if ( !showOpenItems )
+		el = document.documentElement;
+	
+	// context menu key
+	if ( lastKeyCode == 93 )
+	{
+		left = PosLib.getScreenLeft( el );
+		top  = PosLib.getScreenTop( el );
+	}
+	else
+	{
+		left = window.event.screenX;
+		top  = window.event.screenY;
+	}
+	
+	if ( showEditMenu )
+	{	
+		// undo is broken in IE
+		// undoItem.disabled   = !document.queryCommandEnabled( "Undo" );
+		cutItem.disabled       = !document.queryCommandEnabled( "Cut" );
+		copyItem.disabled      = !document.queryCommandEnabled( "Copy" );
+		pasteItem.disabled     = !document.queryCommandEnabled( "Paste" );
+		deleteItem.disabled    = !document.queryCommandEnabled( "Delete" );
+		selectAllItem.disabled = !document.queryCommandEnabled( "SelectAll" );
+	
+		eMenu.invalidate();
+		eMenu.show( left, top );
+	}
+	else
+	{
+		cMenu.invalidate();
+		cMenu.show( left, top );
+	}
+	
+	event.returnValue = false;
+	lastKeyCode = 0
+}
+function getQueryString( sProp )
+{
+	var re = new RegExp( sProp + "=([^\\&]*)", "i" );
+	var a  = re.exec( document.location.search );
+	
+	if ( a == null )
+		return "";
+	
+	return a[1];
+};
+function changeCssFile( sCssFile )
+{
+	var loc = String(document.location);
+	var search = document.location.search;
+	
+	if ( search != "" )
+		loc = loc.replace( search, "" );
+	
+	loc = loc + "?css=" + sCssFile;
+	document.location.replace( loc );
+}
+
+Env.onLoad = function()
+{
+	document.attachEvent(
+		"oncontextmenu",
+		showContextMenu
+	);
+	document.attachEvent(
+		"onkeyup",
+		rememberKeyCode
+	);
+}
+
+document.write("<link type=\"text/css\" rel=\"StyleSheet\" href=\"" + cssFile + "\" />" );
+
+</script>
+
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+var tmp;
+var openItem, openNewWinItem;
+
+// Build context menu
+var cMenu = new Menu();
+
+cMenu.add( openItem = new MenuItem( "Open" ) );
+openItem.mnemonic = "o";
+cMenu.add( openNewWinItem = new MenuItem( "Open in New Window" ) );
+openNewWinItem.mnemonic = "n";
+openNewWinItem.target   = "_blank";	// open in new window
+
+var backItem, forwardItem, refreshItem;
+
+cMenu.add( backItem = new MenuItem( "Back", function() { window.history.go( -1 ); }, "img/back.png" ) );
+backItem.mnemonic = "b";
+cMenu.add( forwardItem = new MenuItem( "Forward", function() { window.history.go( 1 ); }, "img/forward.png" ) );
+forwardItem.mnemonic = "o";
+cMenu.add( refreshItem = new MenuItem( "Refresh", function() { document.location.reload(); }, "img/refresh.png" ) );
+refreshItem.mnemonic = "r";
+
+cMenu.add( new MenuItem_separator() );
+
+cMenu.add( tmp = new MenuItem( "View Source", function() {	document.location = "view-source:" + document.location; }, "img/notepad.png" ) );
+tmp.mnemonic = "v";
+
+
+// edit menu
+var eMenu = new Menu()
+
+var undoItem, cutItem, copyItem, pasteItem, deleteItem, selectAllItem;
+
+// undo is broken in IE
+// eMenu.add( undoItem = new MenuItem( "Undo", function () { document.execCommand( "Undo" ); }, "img/undo.png" ) );
+// undoItem.mnemonic = "u";
+// 
+// 
+// eMenu.add( new MenuSeparator() );
+
+eMenu.add( cutItem = new MenuItem( "Cut", function() { document.execCommand( "Cut" ); }, "img/cut.png" ) );
+cutItem.mnemonic = "t";
+
+eMenu.add( copyItem = new MenuItem( "Copy", function() { document.execCommand( "Copy" ); }, "img/copy.png" ) );
+copyItem.mnemonic = "c";
+
+eMenu.add( pasteItem = new MenuItem( "Paste", function() { document.execCommand( "Paste" ); }, "img/paste.png" ) );
+pasteItem.mnemonic = "p";
+
+eMenu.add( deleteItem = new MenuItem( "Delete", function() { document.execCommand( "Delete" ); }, "img/delete.png" ) );
+deleteItem.mnemonic = "d";
+
+eMenu.add( new MenuItem_separator() );
+
+eMenu.add( selectAllItem = new MenuItem( "Select All", function() { document.execCommand( "SelectAll" ); } ) );
+selectAllItem.mnemonic = "a";
+
+</script>
+
+<fieldset>
+	<legend>Select Look &amp; Feel</legend>
+	<select id="cssSelect">
+		<option value="css/winclassic.css">Windows Classic</option>
+		<option value="css/winxp.css">Windows XP</option>
+		<option value="css/office.css">Office</option>
+		<option value="css/officexp/officexp.css">Office XP</option>
+		<option value="css/qnx/qnx.css">QNX</option>
+	</select>
+	&nbsp;
+	<button onclick="changeCssFile( document.getElementById('cssSelect').value )" ID=Button1>Change</button>
+</fieldset>
+
+<textarea>Textarea to test focus</textarea>
+<p>Try bringing up the context menu in the textarea as well.</p>
+
+</body>
+</html>

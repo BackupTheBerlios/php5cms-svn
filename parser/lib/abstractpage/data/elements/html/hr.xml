@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+
+<tag name="HR" endtag="no">
+	<tagformat nlbeforetag="1" nlaftertag="1"/>
+	
+	<attributes>
+		<attrib name="ALIGN" type="Enumerated">
+			<opt value="left" caption="left"/>
+			<opt value="center" caption="center (default)"/>
+			<opt value="right" caption="right"/>
+		</attrib>
+	
+		<attrib name="WIDTH"/>
+		<attrib name="SIZE"/>
+		<attrib name="NOSHADE" type="Flag"/>
+		<attrib name="COLOR" type="Color"/>
+		<attrib name="CLASS" type="cssStyle"/>
+		<attrib name="ID"/>
+		<attrib name="STYLE" type="Style"/>
+		<attrib name="TITLE"/>
+		<attrib name="onClick" casesensitive="yes"/>
+		<attrib name="onDblClick" casesensitive="yes"/>
+		<attrib name="onMouseDown" casesensitive="yes"/>
+		<attrib name="onMouseUp" casesensitive="yes"/>
+		<attrib name="onMouseOver" casesensitive="yes"/>
+		<attrib name="onMouseMove" casesensitive="yes"/>
+		<attrib name="onMouseOut" casesensitive="yes"/>
+		<attrib name="onKeyPress" casesensitive="yes"/>
+		<attrib name="onKeyDown" casesensitive="yes"/>
+		<attrib name="onKeyUp" casesensitive="yes"/>
+
+		<evt name="onClick"/>
+		<evt name="onDblClick"/>
+		<evt name="onMouseDown"/>
+		<evt name="onMouseUp"/>
+		<evt name="onMouseOver"/>
+		<evt name="onMouseMove"/>
+		<evt name="onMouseOut"/>
+		<evt name="onKeyPress"/>
+		<evt name="onKeyDown"/>
+		<evt name="onKeyUp"/>
+	</attributes>
+
+	<descriptions>
+		<desc lang="de">
+		</desc>
+
+		<desc lang="en">
+		</desc>
+	</descriptions>
+</tag>

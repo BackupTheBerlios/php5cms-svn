@@ -1,0 +1,99 @@
+.outer, .inner
+{
+	border: 1px solid buttonface;
+}
+.favMenu
+{ 
+	background: buttonface; 
+	font: menu; 
+	color: menutext; 
+	cursor: hand; 
+}
+.favMenu div
+{ 
+	width: 100%; 
+}
+.favMenu a
+{ 
+	color: menutext; 
+	text-decoration: none; 
+}
+.favMenu a:hover 
+{ 
+	color: menutext; 
+	text-decoration: underline; 
+}
+.topFolder
+{ 
+	padding: 2px; 
+	border: 1px solid buttonface;  
+}
+.topItem
+{ 
+	padding: 2px; 
+	border: 1px solid buttonface;  
+}
+.subFolder
+{ 
+	padding: 3px; 
+}
+.subItem
+{ 
+	padding: 3px; 
+}
+.sub
+{ 
+	display: none; 
+	border-left: 1px solid buttonshadow; 
+	border-right: 1px solid buttonhighlight; 
+	border-bottom: 1px solid buttonhighlight; 
+	padding-top: 1px; 
+}
+.sub .sub		 
+{ 
+	border: 0px; 
+}
+.icon
+{ 
+	margin-right: 5; 
+	width: 16; 
+	height: 16; 
+	vertical-align: top; 
+}
+.outer
+{ 
+	border-left: 1px solid buttonshadow; 
+	border-right: 1px solid buttonhighlight; 
+	border-top: 1px solid buttonshadow; 
+	border-bottom: 1px solid buttonhighlight; 
+	background: buttonface; 
+	padding: 0px;
+}
+.inner
+{ 
+	border-left: 1px solid buttonhighlight; 
+	border-right: 1px solid buttonshadow; 
+	border-top: 1px solid buttonhighlight; 
+	border-bottom: 1px solid buttonshadow; 
+	padding: 0px; 
+	overflow: hidden; 
+}
+.scrollButton	 
+{ 
+	position: absolute; 
+	height: 16px; 
+	width: 50px; 
+	overflow: hidden; 
+	font-family: webdings; 
+	font-size: 10px; 
+	text-align: center; 
+	background: buttonface; 
+	display: none; 
+	cursor: default; 
+	border: 1px solid buttonface; 
+}
+.flat
+{ 
+	border: 1px solid buttonface; 
+	padding: 0px; 
+}
