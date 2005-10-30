@@ -1,0 +1,3050 @@
+<html>
+<head>
+<title>Docs For Class TPage</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">System.Web.UI</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_System.Web.UI.html" class="menu">class tree: System.Web.UI</a> ]
+		  [ <a href="../elementindex_System.Web.UI.html" class="menu">index: System.Web.UI</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_prado.html">prado</a><br />
+              <a href="../li_System.html">System</a><br />
+              <a href="../li_System.Data.html">System.Data</a><br />
+              <a href="../li_System.Exception.html">System.Exception</a><br />
+              <a href="../li_System.I18N.html">System.I18N</a><br />
+              <a href="../li_System.I18N.core.html">System.I18N.core</a><br />
+              <a href="../li_System.Security.html">System.Security</a><br />
+              <a href="../li_System.Web.Services.html">System.Web.Services</a><br />
+              <a href="../li_System.Web.UI.html">System.Web.UI</a><br />
+              <a href="../li_System.Web.UI.WebControls.html">System.Web.UI.WebControls</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../System.Web.UI/TAJAXScript.html">TAJAXScript</a><br />
+	    		<a href="../System.Web.UI/TBodyCollection.html">TBodyCollection</a><br />
+	    		<a href="../System.Web.UI/TContent.html">TContent</a><br />
+	    		<a href="../System.Web.UI/TContentPlaceHolder.html">TContentPlaceHolder</a><br />
+	    		<a href="../System.Web.UI/TControl.html">TControl</a><br />
+	    		<a href="../System.Web.UI/TForm.html">TForm</a><br />
+	    		<a href="../System.Web.UI/TJSTemplate.html">TJSTemplate</a><br />
+	    		<a href="../System.Web.UI/TPage.html">TPage</a><br />
+	  </div>
+      
+            <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../System.Web.UI/_Web_Services_TAJAXScript_php.html">		TAJAXScript.php
+		</a><br>
+			<a href="../System.Web.UI/_Web_UI_TContent_php.html">		TContent.php
+		</a><br>
+			<a href="../System.Web.UI/_Web_UI_TContentPlaceHolder_php.html">		TContentPlaceHolder.php
+		</a><br>
+			<a href="../System.Web.UI/_Web_UI_TControl_php.html">		TControl.php
+		</a><br>
+			<a href="../System.Web.UI/_Web_UI_TForm_php.html">		TForm.php
+		</a><br>
+			<a href="../System.Web.UI/_Web_Services_TJSTemplate_php.html">		TJSTemplate.php
+		</a><br>
+			<a href="../System.Web.UI/_Web_UI_TPage_php.html">		TPage.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: TPage</h1>
+Source Location: /Web/UI/TPage.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre><a href="../System/TComponent.html">TComponent</a>
+   |
+   --<a href="../System.Web.UI/TControl.html">TControl</a>
+      |
+      --TPage</pre><br />
+<div class="description">TPage class</div><br />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 49]<br />
+TPage class<br /><br /><p>TPage implements the postback mechanism as well as many functions related to client scripting.</p><p>A page, an instance of TPage or its descendent class is a top-level control  in a PRADO application. It has neither parent nor container.  In order for an application to load a page, the page name and the location of the page class  must be defined in the application specification.</p><p>Namespace: System.Web.UI</p><p>Properties <ul><li><strong>IsValid</strong>, boolean, read-only
+   <br />Gets the value that indicates whether the page has passed validation.</li><li><strong>IsPostBack</strong>, boolean, read-only
+   <br />Gets the value that indicates whether the current request is a postback.</li><li><strong>Form</strong>, TForm, read-only
+   <br />Gets the form control associated with the page.</li><li><strong>Validators</strong>, array, read-only
+   <br />Gets the list of registered validators.</li><li><strong>MasterPage</strong>, TPage, read-only
+   <br />Gets the master page, null if none.</li><li><strong>MasterPageName</strong>, string
+   <br />Gets or sets the name of the master page.</li></ul></p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>v1.0, last update on 2004/08/13 21:44:52</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Qiang Xue &lt;<a href="mailto:qiang.xue@gmail.com">qiang.xue@gmail.com</a>&gt;</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+
+
+    
+        
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_consts">Constants</a></h3>
+<ul>
+    <li><a href="../System.Web.UI/TPage.html#constINPUT_EVENTPARAMETER">INPUT_EVENTPARAMETER</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constINPUT_EVENTTARGET">INPUT_EVENTTARGET</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constINPUT_VIEWSTATE">INPUT_VIEWSTATE</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constJS_POSTBACK">JS_POSTBACK</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constSTAGE_CREATE">STAGE_CREATE</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constSTAGE_INIT">STAGE_INIT</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constSTAGE_LOAD">STAGE_LOAD</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constSTAGE_LOADVIEWSTATE">STAGE_LOADVIEWSTATE</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constSTAGE_PRERENDER">STAGE_PRERENDER</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constSTAGE_RAISEEVENTS">STAGE_RAISEEVENTS</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constSTAGE_RENDER">STAGE_RENDER</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constSTAGE_SAVEVIEWSTATE">STAGE_SAVEVIEWSTATE</a></li>
+    <li><a href="../System.Web.UI/TPage.html#constSTAGE_UNLOAD">STAGE_UNLOAD</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../System.Web.UI/TPage.html#method__construct">__construct</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodattachContent">attachContent</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methoddeterminePostBackMode">determinePostBackMode</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodexecute">execute</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetForm">getForm</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetHead">getHead</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetMasterPage">getMasterPage</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetMasterPageName">getMasterPageName</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetModule">getModule</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetPageName">getPageName</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetPostBackClientEvent">getPostBackClientEvent</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetPostBackParameter">getPostBackParameter</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetPostBackTarget">getPostBackTarget</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetStage">getStage</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetTheme">getTheme</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetUrl">getUrl</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodgetValidators">getValidators</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodhandlePostBackEvent">handlePostBackEvent</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodisArrayDeclarationRegistered">isArrayDeclarationRegistered</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodisBeginScriptRegistered">isBeginScriptRegistered</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodisEndScriptRegistered">isEndScriptRegistered</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodisHiddenFieldRegistered">isHiddenFieldRegistered</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodisOnSubmitStatementRegistered">isOnSubmitStatementRegistered</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodisPostBack">isPostBack</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodisScriptFileRegistered">isScriptFileRegistered</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodisStyleFileRegistered">isStyleFileRegistered</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodisValid">isValid</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodloadPageStateFromPersistenceMedium">loadPageStateFromPersistenceMedium</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodloadPostData">loadPostData</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodloadViewState">loadViewState</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodonAuthorize">onAuthorize</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodonInitRecursive">onInitRecursive</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodonLoadRecursive">onLoadRecursive</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodonPreInit">onPreInit</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodonPreRenderRecursive">onPreRenderRecursive</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodonUnloadRecursive">onUnloadRecursive</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodraisePostDataChangedEvents">raisePostDataChangedEvents</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterArrayDeclaration">registerArrayDeclaration</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterBeginScript">registerBeginScript</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterContentPlaceHolder">registerContentPlaceHolder</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterEndScript">registerEndScript</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterHiddenField">registerHiddenField</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterOnSubmitStatement">registerOnSubmitStatement</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterPostBackCandidate">registerPostBackCandidate</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterPostDataLoader">registerPostDataLoader</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterScriptFile">registerScriptFile</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterStyleFile">registerStyleFile</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterValidator">registerValidator</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodregisterViewState">registerViewState</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodrenderBody">renderBody</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodrenderContent">renderContent</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodsavePageStateToPersistenceMedium">savePageStateToPersistenceMedium</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodsaveViewState">saveViewState</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodsetForm">setForm</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodsetHead">setHead</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodsetMasterPageName">setMasterPageName</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodsetModule">setModule</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodsetPostBackParameter">setPostBackParameter</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodsetPostBackTarget">setPostBackTarget</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodsetTheme">setTheme</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodunregisterContentPlaceHolder">unregisterContentPlaceHolder</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodunregisterPostBackCandidate">unregisterPostBackCandidate</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodunregisterPostDataLoader">unregisterPostDataLoader</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodunregisterValidator">unregisterValidator</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodunsetForm">unsetForm</a></li>
+    <li><a href="../System.Web.UI/TPage.html#methodvalidate">validate</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+<td valign="top">
+<h3>Child classes:</h3>
+<div class="tags">
+<dl>
+<dt><a href="../System.Web.Services/TPageWithCallback.html">TPageWithCallback</a></dt>
+	<dd>A Page than can handle components with callbacks.</dd>
+</dl>
+</div>
+</td>
+
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+<div class="tags">
+<h4>Class: <a href="../System/TComponent.html">TComponent</a></h4>
+<dl>
+<dt>
+  <a href="../System/TComponent.html#var$children">TComponent::$children</a>
+  </dt>
+<dd>
+   
+</dd>
+</dl>
+</div>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+<h4>Class: <a href="../System.Web.UI/TControl.html">TControl</a></h4>
+<dl>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#method__construct">TControl::__construct()</a>
+  </dt>
+  <dd>
+    Constructor.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodaddBody">TControl::addBody()</a>
+  </dt>
+  <dd>
+    Appends an object into the body collection of this control.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodaddParsedObject">TControl::addParsedObject()</a>
+  </dt>
+  <dd>
+    Adds the object parsed in template as a body of the component.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodallowBody">TControl::allowBody()</a>
+  </dt>
+  <dd>
+    Determines whether the control can add the object as a body.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodclearViewState">TControl::clearViewState()</a>
+  </dt>
+  <dd>
+    Clears viewstate
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodfindBodyControl">TControl::findBodyControl()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodgetAttribute">TControl::getAttribute()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodgetAttributes">TControl::getAttributes()</a>
+  </dt>
+  <dd>
+    Returns the attribute list object.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodgetAttributesToRender">TControl::getAttributesToRender()</a>
+  </dt>
+  <dd>
+    Returns attributes to be rendered.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodgetBodies">TControl::getBodies()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodgetClientID">TControl::getClientID()</a>
+  </dt>
+  <dd>
+    Returns the client ID of the component.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodgetContainer">TControl::getContainer()</a>
+  </dt>
+  <dd>
+    Returns the container of this component.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodgetSkinName">TControl::getSkinName()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodgetTagName">TControl::getTagName()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodgetViewState">TControl::getViewState()</a>
+  </dt>
+  <dd>
+    Returns a viewstate value.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodinitSkin">TControl::initSkin()</a>
+  </dt>
+  <dd>
+    Initializes a skin for the control. If a skin name is provided then that skin will be loaded.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodisViewStateEnabled">TControl::isViewStateEnabled()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodisVisible">TControl::isVisible()</a>
+  </dt>
+  <dd>
+    This method checks whether a control is visible.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodloadViewState">TControl::loadViewState()</a>
+  </dt>
+  <dd>
+    Loads viewstate into this component and its children.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodonBubbleEvent">TControl::onBubbleEvent()</a>
+  </dt>
+  <dd>
+    This method responds to a bubbled event.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodonInit">TControl::onInit()</a>
+  </dt>
+  <dd>
+    This method is invoked when the control enters 'Init' stage.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodonInitRecursive">TControl::onInitRecursive()</a>
+  </dt>
+  <dd>
+    Calls onInit of this control and its children recursively.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodonLoad">TControl::onLoad()</a>
+  </dt>
+  <dd>
+    This method is invoked when the control enters 'Load' stage.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodonLoadRecursive">TControl::onLoadRecursive()</a>
+  </dt>
+  <dd>
+    Calls onLoad of this control and its children recursively.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodonPreRender">TControl::onPreRender()</a>
+  </dt>
+  <dd>
+    This method is invoked when the control enters 'PreRender' stage.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodonPreRenderRecursive">TControl::onPreRenderRecursive()</a>
+  </dt>
+  <dd>
+    Calls onPreRender of this control and its children recursively.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodonUnload">TControl::onUnload()</a>
+  </dt>
+  <dd>
+    This method is invoked when the control enters 'Unload' stage.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodonUnloadRecursive">TControl::onUnloadRecursive()</a>
+  </dt>
+  <dd>
+    Calls onUnload of this control and its children recursively.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodraiseBubbleEvent">TControl::raiseBubbleEvent()</a>
+  </dt>
+  <dd>
+    Invokes the parent's onBubbleEvent method.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodremoveBodies">TControl::removeBodies()</a>
+  </dt>
+  <dd>
+    Removes all body content.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodrender">TControl::render()</a>
+  </dt>
+  <dd>
+    Renders this control.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodrenderAttributes">TControl::renderAttributes()</a>
+  </dt>
+  <dd>
+    Renders the attributes.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodrenderBody">TControl::renderBody()</a>
+  </dt>
+  <dd>
+    Renders the body content.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodsaveViewState">TControl::saveViewState()</a>
+  </dt>
+  <dd>
+    Returns the viewstate of this component and its children.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodsetAttribute">TControl::setAttribute()</a>
+  </dt>
+  <dd>
+    Sets an attribute.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodsetContainer">TControl::setContainer()</a>
+  </dt>
+  <dd>
+    Sets the container of this component
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodsetEnableViewState">TControl::setEnableViewState()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodsetSkinName">TControl::setSkinName()</a>
+  </dt>
+  <dd>
+    Sets the skin to use for this control
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodsetTagName">TControl::setTagName()</a>
+  </dt>
+  <dd>
+    Sets the tag name.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodsetViewState">TControl::setViewState()</a>
+  </dt>
+  <dd>
+    Sets a viewstate value.
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodsetVisible">TControl::setVisible()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System.Web.UI/TControl.html#methodsynchronizeControl">TControl::synchronizeControl()</a>
+  </dt>
+  <dd>
+    This method should only be used by framework developer.
+  </dd>
+  </dl>
+<h4>Class: <a href="../System/TComponent.html">TComponent</a></h4>
+<dl>
+    <dt>
+    <a href="../System/TComponent.html#method__construct">TComponent::__construct()</a>
+  </dt>
+  <dd>
+    Constructor.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodaddChild">TComponent::addChild()</a>
+  </dt>
+  <dd>
+    Adds a child component.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodaddParsedObject">TComponent::addParsedObject()</a>
+  </dt>
+  <dd>
+    Handles a component or string met in template.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodattachEventHandler">TComponent::attachEventHandler()</a>
+  </dt>
+  <dd>
+    Attaches a handler function to an event.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodbindProperty">TComponent::bindProperty()</a>
+  </dt>
+  <dd>
+    Sets up the binding between a property and an expression.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodcanGetProperty">TComponent::canGetProperty()</a>
+  </dt>
+  <dd>
+    Determines whether a property can be read.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodcanSetProperty">TComponent::canSetProperty()</a>
+  </dt>
+  <dd>
+    Determines whether a property can be written.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodcreateComponent">TComponent::createComponent()</a>
+  </dt>
+  <dd>
+    Creates a child component.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methoddataBind">TComponent::dataBind()</a>
+  </dt>
+  <dd>
+    Performs the databinding for this component.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodevaluateExpression">TComponent::evaluateExpression()</a>
+  </dt>
+  <dd>
+    Evaluates a PHP expression.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodevaluateStatements">TComponent::evaluateStatements()</a>
+  </dt>
+  <dd>
+    Evaluates a list of PHP statements.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodfindObject">TComponent::findObject()</a>
+  </dt>
+  <dd>
+    Finds an object by its ID path.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetApplication">TComponent::getApplication()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetChild">TComponent::getChild()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetChildren">TComponent::getChildren()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetDefinition">TComponent::getDefinition()</a>
+  </dt>
+  <dd>
+    Returns or builds a component definition.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetGlobalization">TComponent::getGlobalization()</a>
+  </dt>
+  <dd>
+    Returns the Globalization instance for the application.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetID">TComponent::getID()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetModule">TComponent::getModule()</a>
+  </dt>
+  <dd>
+    Returns the module object that contains the component or the page containing the component.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetPage">TComponent::getPage()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetParent">TComponent::getParent()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetPropertyInitValue">TComponent::getPropertyInitValue()</a>
+  </dt>
+  <dd>
+    Gets the initial value of a property.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetPropertyType">TComponent::getPropertyType()</a>
+  </dt>
+  <dd>
+    Returns the type of a property
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetRequest">TComponent::getRequest()</a>
+  </dt>
+  <dd>
+    Returns the request object associated with application.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetServiceManager">TComponent::getServiceManager()</a>
+  </dt>
+  <dd>
+    Returns the service manager for this application.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetSession">TComponent::getSession()</a>
+  </dt>
+  <dd>
+    Returns the session object associated with the application.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetSessionState">TComponent::getSessionState()</a>
+  </dt>
+  <dd>
+    Returns a session variable.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetUniqueID">TComponent::getUniqueID()</a>
+  </dt>
+  <dd>
+    Returns the unique ID of the component.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodgetUser">TComponent::getUser()</a>
+  </dt>
+  <dd>
+    Returns the user object associated with the application.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodhasChildren">TComponent::hasChildren()</a>
+  </dt>
+  <dd>
+    
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodhasEvent">TComponent::hasEvent()</a>
+  </dt>
+  <dd>
+    Determines whether an event is defined.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodhasProperty">TComponent::hasProperty()</a>
+  </dt>
+  <dd>
+    Determines whether a property is defined.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodinitProperties">TComponent::initProperties()</a>
+  </dt>
+  <dd>
+    Initializes the property values.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodinstantiateTemplate">TComponent::instantiateTemplate()</a>
+  </dt>
+  <dd>
+    Parses a template string and instantiates the content.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodonDataBinding">TComponent::onDataBinding()</a>
+  </dt>
+  <dd>
+    This method is invoked when dataBind is invoked for the component.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodraiseEvent">TComponent::raiseEvent()</a>
+  </dt>
+  <dd>
+    Invokes all attached event handler functions for a particular event.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodremoveChild">TComponent::removeChild()</a>
+  </dt>
+  <dd>
+    Removes a child component.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodremoveChildren">TComponent::removeChildren()</a>
+  </dt>
+  <dd>
+    Removes all child components.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodsetAttribute">TComponent::setAttribute()</a>
+  </dt>
+  <dd>
+    Sets an attribute.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodsetDefinition">TComponent::setDefinition()</a>
+  </dt>
+  <dd>
+    Sets a component definition.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodsetID">TComponent::setID()</a>
+  </dt>
+  <dd>
+    Sets a component ID.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodsetParent">TComponent::setParent()</a>
+  </dt>
+  <dd>
+    Sets the parent of this component.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodsetPropertyInitValue">TComponent::setPropertyInitValue()</a>
+  </dt>
+  <dd>
+    Sets the initial value of a property.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodsetRoot">TComponent::setRoot()</a>
+  </dt>
+  <dd>
+    Sets the root component in the component hierarchy.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodsetSessionState">TComponent::setSessionState()</a>
+  </dt>
+  <dd>
+    Sets a session variable.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#methodunbindProperty">TComponent::unbindProperty()</a>
+  </dt>
+  <dd>
+    Breaks the binding between a property and an expression.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#method__get">TComponent::__get()</a>
+  </dt>
+  <dd>
+    Returns a property value by name or a child component by ID.
+  </dd>
+    <dt>
+    <a href="../System/TComponent.html#method__set">TComponent::__set()</a>
+  </dt>
+  <dd>
+    Sets value of a component property.
+  </dd>
+  </dl>
+</div>
+</td>
+
+</tr></table>
+
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 167]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>TPage __construct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor, initiates the root to itself.<br /><br /><p>Use pradoGetApplication()-&gt;loadPage() to create a page instead of using the new operator.</p><br /><br /><br />
+
+Overrides <a href="../System.Web.UI/TControl.html#method__construct">TControl::__construct()</a> (Constructor.)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodattachContent"></a>
+	<h3>method attachContent <span class="smalllinenumber">[line 412]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void attachContent(
+<a href="../System.Web.UI/TContent.html">TContent</a>
+$content)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Attaches a content control to a content placeholder.<br /><br /><p>The attachment is based on ID matching.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI/TContent.html">TContent</a>&nbsp;&nbsp;</td>
+        <td><b>$content</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddeterminePostBackMode"></a>
+	<h3>method determinePostBackMode <span class="smalllinenumber">[line 178]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void determinePostBackMode(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Determines whether the current request is a postback.<br /><br /><p>This method should only be used by framework developers.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodexecute"></a>
+	<h3>method execute <span class="smalllinenumber">[line 933]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void execute(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Executes page lifecycles.<br /><br /><p>Starting with TModule.onLoad</p><p>If the page is requested for the first time, it consists of the following lifecycles, <ul><li>OnInit event</li><li>OnLoad event</li><li>OnPreRender event</li><li>save viewstate</li><li>render page</li><li>OnUnload event</li></ul>  If the page is requested in response to a form submission (called postback), the life cycles include <ul><li>OnInit event</li><li>load viewstate</li><li>load post data</li><li>OnLoad event</li><li>load post data (for newly created components during Load event)</li><li>OnPostDataChanged event</li><li>Input validation if the postback event handler is enabled with CausesValidation property</li><li>PostBack event</li><li>OnPreRender event</li><li>save viewstate</li><li>render page</li><li>OnUnload event</li></ul>  The execution is ended with TMOdule.onUnload</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../System.Web.Services/TPageWithCallback.html#methodexecute">TPageWithCallback::execute()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetForm"></a>
+	<h3>method getForm <span class="smalllinenumber">[line 250]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../System.Web.UI/TForm.html">TForm</a> getForm(
+[string
+$id = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the currently attached form object.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the reference to the currently attached form object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td>The unique id of the form to detach</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetHead"></a>
+	<h3>method getHead <span class="smalllinenumber">[line 270]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../System.Web.UI.WebControls/THead.html">THead</a> getHead(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the current page's Head object.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The reference to the THead object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetMasterPage"></a>
+	<h3>method getMasterPage <span class="smalllinenumber">[line 853]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>null|<a href="../System.Web.UI/TPage.html">TPage</a> getMasterPage(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the master page</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetMasterPageName"></a>
+	<h3>method getMasterPageName <span class="smalllinenumber">[line 861]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getMasterPageName(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the master page name</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetModule"></a>
+	<h3>method getModule <span class="smalllinenumber">[line 835]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../System/TModule.html">TModule</a> getModule(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the module object.<br /><br /><p>This method overrides the TComponent implementation.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System/TComponent.html#methodgetModule">TComponent::getModule()</a> (Returns the module object that contains the component or the page containing the component.)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPageName"></a>
+	<h3>method getPageName <span class="smalllinenumber">[line 889]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getPageName(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>full qualified page name including module name if any.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPostBackClientEvent"></a>
+	<h3>method getPostBackClientEvent <span class="smalllinenumber">[line 553]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getPostBackClientEvent(
+<a href="../System/TComponent.html">TComponent</a>
+$target, string
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns a javascript that can be used to trigger client-side postback event.<br /><br /><p>You have to add your own javascript surrounding elements if necessary.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System/TComponent.html">TComponent</a>&nbsp;&nbsp;</td>
+        <td><b>$target</b>&nbsp;&nbsp;</td>
+        <td>the control that needs to trigger the postback event</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$param</b>&nbsp;&nbsp;</td>
+        <td>a parameter to be included with the postback event</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPostBackParameter"></a>
+	<h3>method getPostBackParameter <span class="smalllinenumber">[line 528]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getPostBackParameter(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the parameter of the postback event</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPostBackTarget"></a>
+	<h3>method getPostBackTarget <span class="smalllinenumber">[line 498]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Tcontrol getPostBackTarget(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the control responsible for the postback event, null if no postback target available</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetStage"></a>
+	<h3>method getStage <span class="smalllinenumber">[line 899]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getStage(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the current life cycle the page is in.<br /><br /><p>This method should only be used by framework developers.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the current life cycle the page is in</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetTheme"></a>
+	<h3>method getTheme <span class="smalllinenumber">[line 290]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getTheme(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the name of the theme to be applied to the page</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetUrl"></a>
+	<h3>method getUrl <span class="smalllinenumber">[line 880]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getUrl(
+[array|null
+$getParameters = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>a URL for this page</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array|null&nbsp;&nbsp;</td>
+        <td><b>$getParameters</b>&nbsp;&nbsp;</td>
+        <td>GET parameters (name=&gt;value pairs), null if no GET parameters</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetValidators"></a>
+	<h3>method getValidators <span class="smalllinenumber">[line 432]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getValidators(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodhandlePostBackEvent"></a>
+	<h3>method handlePostBackEvent <span class="smalllinenumber">[line 990]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void handlePostBackEvent(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisArrayDeclarationRegistered"></a>
+	<h3>method isArrayDeclarationRegistered <span class="smalllinenumber">[line 673]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isArrayDeclarationRegistered(
+string
+$name)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Indicates whether the named array has been registered before.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodregisterArrayDeclaration">TPage::registerArrayDeclaration()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>the array name</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisBeginScriptRegistered"></a>
+	<h3>method isBeginScriptRegistered <span class="smalllinenumber">[line 687]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isBeginScriptRegistered(
+string
+$key)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Indicates whether the named beginscript has been registered before.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodregisterBeginScript">TPage::registerBeginScript()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>the key that identifies a beginscript</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisEndScriptRegistered"></a>
+	<h3>method isEndScriptRegistered <span class="smalllinenumber">[line 715]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isEndScriptRegistered(
+string
+$key)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Indicate whether the named endscript has been registered before.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodregisterEndScript">TPage::registerEndScript()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>the key that identifies a beginscript</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisHiddenFieldRegistered"></a>
+	<h3>method isHiddenFieldRegistered <span class="smalllinenumber">[line 618]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isHiddenFieldRegistered(
+string
+$name)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Indicates whether the named hidden field has been registered before.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodregisterHiddenField">TPage::registerHiddenField()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>the name of the hidden field</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisOnSubmitStatementRegistered"></a>
+	<h3>method isOnSubmitStatementRegistered <span class="smalllinenumber">[line 645]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isOnSubmitStatementRegistered(
+string
+$name)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Indicates whether the named onsubmit statement has been registered before.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodregisterOnSubmitStatement">TPage::registerOnSubmitStatement()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>the key that identifies the onsubmit statement</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisPostBack"></a>
+	<h3>method isPostBack <span class="smalllinenumber">[line 197]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean|false isPostBack(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Indicates whether the current request is a postback.<br /><br /><p>The value is available since Init stage.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisScriptFileRegistered"></a>
+	<h3>method isScriptFileRegistered <span class="smalllinenumber">[line 743]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isScriptFileRegistered(
+string
+$key)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Indicates whether the named scriptfile has been registered before.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodregisterScriptFile">TPage::registerScriptFile()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>the name of the scriptfile</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisStyleFileRegistered"></a>
+	<h3>method isStyleFileRegistered <span class="smalllinenumber">[line 783]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isStyleFileRegistered(
+string
+$key)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Indicates whether the named CSS style file has been registered before.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodregisterStyleFile">TPage::registerStyleFile()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>the name of the style file</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisValid"></a>
+	<h3>method isValid <span class="smalllinenumber">[line 207]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isValid(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Indicates whether all validators have successfully validated the post data.<br /><br /><p>The value is available since PostBack stage.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodloadPageStateFromPersistenceMedium"></a>
+	<h3>method loadPageStateFromPersistenceMedium <span class="smalllinenumber">[line 344]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array loadPageStateFromPersistenceMedium(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Loads viewstate of the page and all its children from a persistence medium.<br /><br /><p>By default, a hidden field is used as persistence medium.  You can override this function to provide your own viewstate maintenance method.  For example, you can keep the viewstate in session data or in database.  If you override, you have to override <a href="../System.Web.UI/TPage.html#methodsavePageStateToPersistenceMedium">savePageStateToPersistenceMedium</a>  as well to match the load and save processes.</p><p>This method should only be used by framework developers.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>reference to the loaded viewstate array.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodsavePageStateToPersistenceMedium">TPage::savePageStateToPersistenceMedium()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodloadPostData"></a>
+	<h3>method loadPostData <span class="smalllinenumber">[line 307]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void loadPostData(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Runs through every postdata loader to load postdata.<br /><br /><p>This method should only be used by framework developers.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodloadViewState"></a>
+	<h3>method loadViewState <span class="smalllinenumber">[line 1098]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void loadViewState(
+mixed
+$viewState)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.Web.UI/TControl.html#methodloadViewState">TControl::loadViewState()</a> (Loads viewstate into this component and its children.)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodonAuthorize"></a>
+	<h3>method onAuthorize <span class="smalllinenumber">[line 824]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean onAuthorize(
+<a href="../System/IUser.html">IUser</a>
+$user)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Checks if the user is authorized to access this page.<br /><br /><p>Default implement always returns true.  Derived classes may override this method to do real authorization work.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>whether the user is authorized</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System/IUser.html">IUser</a>&nbsp;&nbsp;</td>
+        <td><b>$user</b>&nbsp;&nbsp;</td>
+        <td>the user object</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodonInitRecursive"></a>
+	<h3>method onInitRecursive <span class="smalllinenumber">[line 1063]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void onInitRecursive(
+mixed
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.Web.UI/TControl.html#methodonInitRecursive">TControl::onInitRecursive()</a> (Calls onInit of this control and its children recursively.)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodonLoadRecursive"></a>
+	<h3>method onLoadRecursive <span class="smalllinenumber">[line 1072]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void onLoadRecursive(
+mixed
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.Web.UI/TControl.html#methodonLoadRecursive">TControl::onLoadRecursive()</a> (Calls onLoad of this control and its children recursively.)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodonPreInit"></a>
+	<h3>method onPreInit <span class="smalllinenumber">[line 979]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void onPreInit(
+mixed
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodonPreRenderRecursive"></a>
+	<h3>method onPreRenderRecursive <span class="smalllinenumber">[line 1081]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void onPreRenderRecursive(
+mixed
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.Web.UI/TControl.html#methodonPreRenderRecursive">TControl::onPreRenderRecursive()</a> (Calls onPreRender of this control and its children recursively.)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodonUnloadRecursive"></a>
+	<h3>method onUnloadRecursive <span class="smalllinenumber">[line 1090]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void onUnloadRecursive(
+mixed
+$param)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.Web.UI/TControl.html#methodonUnloadRecursive">TControl::onUnloadRecursive()</a> (Calls onUnload of this control and its children recursively.)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodraisePostDataChangedEvents"></a>
+	<h3>method raisePostDataChangedEvents <span class="smalllinenumber">[line 323]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void raisePostDataChangedEvents(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Raises PostDataChanged event for each postdata loader whose data is changed.<br /><br /><p>This method should only be used by framework developers.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterArrayDeclaration"></a>
+	<h3>method registerArrayDeclaration <span class="smalllinenumber">[line 659]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerArrayDeclaration(
+string
+$name, string
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Register an element of a javascript array to be created on client side.<br /><br /><p>The elements of multiple registration of the same array name will be merged together.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>the name of the array</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>the value of the array element</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterBeginScript"></a>
+	<h3>method registerBeginScript <span class="smalllinenumber">[line 701]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerBeginScript(
+string
+$key, string
+$script)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a javascript block to be rendered right after the openning form element.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodisBeginScriptRegistered">TPage::isBeginScriptRegistered()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>a key that identifies the script block to avoid repetitive registration</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$script</b>&nbsp;&nbsp;</td>
+        <td>the javascript block</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterContentPlaceHolder"></a>
+	<h3>method registerContentPlaceHolder <span class="smalllinenumber">[line 402]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerContentPlaceHolder(
+<a href="../System.Web.UI/TContentPlaceHolder.html">TContentPlaceHolder</a>
+$placeHolder)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a content placeholder with the page.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI/TContentPlaceHolder.html">TContentPlaceHolder</a>&nbsp;&nbsp;</td>
+        <td><b>$placeHolder</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterEndScript"></a>
+	<h3>method registerEndScript <span class="smalllinenumber">[line 729]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerEndScript(
+string
+$key, string
+$script)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Register a javascript block to be rendered right before the closing form element.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodisEndScriptRegistered">TPage::isEndScriptRegistered()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>a key that identifies the script block to avoid repetitive registration</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$script</b>&nbsp;&nbsp;</td>
+        <td>the javascript block</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterHiddenField"></a>
+	<h3>method registerHiddenField <span class="smalllinenumber">[line 604]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerHiddenField(
+string
+$name, string
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a hidden field to be submitted upon client postback event.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$name</b>&nbsp;&nbsp;</td>
+        <td>name of the hidden field</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>value of the hidden field</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterOnSubmitStatement"></a>
+	<h3>method registerOnSubmitStatement <span class="smalllinenumber">[line 631]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerOnSubmitStatement(
+string
+$key, string
+$script)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a javascript statement to be executed upon client postback event.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>a key that identifies the statement to avoid repetitive registration</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$script</b>&nbsp;&nbsp;</td>
+        <td>the javascript statement to be registered</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterPostBackCandidate"></a>
+	<h3>method registerPostBackCandidate <span class="smalllinenumber">[line 471]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerPostBackCandidate(
+IPostBackEventHandler
+$control)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a postback event handler.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System/IPostBackEventHandler.html">IPostBackEventHandler</a>&nbsp;&nbsp;</td>
+        <td><b>$control</b>&nbsp;&nbsp;</td>
+        <td>the control that wants to respond to postback event</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterPostDataLoader"></a>
+	<h3>method registerPostDataLoader <span class="smalllinenumber">[line 452]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerPostDataLoader(
+IPostBackDataHandler
+$control)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a postdata loader.<br /><br /><p>The control must implement IPostBackDataHandler interface.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../System.Web.Services/TPageWithCallback.html#methodregisterPostDataLoader">TPageWithCallback::registerPostDataLoader()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System/IPostBackDataHandler.html">IPostBackDataHandler</a>&nbsp;&nbsp;</td>
+        <td><b>$control</b>&nbsp;&nbsp;</td>
+        <td>the control that wants to load postback data</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterScriptFile"></a>
+	<h3>method registerScriptFile <span class="smalllinenumber">[line 762]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerScriptFile(
+string
+$key, string
+$scriptFile)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a javascript file to be loaded in client side<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodisScriptFileRegistered">TPage::isScriptFileRegistered()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>a key that identifies the script file to avoid repetitive registration</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$scriptFile</b>&nbsp;&nbsp;</td>
+        <td>the javascript file which can be relative or absolute URL</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterStyleFile"></a>
+	<h3>method registerStyleFile <span class="smalllinenumber">[line 802]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerStyleFile(
+string
+$key, string
+$styleFile)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a CSS style file to be imported with the page body<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodisStyleFileRegistered">TPage::isStyleFileRegistered()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>a key that identifies the style file to avoid repetitive registration</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$styleFile</b>&nbsp;&nbsp;</td>
+        <td>the javascript file which can be relative or absolute URL</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterValidator"></a>
+	<h3>method registerValidator <span class="smalllinenumber">[line 393]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerValidator(
+IValidator
+$validator)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a validator with the page.<br /><br /><p>The validator must implement IValidator interface</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System/IValidator.html">IValidator</a>&nbsp;&nbsp;</td>
+        <td><b>$validator</b>&nbsp;&nbsp;</td>
+        <td>the validator to be registered</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterViewState"></a>
+	<h3>method registerViewState <span class="smalllinenumber">[line 589]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerViewState(
+string
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers the viewstate into each form so that regardless of which<br /><br /><p>form triggers the postback, viewstate is found for the whole page</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>The value to register for the viewstate</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrenderBody"></a>
+	<h3>method renderBody <span class="smalllinenumber">[line 1035]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string renderBody(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Renders the body content.<br /><br /><p>This is overridden so that the THead control can be caught  and have its rendering deferred. This is so that if any  other controls on the page want to register scripts or styles,  the rendering of the head will be delayed until later.  Thanks to stever on the prado forums for the very elegant  memory location reassignment method for building the content  string whether or not there's a THead present or not.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the rendering result</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Marcus Nyeholt &lt;<a href="mailto:tanus@users.sourceforge.net">tanus@users.sourceforge.net</a>&gt;</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.Web.UI/TControl.html#methodrenderBody">TControl::renderBody()</a> (Renders the body content.)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrenderContent"></a>
+	<h3>method renderContent <span class="smalllinenumber">[line 1007]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void renderContent(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsavePageStateToPersistenceMedium"></a>
+	<h3>method savePageStateToPersistenceMedium <span class="smalllinenumber">[line 371]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void savePageStateToPersistenceMedium(
+array
+$viewState)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Saves viewstate of the page and all its children to a persistence medium.<br /><br /><p>This method should only be used by framework developers.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodloadPageStateFromPersistenceMedium">TPage::loadPageStateFromPersistenceMedium()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$viewState</b>&nbsp;&nbsp;</td>
+        <td>the viewstate structure of the page and all its children</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsaveViewState"></a>
+	<h3>method saveViewState <span class="smalllinenumber">[line 1110]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void saveViewState(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.Web.UI/TControl.html#methodsaveViewState">TControl::saveViewState()</a> (Returns the viewstate of this component and its children.)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetForm"></a>
+	<h3>method setForm <span class="smalllinenumber">[line 217]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setForm(
+TForm
+$form)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Attaches the form object to the page.<br /><br /><p>If the</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI/TForm.html">TForm</a>&nbsp;&nbsp;</td>
+        <td><b>$form</b>&nbsp;&nbsp;</td>
+        <td>an instance of TForm or its desendent class</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetHead"></a>
+	<h3>method setHead <span class="smalllinenumber">[line 280]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setHead(
+THead
+$head)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		sets the current page's Head object.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI.WebControls/THead.html">THead</a>&nbsp;&nbsp;</td>
+        <td><b>$head</b>&nbsp;&nbsp;</td>
+        <td>The head object</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetMasterPageName"></a>
+	<h3>method setMasterPageName <span class="smalllinenumber">[line 871]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setMasterPageName(
+string
+$pageName)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the master page name.<br /><br /><p>This method should only be invoked at the beginning of onPreInit() method.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$pageName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetModule"></a>
+	<h3>method setModule <span class="smalllinenumber">[line 845]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setModule(
+<a href="../System/TModule.html">TModule</a>
+$module)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the module object.<br /><br /><p>This method should only be used by framework developers.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System/TModule.html">TModule</a>&nbsp;&nbsp;</td>
+        <td><b>$module</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetPostBackParameter"></a>
+	<h3>method setPostBackParameter <span class="smalllinenumber">[line 520]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setPostBackParameter(
+string
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets postback parameter<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>postback parameter to be passed to postback event handler</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetPostBackTarget"></a>
+	<h3>method setPostBackTarget <span class="smalllinenumber">[line 490]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setPostBackTarget(
+string
+$uniqueID)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets postback target by its unique ID<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$uniqueID</b>&nbsp;&nbsp;</td>
+        <td>the unique ID of the postback target</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetTheme"></a>
+	<h3>method setTheme <span class="smalllinenumber">[line 298]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setTheme(
+string
+$theme)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$theme</b>&nbsp;&nbsp;</td>
+        <td>the name of the theme to be applied to the page</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodunregisterContentPlaceHolder"></a>
+	<h3>method unregisterContentPlaceHolder <span class="smalllinenumber">[line 423]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void unregisterContentPlaceHolder(
+<a href="../System.Web.UI/TContentPlaceHolder.html">TContentPlaceHolder</a>
+$placeHolder)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Unregisters a content placeholder with the page.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI/TContentPlaceHolder.html">TContentPlaceHolder</a>&nbsp;&nbsp;</td>
+        <td><b>$placeHolder</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodunregisterPostBackCandidate"></a>
+	<h3>method unregisterPostBackCandidate <span class="smalllinenumber">[line 480]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void unregisterPostBackCandidate(
+<a href="../System.Web.UI/TControl.html">TControl</a>
+$control)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Unregisters a postback handler from the page.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI/TControl.html">TControl</a>&nbsp;&nbsp;</td>
+        <td><b>$control</b>&nbsp;&nbsp;</td>
+        <td>the postback candidate control</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodunregisterPostDataLoader"></a>
+	<h3>method unregisterPostDataLoader <span class="smalllinenumber">[line 461]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void unregisterPostDataLoader(
+<a href="../System.Web.UI/TControl.html">TControl</a>
+$control)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Unregister a postdata loader from the page.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../System.Web.Services/TPageWithCallback.html#methodunregisterPostDataLoader">TPageWithCallback::unregisterPostDataLoader()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI/TControl.html">TControl</a>&nbsp;&nbsp;</td>
+        <td><b>$control</b>&nbsp;&nbsp;</td>
+        <td>the post data loader control</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodunregisterValidator"></a>
+	<h3>method unregisterValidator <span class="smalllinenumber">[line 441]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void unregisterValidator(
+<a href="../System.Web.UI/TControl.html">TControl</a>
+$control)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Unregisters a validator from the page.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI/TControl.html">TControl</a>&nbsp;&nbsp;</td>
+        <td><b>$control</b>&nbsp;&nbsp;</td>
+        <td>the validator control</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodunsetForm"></a>
+	<h3>method unsetForm <span class="smalllinenumber">[line 236]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void unsetForm(
+TForm
+$form)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Detaches the form object from the page.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI/TForm.html">TForm</a>&nbsp;&nbsp;</td>
+        <td><b>$form</b>&nbsp;&nbsp;</td>
+        <td>an instance of TForm or its desendent class</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodvalidate"></a>
+	<h3>method validate <span class="smalllinenumber">[line 538]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void validate(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Invokes validate() method of every registered validator  and update isValid accordingly.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.Web.UI/TPage.html#methodisValid">TPage::isValid()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+<hr />
+<a name="class_constss"></a>
+<h3>Class Constants</h3>
+<div class="tags">
+	<a name="constINPUT_EVENTPARAMETER"></a>
+	<p></p>
+	<h4>INPUT_EVENTPARAMETER = <span class="value">'__EVENTPARAMETER'</span></h4>
+	<p>[line 62]</p>
+  hidden form field name for event parameter<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constINPUT_EVENTTARGET"></a>
+	<p></p>
+	<h4>INPUT_EVENTTARGET = <span class="value">'__EVENTTARGET'</span></h4>
+	<p>[line 58]</p>
+  hidden form field name for event target<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constINPUT_VIEWSTATE"></a>
+	<p></p>
+	<h4>INPUT_VIEWSTATE = <span class="value">'__VIEWSTATE'</span></h4>
+	<p>[line 54]</p>
+  hidden form field name for viewstate<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constJS_POSTBACK"></a>
+	<p></p>
+	<h4>JS_POSTBACK = <span class="value">'__doPostBack'</span></h4>
+	<p>[line 66]</p>
+  name of javascript function that submits a form<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constSTAGE_CREATE"></a>
+	<p></p>
+	<h4>STAGE_CREATE = <span class="value">0</span></h4>
+	<p>[line 70]</p>
+  the current life cycle that the page is in<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constSTAGE_INIT"></a>
+	<p></p>
+	<h4>STAGE_INIT = <span class="value">1</span></h4>
+	<p>[line 71]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constSTAGE_LOAD"></a>
+	<p></p>
+	<h4>STAGE_LOAD = <span class="value">3</span></h4>
+	<p>[line 73]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constSTAGE_LOADVIEWSTATE"></a>
+	<p></p>
+	<h4>STAGE_LOADVIEWSTATE = <span class="value">2</span></h4>
+	<p>[line 72]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constSTAGE_PRERENDER"></a>
+	<p></p>
+	<h4>STAGE_PRERENDER = <span class="value">5</span></h4>
+	<p>[line 75]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constSTAGE_RAISEEVENTS"></a>
+	<p></p>
+	<h4>STAGE_RAISEEVENTS = <span class="value">4</span></h4>
+	<p>[line 74]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constSTAGE_RENDER"></a>
+	<p></p>
+	<h4>STAGE_RENDER = <span class="value">7</span></h4>
+	<p>[line 77]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constSTAGE_SAVEVIEWSTATE"></a>
+	<p></p>
+	<h4>STAGE_SAVEVIEWSTATE = <span class="value">6</span></h4>
+	<p>[line 76]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constSTAGE_UNLOAD"></a>
+	<p></p>
+	<h4>STAGE_UNLOAD = <span class="value">8</span></h4>
+	<p>[line 78]</p>
+  
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+        <div class="credit"><hr />
+		    &copy; 2004-2005 <a href="http://www.pradosoft.com/">PRADO Software Group</a>. All Rights Reserved.
+        </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
