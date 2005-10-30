@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><!--Copyright 2004 ThoughtWorks, Inc Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at     http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.-->
+<html>
+<head>
+<title>Test Open</title>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1" id=TABLE1>
+  <tbody>
+    <tr>
+      <td rowspan="1" colspan="3"><strong>Testing Login, adding contact, deleting contact, logout. </strong></td>
+    </tr>
+    <tr>
+      <td>open</td>
+      <td>../../examples/phonebook.php</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertLocation</td>
+      <td>phonebook.php</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertTextPresent</td>
+      <td>PRADO Phonebook </td>
+      <td><p>&nbsp;</p>      </td>
+    </tr>
+    <tr>
+      <td>clickAndWait</td>
+      <td>link=Login</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertTextPresent</td>
+      <td>Login</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>_TButton3</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertVisible</td>
+      <td> _TRequiredFieldValidator1  </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Username</td>
+      <td>tester1</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Password</td>
+      <td>tester1</td>
+    </tr>
+    <tr>
+      <td>clickAndWait</td>
+      <td>_TButton3</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertNotVisible</td>
+      <td>_TRequiredFieldValidator1</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertVisible</td>
+      <td>_TCustomValidator2</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Username</td>
+      <td>root</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Password</td>
+      <td>prado</td>
+    </tr>
+    <tr>
+      <td>clickAndWait</td>
+      <td>_TButton3</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertTextPresent</td>
+      <td>Logout</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertTextNotPresent</td>
+      <td>Web Tester </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>clickAndWait</td>
+      <td>link=Add Contact </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type </td>
+      <td>Email</td>
+      <td>testing@123.com</td>
+    </tr>
+    <tr>
+      <td>click</td>
+      <td>_TButton2</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertVisible</td>
+      <td>_TRequiredFieldValidator1</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Name</td>
+      <td>Web Tester </td>
+    </tr>
+    <tr>
+      <td>clickAndWait</td>
+      <td>_TButton2</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertTextPresent</td>
+      <td>Web Tester </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>clickAndWait</td>
+      <td>link=All</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertTextPresent</td>
+      <td>testing@123.com</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>clickAndWait</td>
+      <td> EntryTable:Item5:_TLinkButton7</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertConfirmation</td>
+      <td> Are you sure? </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertTextNotPresent</td>
+      <td>Web Tester </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>clickAndWait</td>
+      <td>link=Logout</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>assertTextPresent</td>
+      <td>Login</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
