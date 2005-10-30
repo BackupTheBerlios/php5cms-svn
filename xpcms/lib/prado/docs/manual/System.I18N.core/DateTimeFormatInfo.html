@@ -1,0 +1,1174 @@
+<html>
+<head>
+<title>Docs For Class DateTimeFormatInfo</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">System.I18N.core</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_System.I18N.core.html" class="menu">class tree: System.I18N.core</a> ]
+		  [ <a href="../elementindex_System.I18N.core.html" class="menu">index: System.I18N.core</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_prado.html">prado</a><br />
+              <a href="../li_System.html">System</a><br />
+              <a href="../li_System.Data.html">System.Data</a><br />
+              <a href="../li_System.Exception.html">System.Exception</a><br />
+              <a href="../li_System.I18N.html">System.I18N</a><br />
+              <a href="../li_System.I18N.core.html">System.I18N.core</a><br />
+              <a href="../li_System.Security.html">System.Security</a><br />
+              <a href="../li_System.Web.Services.html">System.Web.Services</a><br />
+              <a href="../li_System.Web.UI.html">System.Web.UI</a><br />
+              <a href="../li_System.Web.UI.WebControls.html">System.Web.UI.WebControls</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../System.I18N.core/ChoiceFormat.html">ChoiceFormat</a><br />
+	    		<a href="../System.I18N.core/CultureInfo.html">CultureInfo</a><br />
+	    		<a href="../System.I18N.core/DateFormat.html">DateFormat</a><br />
+	    		<a href="../System.I18N.core/DateTimeFormatInfo.html">DateTimeFormatInfo</a><br />
+	    		<a href="../System.I18N.core/HTTPNegotiator.html">HTTPNegotiator</a><br />
+	    		<a href="../System.I18N.core/IMessageSource.html">IMessageSource</a><br />
+	    		<a href="../System.I18N.core/MessageCache.html">MessageCache</a><br />
+	    		<a href="../System.I18N.core/MessageFormat.html">MessageFormat</a><br />
+	    		<a href="../System.I18N.core/MessageSource.html">MessageSource</a><br />
+	    		<a href="../System.I18N.core/MessageSource_gettext.html">MessageSource_gettext</a><br />
+	    		<a href="../System.I18N.core/MessageSource_MySQL.html">MessageSource_MySQL</a><br />
+	    		<a href="../System.I18N.core/MessageSource_SQLite.html">MessageSource_SQLite</a><br />
+	    		<a href="../System.I18N.core/MessageSource_XLIFF.html">MessageSource_XLIFF</a><br />
+	    		<a href="../System.I18N.core/NumberFormat.html">NumberFormat</a><br />
+	    		<a href="../System.I18N.core/NumberFormatInfo.html">NumberFormatInfo</a><br />
+	    		<a href="../System.I18N.core/TCache_Lite.html">TCache_Lite</a><br />
+	    		<a href="../System.I18N.core/TGettext.html">TGettext</a><br />
+	    		<a href="../System.I18N.core/TGettext_MO.html">TGettext_MO</a><br />
+	    		<a href="../System.I18N.core/TGettext_PO.html">TGettext_PO</a><br />
+	  </div>
+      
+            <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../System.I18N.core/_I18N_core_ChoiceFormat_php.html">		ChoiceFormat.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_CultureInfo_php.html">		CultureInfo.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_DateFormat_php.html">		DateFormat.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_DateTimeFormatInfo_php.html">		DateTimeFormatInfo.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_HTTPNegotiator_php.html">		HTTPNegotiator.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_IMessageSource_php.html">		IMessageSource.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageCache_php.html">		MessageCache.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageFormat_php.html">		MessageFormat.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_php.html">		MessageSource.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_gettext_php.html">		MessageSource_gettext.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_MySQL_php.html">		MessageSource_MySQL.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_SQLite_php.html">		MessageSource_SQLite.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_XLIFF_php.html">		MessageSource_XLIFF.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_Gettext_MO_php.html">		MO.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_NumberFormat_php.html">		NumberFormat.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_NumberFormatInfo_php.html">		NumberFormatInfo.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_Gettext_PO_php.html">		PO.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_TCache_Lite_php.html">		TCache_Lite.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_Gettext_TGettext_php.html">		TGettext.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_util_php.html">		util.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: DateTimeFormatInfo</h1>
+Source Location: /I18N/core/DateTimeFormatInfo.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Defines how DateTime values are formatted and displayed, depending  on the culture.</div><br />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 78]<br />
+Defines how DateTime values are formatted and displayed, depending  on the culture.<br /><br /><p>This class contains information, such as date patterns, time patterns,  and AM/PM designators.</p><p>To create a DateTimeFormatInfo for a specific culture, create a  CultureInfo for that culture and retrieve the CultureInfo.DateTimeFormat  property. For example:  <div class="listing"><pre><ol><li> <span class="src-var">$culture </span>= <span class="src-key">new </span><span class="src-id"><a href="../System.I18N.core/CultureInfo.html">CultureInfo</a></span><span class="src-sym">(</span><span class="src-str">'en_AU'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li> <span class="src-var">$dtfi </span>= <span class="src-var">$culture</span><span class="src-sym">-&gt;</span><span class="src-id">DateTimeFormat</span><span class="src-sym">;</span></li>
+</ol></pre></div></p><p>To create a DateTimeFormatInfo for the invariant culture, use  <div class="listing"><pre><ol><li> <span class="src-id"><a href="../System.I18N.core/DateTimeFormatInfo.html">DateTimeFormatInfo</a></span><span class="src-sym">::</span><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetInstance">getInstance</a><span class="src-sym">(</span><span class="src-var">$culture</span>=<span class="src-id">null</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</ol></pre></div>  you may pass a CultureInfo parameter $culture to get the DateTimeFormatInfo  for a specific culture.</p><p>DateTime values are formatted using standard or custom patterns stored in  the properties of a DateTimeFormatInfo.</p><p>The standard patterns can be replaced with custom patterns by setting the  associated properties of DateTimeFormatInfo.</p><p>The following table lists the standard format characters for each standard  pattern and the associated DateTimeFormatInfo property that can be set to  modify the standard pattern. The format characters are case-sensitive;  for example, 'g' and 'G' represent slightly different patterns.</p><p><div class="listing"><pre><ol><li>  <span class="src-id">Format Character    Associated Property     Example Format Pattern </span><span class="src-sym">(</span><span class="src-id">en</span>-<span class="src-id">US</span><span class="src-sym">)</span></li>
+<li>  --------------------------------------------------------------------------</li>
+<li>  <span class="src-id">d                   ShortDatePattern        MM</span>/<span class="src-id">dd</span>/<span class="src-id">yyyy</span></li>
+<li>  <span class="src-id">D                   LongDatePattern         dddd</span><span class="src-sym">, </span><span class="src-id">dd MMMM yyyy</span></li>
+<li>  <span class="src-id">F                   FullDateTimePattern     dddd</span><span class="src-sym">, </span><span class="src-id">dd MMMM yyyy HH</span>:<span class="src-id">mm</span>:<span class="src-id">ss</span></li>
+<li>  <span class="src-id">m</span><span class="src-sym">, </span><span class="src-id">M                MonthDayPattern         MMMM dd</span></li>
+<li>  <span class="src-id">r</span><span class="src-sym">, </span><span class="src-id">R                RFC1123Pattern          ddd</span><span class="src-sym">, </span><span class="src-id">dd MMM yyyy HH</span><span class="src-str">':'</span><span class="src-id">mm</span><span class="src-str">':'</span><span class="src-id">ss </span><span class="src-str">'GMT'</span></li>
+<li>  <span class="src-id">s                   SortableDateTimePattern yyyy</span><span class="src-str">'-'</span><span class="src-id">MM</span><span class="src-str">'-'</span><span class="src-id">dd</span><span class="src-str">'T'</span><span class="src-id">HH</span><span class="src-str">':'</span><span class="src-id">mm</span><span class="src-str">':'</span><span class="src-id">ss</span></li>
+<li>  <span class="src-id">t                   ShortTimePattern        HH</span>:<span class="src-id">mm</span></li>
+<li>  <span class="src-id">T                   LongTimePattern         HH</span>:<span class="src-id">mm</span>:<span class="src-id">ss</span></li>
+<li>  <span class="src-id">Y                   YearMonthPattern        yyyy MMMM</span></li>
+<li>  --------------------------------------------------------------------------</li>
+</ol></pre></div></p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>v1.0, last update on Fri Dec 03 22:30:31 EST 2004</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Xiang Wei Zhuo &lt;<a href="mailto:weizhuo[at]gmail[dot]com">weizhuo[at]gmail[dot]com</a>&gt;</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+
+
+    
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#var$properties">$properties</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#method__construct">__construct</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodformatDateTime">formatDateTime</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetAbbreviatedDayNames">getAbbreviatedDayNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetAbbreviatedMonthNames">getAbbreviatedMonthNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetAMDesignator">getAMDesignator</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetAMPMMarkers">getAMPMMarkers</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetData">getData</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetDateTimeOrderPattern">getDateTimeOrderPattern</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetDayNames">getDayNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetEra">getEra</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetFullDatePattern">getFullDatePattern</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetFullTimePattern">getFullTimePattern</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetInstance">getInstance</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetInvariantInfo">getInvariantInfo</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetLongDatePattern">getLongDatePattern</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetLongTimePattern">getLongTimePattern</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetMediumDatePattern">getMediumDatePattern</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetMediumTimePattern">getMediumTimePattern</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetMonthNames">getMonthNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetNarrowDayNames">getNarrowDayNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetNarrowMonthNames">getNarrowMonthNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetPMDesignator">getPMDesignator</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetShortDatePattern">getShortDatePattern</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetShortTimePattern">getShortTimePattern</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodsetAbbreviatedDayNames">setAbbreviatedDayNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodsetAbbreviatedMonthNames">setAbbreviatedMonthNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodsetAMDesignator">setAMDesignator</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodsetAMPMMarkers">setAMPMMarkers</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodsetDayNames">setDayNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodsetMonthNames">setMonthNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodsetNarrowDayNames">setNarrowDayNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodsetNarrowMonthNames">setNarrowMonthNames</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#methodsetPMDesignator">setPMDesignator</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#method__get">__get</a></li>
+    <li><a href="../System.I18N.core/DateTimeFormatInfo.html#method__set">__set</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$properties"></a>
+	<p></p>
+	<h4>$properties = <span class="value">array()</span></h4>
+	<p>[line 90]</p>
+  A list of properties that are accessable/writable.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 128]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>DateTimeFormatInfo __construct(
+[array
+$data = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Initializes a new writable instance of the DateTimeFormatInfo class<br /><br /><p>that is dependent on the ICU data for date time formatting  information. <strong>N.B.</strong>You should not initialize this class directly  unless you know what you are doing. Please use use  DateTimeFormatInfo::getInstance() to create an instance.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../System.I18N.core/DateTimeFormatInfo.html#methodgetInstance">DateTimeFormatInfo::getInstance()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>ICU data for date time formatting.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodformatDateTime"></a>
+	<h3>method formatDateTime <span class="smalllinenumber">[line 506]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string formatDateTime(
+mixed
+$date, mixed
+$time)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Formats the date and time in a culture sensitive paterrn.<br /><br /><p>The default is &quot;Date Time&quot;.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>date and time formated</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetAbbreviatedDayNames"></a>
+	<h3>method getAbbreviatedDayNames <span class="smalllinenumber">[line 193]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getAbbreviatedDayNames(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		A one-dimensional array of type String containing  the culture-specific abbreviated names of the days  of the week. The array for InvariantInfo contains  &quot;Sun&quot;, &quot;Mon&quot;, &quot;Tue&quot;, &quot;Wed&quot;, &quot;Thu&quot;, &quot;Fri&quot;, and &quot;Sat&quot;.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>abbreviated day names</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetAbbreviatedMonthNames"></a>
+	<h3>method getAbbreviatedMonthNames <span class="smalllinenumber">[line 292]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getAbbreviatedMonthNames(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		A one-dimensional array of type String containing the  culture-specific abbreviated names of the months. The array  for InvariantInfo contains &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;,  &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, and &quot;Dec&quot;.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>abbreviated month names.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetAMDesignator"></a>
+	<h3>method getAMDesignator <span class="smalllinenumber">[line 352]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getAMDesignator(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		The string designator for hours that are &quot;ante meridiem&quot; (before noon).<br /><br /><p>The default for InvariantInfo is &quot;AM&quot;.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>AM designator.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetAMPMMarkers"></a>
+	<h3>method getAMPMMarkers <span class="smalllinenumber">[line 396]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getAMPMMarkers(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the AM and PM markers array.<br /><br /><p>Default InvariantInfo for AM and PM is <div class="listing"><pre><ol><li><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'AM'</span><span class="src-sym">,</span><span class="src-str">'PM'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</ol></pre></div></p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>AM and PM markers</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetData"></a>
+	<h3>method getData <span class="smalllinenumber">[line 142]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getData(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the internal ICU data for date time formatting.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>ICU date time formatting data.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetDateTimeOrderPattern"></a>
+	<h3>method getDateTimeOrderPattern <span class="smalllinenumber">[line 496]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getDateTimeOrderPattern(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the date time order pattern, &quot;{1} {0}&quot; (default).<br /><br /><p>This is culture sensitive.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>pattern &quot;{1} {0}&quot;.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetDayNames"></a>
+	<h3>method getDayNames <span class="smalllinenumber">[line 242]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getDayNames(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		A one-dimensional array of type String containing the  culture-specific full names of the days of the week.<br /><br /><p>The array for InvariantInfo contains &quot;Sunday&quot;, &quot;Monday&quot;,  &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;, and &quot;Saturday&quot;.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>day names</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEra"></a>
+	<h3>method getEra <span class="smalllinenumber">[line 341]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getEra(
+int
+$era)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		A string containing the name of the era.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the era name.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$era</b>&nbsp;&nbsp;</td>
+        <td>era The integer representing the era.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetFullDatePattern"></a>
+	<h3>method getFullDatePattern <span class="smalllinenumber">[line 456]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getFullDatePattern(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the full date pattern &quot;EEEE, yyyy MMMM dd&quot; (default).<br /><br /><p>This is culture sensitive.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>pattern &quot;EEEE, yyyy MMMM dd&quot;.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetFullTimePattern"></a>
+	<h3>method getFullTimePattern <span class="smalllinenumber">[line 416]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getFullTimePattern(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the full time pattern &quot;HH:mm:ss z&quot; (default).<br /><br /><p>This is culture sensitive.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>pattern &quot;HH:mm:ss z&quot;.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetInstance"></a>
+	<h3>method getInstance <span class="smalllinenumber">[line 169]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../System.I18N.core/DateTimeFormatInfo.html">DateTimeFormatInfo</a> getInstance(
+[<a href="../System.I18N.core/CultureInfo.html">CultureInfo</a>
+$culture = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the DateTimeFormatInfo associated with the specified culture.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DateTimeFormatInfo for the specified  culture.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.I18N.core/CultureInfo.html">CultureInfo</a>&nbsp;&nbsp;</td>
+        <td><b>$culture</b>&nbsp;&nbsp;</td>
+        <td>the culture that gets the DateTimeFormat property.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetInvariantInfo"></a>
+	<h3>method getInvariantInfo <span class="smalllinenumber">[line 152]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../System.I18N.core/DateTimeFormatInfo.html">DateTimeFormatInfo</a> getInvariantInfo(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Gets the default DateTimeFormatInfo that is culture-independent  (invariant).<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>default DateTimeFormatInfo.</td>
+  </tr>
+  <tr>
+    <td><b>static:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetLongDatePattern"></a>
+	<h3>method getLongDatePattern <span class="smalllinenumber">[line 466]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getLongDatePattern(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the long date pattern &quot;yyyy MMMM d&quot; (default).<br /><br /><p>This is culture sensitive.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>pattern &quot;yyyy MMMM d&quot;.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetLongTimePattern"></a>
+	<h3>method getLongTimePattern <span class="smalllinenumber">[line 426]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getLongTimePattern(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the long time pattern &quot;HH:mm:ss z&quot; (default).<br /><br /><p>This is culture sensitive.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>pattern &quot;HH:mm:ss z&quot;.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetMediumDatePattern"></a>
+	<h3>method getMediumDatePattern <span class="smalllinenumber">[line 476]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getMediumDatePattern(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the medium date pattern &quot;yyyy MMMM d&quot; (default).<br /><br /><p>This is culture sensitive.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>pattern &quot;yyyy MMM d&quot;.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetMediumTimePattern"></a>
+	<h3>method getMediumTimePattern <span class="smalllinenumber">[line 436]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getMediumTimePattern(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the medium time pattern &quot;HH:mm:ss&quot; (default).<br /><br /><p>This is culture sensitive.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>pattern &quot;HH:mm:ss&quot;.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetMonthNames"></a>
+	<h3>method getMonthNames <span class="smalllinenumber">[line 318]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getMonthNames(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		A one-dimensional array of type String containing the<br /><br /><p>culture-specific full names of the months. The array for  InvariantInfo contains &quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;,  &quot;May&quot;, &quot;June&quot;, &quot;July&quot;, &quot;August&quot;, &quot;September&quot;, &quot;October&quot;, &quot;November&quot;,  and &quot;December&quot;</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>month names.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetNarrowDayNames"></a>
+	<h3>method getNarrowDayNames <span class="smalllinenumber">[line 218]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getNarrowDayNames(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		A one-dimensional array of type String containing  the culture-specific narrow names of the days  of the week. The array for InvariantInfo contains  &quot;S&quot;, &quot;M&quot;, &quot;T&quot;, &quot;W&quot;, &quot;T&quot;, &quot;F&quot;, and &quot;S&quot;.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>narrow day names</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetNarrowMonthNames"></a>
+	<h3>method getNarrowMonthNames <span class="smalllinenumber">[line 268]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getNarrowMonthNames(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		A one-dimensional array of type String containing the  culture-specific narrow names of the months. The array  for InvariantInfo contains &quot;J&quot;, &quot;F&quot;, &quot;M&quot;, &quot;A&quot;, &quot;M&quot;, &quot;J&quot;,  &quot;J&quot;, &quot;A&quot;, &quot;S&quot;, &quot;O&quot;, &quot;N&quot;, and &quot;D&quot;.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>narrow month names.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPMDesignator"></a>
+	<h3>method getPMDesignator <span class="smalllinenumber">[line 374]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getPMDesignator(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		The string designator for hours that are &quot;post meridiem&quot; (after noon).<br /><br /><p>The default for InvariantInfo is &quot;PM&quot;.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>PM designator.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetShortDatePattern"></a>
+	<h3>method getShortDatePattern <span class="smalllinenumber">[line 486]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getShortDatePattern(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the short date pattern &quot;yy/MM/dd&quot; (default).<br /><br /><p>This is culture sensitive.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>pattern &quot;yy/MM/dd&quot;.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetShortTimePattern"></a>
+	<h3>method getShortTimePattern <span class="smalllinenumber">[line 446]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getShortTimePattern(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the short time pattern &quot;HH:mm&quot; (default).<br /><br /><p>This is culture sensitive.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>pattern &quot;HH:mm&quot;.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetAbbreviatedDayNames"></a>
+	<h3>method setAbbreviatedDayNames <span class="smalllinenumber">[line 206]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setAbbreviatedDayNames(
+array
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the abbreviated day names. The value should be  an array of string starting with Sunday and ends in Saturady.<br /><br /><p>For example,  <div class="listing"><pre><ol><li><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;Sun&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Mon&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Tue&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Wed&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Thu&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Fri&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Sat&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</ol></pre></div></p><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>abbreviated day names.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetAbbreviatedMonthNames"></a>
+	<h3>method setAbbreviatedMonthNames <span class="smalllinenumber">[line 305]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setAbbreviatedMonthNames(
+array
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the abbreviated month names. The value should be  an array of string starting with Jan and ends in Dec.<br /><br /><p>For example,  <div class="listing"><pre><ol><li><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;Jan&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Feb&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Mar&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Apr&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;May&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Jun&quot;</span><span class="src-sym">,</span></li>
+<li> <span class="src-str">&quot;Jul&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Aug&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Sep&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;Oct&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;Nov&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;Dec&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</ol></pre></div></p><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>month names.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetAMDesignator"></a>
+	<h3>method setAMDesignator <span class="smalllinenumber">[line 362]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setAMDesignator(
+string
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the AM Designator. For example, 'AM'.<br /><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>AM designator.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetAMPMMarkers"></a>
+	<h3>method setAMPMMarkers <span class="smalllinenumber">[line 406]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setAMPMMarkers(
+array
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the AM and PM markers array.<br /><br /><p>For example <div class="listing"><pre><ol><li><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'AM'</span><span class="src-sym">,</span><span class="src-str">'PM'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</ol></pre></div></p><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>AM and PM markers</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetDayNames"></a>
+	<h3>method setDayNames <span class="smalllinenumber">[line 256]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setDayNames(
+array
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the day names. The value should be  an array of string starting with Sunday and ends in Saturady.<br /><br /><p>For example,  <div class="listing"><pre><ol><li><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;Sunday&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Monday&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Tuesday&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Wednesday&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Thursday&quot;</span><span class="src-sym">,</span></li>
+<li> <span class="src-str">&quot;Friday&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;Saturday&quot;</span>.<span class="src-sym">)</span><span class="src-sym">;</span></li>
+</ol></pre></div></p><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>day names.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetMonthNames"></a>
+	<h3>method setMonthNames <span class="smalllinenumber">[line 331]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setMonthNames(
+array
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the month names. The value should be  an array of string starting with Janurary and ends in December.<br /><br /><p>For example,  <div class="listing"><pre><ol><li><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;January&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;February&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;March&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;April&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;May&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;June&quot;</span><span class="src-sym">,</span></li>
+<li> <span class="src-str">&quot;July&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;August&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;September&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;October&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;November&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;December&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</ol></pre></div></p><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>month names.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetNarrowDayNames"></a>
+	<h3>method setNarrowDayNames <span class="smalllinenumber">[line 230]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setNarrowDayNames(
+array
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the narrow day names. The value should be  an array of string starting with Sunday and ends in Saturady.<br /><br /><p>For example,  <div class="listing"><pre><ol><li><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;S&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;M&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;T&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;W&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;T&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;F&quot;</span><span class="src-sym">, </span><span class="src-str">&quot;S&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</ol></pre></div></p><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>narrow day names.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetNarrowMonthNames"></a>
+	<h3>method setNarrowMonthNames <span class="smalllinenumber">[line 280]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setNarrowMonthNames(
+array
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the narrow month names. The value should be  an array of string starting with J and ends in D.<br /><br /><p>For example,  <div class="listing"><pre><ol><li><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">&quot;J&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;F&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;M&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;A&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;M&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;J&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;J&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;A&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;S&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;O&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;N&quot;</span><span class="src-sym">,</span><span class="src-str">&quot;D&quot;</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</ol></pre></div></p><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>month names.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetPMDesignator"></a>
+	<h3>method setPMDesignator <span class="smalllinenumber">[line 384]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setPMDesignator(
+string
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the PM Designator. For example, 'PM'.<br /><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>PM designator.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method__get"></a>
+	<h3>method __get <span class="smalllinenumber">[line 97]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed __get(
+mixed
+$name)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Allow functions that begins with 'set' to be called directly  as an attribute/property to retrieve the value.<br /><br /><br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method__set"></a>
+	<h3>method __set <span class="smalllinenumber">[line 110]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __set(
+mixed
+$name, mixed
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Allow functions that begins with 'set' to be called directly  as an attribute/property to set the value.<br /><br /><br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit"><hr />
+		    &copy; 2004-2005 <a href="http://www.pradosoft.com/">PRADO Software Group</a>. All Rights Reserved.
+        </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

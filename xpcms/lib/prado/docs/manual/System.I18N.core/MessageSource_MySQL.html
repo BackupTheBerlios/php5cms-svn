@@ -1,0 +1,815 @@
+<html>
+<head>
+<title>Docs For Class MessageSource_MySQL</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">System.I18N.core</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_System.I18N.core.html" class="menu">class tree: System.I18N.core</a> ]
+		  [ <a href="../elementindex_System.I18N.core.html" class="menu">index: System.I18N.core</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_prado.html">prado</a><br />
+              <a href="../li_System.html">System</a><br />
+              <a href="../li_System.Data.html">System.Data</a><br />
+              <a href="../li_System.Exception.html">System.Exception</a><br />
+              <a href="../li_System.I18N.html">System.I18N</a><br />
+              <a href="../li_System.I18N.core.html">System.I18N.core</a><br />
+              <a href="../li_System.Security.html">System.Security</a><br />
+              <a href="../li_System.Web.Services.html">System.Web.Services</a><br />
+              <a href="../li_System.Web.UI.html">System.Web.UI</a><br />
+              <a href="../li_System.Web.UI.WebControls.html">System.Web.UI.WebControls</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../System.I18N.core/ChoiceFormat.html">ChoiceFormat</a><br />
+	    		<a href="../System.I18N.core/CultureInfo.html">CultureInfo</a><br />
+	    		<a href="../System.I18N.core/DateFormat.html">DateFormat</a><br />
+	    		<a href="../System.I18N.core/DateTimeFormatInfo.html">DateTimeFormatInfo</a><br />
+	    		<a href="../System.I18N.core/HTTPNegotiator.html">HTTPNegotiator</a><br />
+	    		<a href="../System.I18N.core/IMessageSource.html">IMessageSource</a><br />
+	    		<a href="../System.I18N.core/MessageCache.html">MessageCache</a><br />
+	    		<a href="../System.I18N.core/MessageFormat.html">MessageFormat</a><br />
+	    		<a href="../System.I18N.core/MessageSource.html">MessageSource</a><br />
+	    		<a href="../System.I18N.core/MessageSource_gettext.html">MessageSource_gettext</a><br />
+	    		<a href="../System.I18N.core/MessageSource_MySQL.html">MessageSource_MySQL</a><br />
+	    		<a href="../System.I18N.core/MessageSource_SQLite.html">MessageSource_SQLite</a><br />
+	    		<a href="../System.I18N.core/MessageSource_XLIFF.html">MessageSource_XLIFF</a><br />
+	    		<a href="../System.I18N.core/NumberFormat.html">NumberFormat</a><br />
+	    		<a href="../System.I18N.core/NumberFormatInfo.html">NumberFormatInfo</a><br />
+	    		<a href="../System.I18N.core/TCache_Lite.html">TCache_Lite</a><br />
+	    		<a href="../System.I18N.core/TGettext.html">TGettext</a><br />
+	    		<a href="../System.I18N.core/TGettext_MO.html">TGettext_MO</a><br />
+	    		<a href="../System.I18N.core/TGettext_PO.html">TGettext_PO</a><br />
+	  </div>
+      
+            <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../System.I18N.core/_I18N_core_ChoiceFormat_php.html">		ChoiceFormat.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_CultureInfo_php.html">		CultureInfo.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_DateFormat_php.html">		DateFormat.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_DateTimeFormatInfo_php.html">		DateTimeFormatInfo.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_HTTPNegotiator_php.html">		HTTPNegotiator.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_IMessageSource_php.html">		IMessageSource.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageCache_php.html">		MessageCache.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageFormat_php.html">		MessageFormat.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_php.html">		MessageSource.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_gettext_php.html">		MessageSource_gettext.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_MySQL_php.html">		MessageSource_MySQL.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_SQLite_php.html">		MessageSource_SQLite.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_MessageSource_XLIFF_php.html">		MessageSource_XLIFF.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_Gettext_MO_php.html">		MO.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_NumberFormat_php.html">		NumberFormat.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_NumberFormatInfo_php.html">		NumberFormatInfo.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_Gettext_PO_php.html">		PO.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_TCache_Lite_php.html">		TCache_Lite.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_Gettext_TGettext_php.html">		TGettext.php
+		</a><br>
+			<a href="../System.I18N.core/_I18N_core_util_php.html">		util.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: MessageSource_MySQL</h1>
+Source Location: /I18N/core/MessageSource_MySQL.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre><a href="../System.I18N.core/MessageSource.html">MessageSource</a>
+   |
+   --MessageSource_MySQL</pre><br />
+<div class="description">MessageSource_MySQL class.</div><br />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 41]<br />
+MessageSource_MySQL class.<br /><br /><p>Retrive the message translation from a MySQL database.</p><p>See the MessageSource::factory() method to instantiate this class.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>v1.0, last update on Fri Dec 24 16:58:58 EST 2004</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Xiang Wei Zhuo &lt;<a href="mailto:weizhuo[at]gmail[dot]com">weizhuo[at]gmail[dot]com</a>&gt;</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+
+
+    
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#var$db">$db</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#var$dns">$dns</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#var$source">$source</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#method__construct">__construct</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#method__destruct">__destruct</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methodcatalogues">catalogues</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methodconnect">connect</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methodconnection">connection</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methoddelete">delete</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methodgetCatalogueList">getCatalogueList</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methodgetLastModified">getLastModified</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methodisValidSource">isValidSource</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methodloadData">loadData</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methodsave">save</a></li>
+    <li><a href="../System.I18N.core/MessageSource_MySQL.html#methodupdate">update</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+<div class="tags">
+<h4>Class: <a href="../System.I18N.core/MessageSource.html">MessageSource</a></h4>
+<dl>
+<dt>
+  <a href="../System.I18N.core/MessageSource.html#var$cache">MessageSource::$cache</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../System.I18N.core/MessageSource.html#var$culture">MessageSource::$culture</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../System.I18N.core/MessageSource.html#var$messages">MessageSource::$messages</a>
+  </dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../System.I18N.core/MessageSource.html#var$untranslated">MessageSource::$untranslated</a>
+  </dt>
+<dd>
+   
+</dd>
+</dl>
+</div>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+<h4>Class: <a href="../System.I18N.core/MessageSource.html">MessageSource</a></h4>
+<dl>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodappend">MessageSource::append()</a>
+  </dt>
+  <dd>
+    Add a untranslated message to the source. Need to call save()  to save the messages to source.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodfactory">MessageSource::factory()</a>
+  </dt>
+  <dd>
+    Factory method to instantiate a new MessageSource depending on the
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodgetCache">MessageSource::getCache()</a>
+  </dt>
+  <dd>
+    Get the cache handler for this source.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodgetCatalogueList">MessageSource::getCatalogueList()</a>
+  </dt>
+  <dd>
+    Get all the variants of a particular catalogue.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodgetCulture">MessageSource::getCulture()</a>
+  </dt>
+  <dd>
+    Get the culture identifier for the source.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodgetLastModified">MessageSource::getLastModified()</a>
+  </dt>
+  <dd>
+    Get the last modified unix-time for this particular catalogue+variant.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodgetSource">MessageSource::getSource()</a>
+  </dt>
+  <dd>
+    Get the source, this could be a filename or database ID.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodisValidSource">MessageSource::isValidSource()</a>
+  </dt>
+  <dd>
+    Determine if the source is valid.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodload">MessageSource::load()</a>
+  </dt>
+  <dd>
+    Load a particular message catalogue. Use read() to  to get the array of messages. The catalogue loading sequence  is as follows
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodloadData">MessageSource::loadData()</a>
+  </dt>
+  <dd>
+    Load the message for a particular catalogue+variant.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodread">MessageSource::read()</a>
+  </dt>
+  <dd>
+    Get the array of messages.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodsetCache">MessageSource::setCache()</a>
+  </dt>
+  <dd>
+    Set the cache handler for caching the messages.
+  </dd>
+    <dt>
+    <a href="../System.I18N.core/MessageSource.html#methodsetCulture">MessageSource::setCulture()</a>
+  </dt>
+  <dd>
+    Set the culture for this message source.
+  </dd>
+  </dl>
+</div>
+</td>
+
+</tr></table>
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$db"></a>
+	<p></p>
+	<h4>$db = <span class="value"></span></h4>
+	<p>[line 59]</p>
+  A resource link to the database<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>db</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$dns"></a>
+	<p></p>
+	<h4>$dns = <span class="value"></span></h4>
+	<p>[line 53]</p>
+  The DSN array property, parsed by PEAR's DB DSN parser.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$source"></a>
+	<p></p>
+	<h4>$source = <span class="value"></span></h4>
+	<p>[line 47]</p>
+  The datasource string, full DSN to the database.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+        <tr>
+      <td><b>Overrides:</b>&nbsp;&nbsp;</td>
+      <td>Array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 66]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>MessageSource_MySQL __construct(
+string
+$source)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor.<br /><br /><p>Create a new message source using MySQL.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td>MessageSource::factory();</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$source</b>&nbsp;&nbsp;</td>
+        <td>MySQL datasource, in PEAR's DB DSN format.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method__destruct"></a>
+	<h3>destructor __destruct <span class="smalllinenumber">[line 76]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __destruct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Destructor, close the database connection.<br /><br /><br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcatalogues"></a>
+	<h3>method catalogues <span class="smalllinenumber">[line 401]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array catalogues(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns a list of catalogue as key and all it variants as value.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>list of catalogues</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodconnect"></a>
+	<h3>method connect <span class="smalllinenumber">[line 86]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>resource connect(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Connect to the MySQL datasource<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>MySQL connection.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+  <tr>
+    <td><b>throws:</b>&nbsp;&nbsp;</td><td>Exception, connection and database errors.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodconnection"></a>
+	<h3>method connection <span class="smalllinenumber">[line 138]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>db connection(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the database connection.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>database connection.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddelete"></a>
+	<h3>method delete <span class="smalllinenumber">[line 336]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean delete(
+string
+$message, [string
+$catalogue = 'messages'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Delete a particular message from the specified catalogue.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>true if deleted, false otherwise.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$message</b>&nbsp;&nbsp;</td>
+        <td>the source message to delete.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$catalogue</b>&nbsp;&nbsp;</td>
+        <td>the catalogue to delete from.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetCatalogueList"></a>
+	<h3>method getCatalogueList <span class="smalllinenumber">[line 220]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getCatalogueList(
+string
+$catalogue)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get all the variants of a particular catalogue.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>list of all variants for this catalogue.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.I18N.core/MessageSource.html#methodgetCatalogueList">MessageSource::getCatalogueList()</a> (Get all the variants of a particular catalogue.)<br /><br />
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$catalogue</b>&nbsp;&nbsp;</td>
+        <td>catalogue name</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetLastModified"></a>
+	<h3>method getLastModified <span class="smalllinenumber">[line 181]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int getLastModified(
+string
+$source)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the last modified unix-time for this particular catalogue+variant.<br /><br /><p>We need to query the database to get the date_modified.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>last modified in unix-time format.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.I18N.core/MessageSource.html#methodgetLastModified">MessageSource::getLastModified()</a> (Get the last modified unix-time for this particular catalogue+variant.)<br /><br />
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$source</b>&nbsp;&nbsp;</td>
+        <td>catalogue+variant</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisValidSource"></a>
+	<h3>method isValidSource <span class="smalllinenumber">[line 200]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isValidSource(
+string
+$variant)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Check if a particular catalogue+variant exists in the database.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>true if the catalogue+variant is in the database,  false otherwise.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.I18N.core/MessageSource.html#methodisValidSource">MessageSource::isValidSource()</a> (Determine if the source is valid.)<br /><br />
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$variant</b>&nbsp;&nbsp;</td>
+        <td>catalogue+variant</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodloadData"></a>
+	<h3>method loadData <span class="smalllinenumber">[line 149]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array &amp;loadData(
+string
+$variant)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get an array of messages for a particular catalogue and cultural  variant.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>translation messages.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+Overrides <a href="../System.I18N.core/MessageSource.html#methodloadData">MessageSource::loadData()</a> (Load the message for a particular catalogue+variant.)<br /><br />
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$variant</b>&nbsp;&nbsp;</td>
+        <td>the catalogue name + variant</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsave"></a>
+	<h3>method save <span class="smalllinenumber">[line 297]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean save(
+[string
+$catalogue = 'messages'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Save the list of untranslated blocks to the translation source.<br /><br /><p>If the translation was not found, you should add those  strings to the translation source via the <strong>append()</strong> method.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>true if saved successfuly, false otherwise.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$catalogue</b>&nbsp;&nbsp;</td>
+        <td>the catalogue to add to</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodupdate"></a>
+	<h3>method update <span class="smalllinenumber">[line 367]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean update(
+string
+$text, string
+$target, string
+$comments, [string
+$catalogue = 'messages'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Update the translation.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>true if translation was updated, false otherwise.</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$text</b>&nbsp;&nbsp;</td>
+        <td>the source string.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$target</b>&nbsp;&nbsp;</td>
+        <td>the new translation string.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$comments</b>&nbsp;&nbsp;</td>
+        <td>comments</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$catalogue</b>&nbsp;&nbsp;</td>
+        <td>the catalogue of the translation.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit"><hr />
+		    &copy; 2004-2005 <a href="http://www.pradosoft.com/">PRADO Software Group</a>. All Rights Reserved.
+        </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

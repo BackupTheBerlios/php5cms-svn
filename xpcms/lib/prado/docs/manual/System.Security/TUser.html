@@ -1,0 +1,470 @@
+<html>
+<head>
+<title>Docs For Class TUser</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">System.Security</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_System.Security.html" class="menu">class tree: System.Security</a> ]
+		  [ <a href="../elementindex_System.Security.html" class="menu">index: System.Security</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_prado.html">prado</a><br />
+              <a href="../li_System.html">System</a><br />
+              <a href="../li_System.Data.html">System.Data</a><br />
+              <a href="../li_System.Exception.html">System.Exception</a><br />
+              <a href="../li_System.I18N.html">System.I18N</a><br />
+              <a href="../li_System.I18N.core.html">System.I18N.core</a><br />
+              <a href="../li_System.Security.html">System.Security</a><br />
+              <a href="../li_System.Web.Services.html">System.Web.Services</a><br />
+              <a href="../li_System.Web.UI.html">System.Web.UI</a><br />
+              <a href="../li_System.Web.UI.WebControls.html">System.Web.UI.WebControls</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../System.Security/TDESCrypto.html">TDESCrypto</a><br />
+	    		<a href="../System.Security/TUser.html">TUser</a><br />
+	  </div>
+      
+            <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../System.Security/_Security_TDESCrypto_php.html">		TDESCrypto.php
+		</a><br>
+			<a href="../System.Security/_Security_TUser_php.html">		TUser.php
+		</a><br>
+	  </div><br />
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: TUser</h1>
+Source Location: /Security/TUser.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">TUser class</div><br />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 52]<br />
+TUser class<br /><br /><p>TUser class is a very basic implementation of IUser interface.</p><p>TUser is meant to be as the base class of other user classes (but not the only one.)  TUser uses username and password as the authentication elements.  You can access the username by the property <strong>Username</strong>.  Whether the user is authenticated can be determined by the property  <strong>IsAuthenticated</strong>.</p><p>Derived classes should override <a href="../System.Security/TUser.html#methodlogin">login</a> and <a href="../System.Security/TUser.html#methodlogout">logout</a> methods  to accomplish the real authentication work (such as authenticating  the user/password against DB).  If Roles are used for authorization, <a href="../System.Security/TUser.html#methodisInRole">isInRole</a> should also be overriden.  The methods <a href="../System.Security/TUser.html#methodonAuthenticationRequired">onAuthenticationRequired</a> and <a href="../System.Security/TUser.html#methodonAuthorizationRequired">onAuthorizationRequired</a>  will be invoked by the framework when authentication and authorization fail, respectively.  Default implementation simply displays an error message.  In most cases, the two methods should be overriden to provide  customized handlings (such as transfer to the login page).</p><p>Namespace: System.Security</p><p>Properties <ul><li><strong>Username</strong>, string
+   <br />Gets or sets the username of TUser.</li><li><strong>IsAuthenticated</strong>, boolean, default=true
+   <br />Gets or sets whether the user passes the authentication.</li></ul></p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>v1.0, last update on 2004/10/24 12:00:00</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Qiang Xue &lt;<a href="mailto:qiang.xue@gmail.com">qiang.xue@gmail.com</a>&gt;, Tim Evans &lt;tim.evans@gmail.com&gt;</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+
+
+    
+        
+</td>
+
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../System.Security/TUser.html#method__construct">__construct</a></li>
+    <li><a href="../System.Security/TUser.html#methodgetUsername">getUsername</a></li>
+    <li><a href="../System.Security/TUser.html#methodisAuthenticated">isAuthenticated</a></li>
+    <li><a href="../System.Security/TUser.html#methodisInRole">isInRole</a></li>
+    <li><a href="../System.Security/TUser.html#methodlogin">login</a></li>
+    <li><a href="../System.Security/TUser.html#methodlogout">logout</a></li>
+    <li><a href="../System.Security/TUser.html#methodonAuthenticationRequired">onAuthenticationRequired</a></li>
+    <li><a href="../System.Security/TUser.html#methodonAuthorizationRequired">onAuthorizationRequired</a></li>
+    <li><a href="../System.Security/TUser.html#methodsetAuthenticated">setAuthenticated</a></li>
+    <li><a href="../System.Security/TUser.html#methodsetUsername">setUsername</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 69]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>TUser __construct(
+mixed
+$config)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor.<br /><br /><br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$config</b>&nbsp;&nbsp;</td>
+        <td>the app spec related with user class.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetUsername"></a>
+	<h3>method getUsername <span class="smalllinenumber">[line 131]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getUsername(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the username of TUser</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisAuthenticated"></a>
+	<h3>method isAuthenticated <span class="smalllinenumber">[line 114]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isAuthenticated(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>whether the user is authenticated</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisInRole"></a>
+	<h3>method isInRole <span class="smalllinenumber">[line 80]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isInRole(
+string
+$role)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Checks if the user is of certain role.<br /><br /><p>Default implementation will only return true if the role to be checked is empty.  Derived classes should override this method if roles are used for authorization.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>if the user is of the role</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$role</b>&nbsp;&nbsp;</td>
+        <td>the role to be checked</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodlogin"></a>
+	<h3>method login <span class="smalllinenumber">[line 154]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean login(
+string
+$username, string
+$password)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Authenticates a user by his/her username and password.<br /><br /><p>Default implementation simply saves the username and sets authentication true.  Derived classes should override this method to do real authentication work  such as check the username/password against DB.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>if authentication succeeds</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$username</b>&nbsp;&nbsp;</td>
+        <td>the username</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$password</b>&nbsp;&nbsp;</td>
+        <td>the password</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodlogout"></a>
+	<h3>method logout <span class="smalllinenumber">[line 166]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void logout(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets authentication false for the user.<br /><br /><p>Default implementation will destroy all session data related to the user visit.  Derived classes may override this method to provide special treatment.</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodonAuthenticationRequired"></a>
+	<h3>method onAuthenticationRequired <span class="smalllinenumber">[line 92]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void onAuthenticationRequired(
+string
+$pageName)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		This method is invoked by the framework when authentication fails.<br /><br /><p>Default implementation simply displays an error message.  Derived classes may override this method to provide customized treatment  when authentication fails (e.g. transfer to login page)</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$pageName</b>&nbsp;&nbsp;</td>
+        <td>the name of the page that requires authentication.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodonAuthorizationRequired"></a>
+	<h3>method onAuthorizationRequired <span class="smalllinenumber">[line 105]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void onAuthorizationRequired(
+<a href="../System.Web.UI/TPage.html">TPage</a>
+$page)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		This method is invoked by the framework when authorization fails.<br /><br /><p>Default implementation simply displays an error message.  Derived classes may override this method to provide customized treatment  when authorization fails (e.g. transfer to login page)</p><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../System.Web.UI/TPage.html">TPage</a>&nbsp;&nbsp;</td>
+        <td><b>$page</b>&nbsp;&nbsp;</td>
+        <td>the page object that are not authorized to be accessed.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetAuthenticated"></a>
+	<h3>method setAuthenticated <span class="smalllinenumber">[line 123]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setAuthenticated(
+boolean
+$authenticated)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the value indicating whether the user is authenticated.<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$authenticated</b>&nbsp;&nbsp;</td>
+        <td>whether the user is authenticated.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetUsername"></a>
+	<h3>method setUsername <span class="smalllinenumber">[line 140]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setUsername(
+string
+$username)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the username of TUser object<br /><br /><br /><br />
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$username</b>&nbsp;&nbsp;</td>
+        <td>the username</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit"><hr />
+		    &copy; 2004-2005 <a href="http://www.pradosoft.com/">PRADO Software Group</a>. All Rights Reserved.
+        </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
